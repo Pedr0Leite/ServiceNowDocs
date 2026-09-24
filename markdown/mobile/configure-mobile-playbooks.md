@@ -22,7 +22,7 @@ Role required: admin
 
 This task is an example of embedding a seismic page, which contains the playbook experience, within a mobile app by using Mobile App Bridge.
 
-Configure mobile web screens to leverage the ServiceNow platform playbook feature on mobile devices. A playbook guides technicians when troubleshooting issues or helps them learn to install new parts. For more information about the playbook feature, see [About Playbook Experience](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/build-workflows/playbook-ui.md).
+Configure mobile web screens to leverage the ServiceNow platform playbook feature on mobile devices. A playbook guides technicians when troubleshooting issues or helps them learn to install new parts. For more information about the playbook feature, see .
 
 Configuring seismic pages with Mobile App Bridge involves the following tools and tasks:
 

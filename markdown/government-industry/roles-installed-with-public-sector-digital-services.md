@@ -1139,7 +1139,7 @@ License &amp; Permits Contributor Creator\[sn\_gsm\_lic\_prmt.contributor\_creat
 
 </td><td>
 
-Enables users to create license and permit cases and is included in the top-level contributor roles. It only allows record creation but does not allow visibilty to a record on its own.
+Enables users to create license and permit cases and is included in the top-level contributor roles. It only allows record creation but does not allow visibility to a record on its own.
 
 </td><td>
 
@@ -2729,7 +2729,7 @@ Provides users the access to view reports on the Service Applicant Information p
 None
 
 </td></tr></tbody>
-</table>**Note:** Customers who have purchased a Public Sector Digital Services subscription can provide Business Stakeholder users with rights to actions listed under [Business Stakeholder for Customer Service Management](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/customer-service-management/business-stakeholder-for-csm.md).
+</table>**Note:** Customers who have purchased a Public Sector Digital Services subscription can provide Business Stakeholder users with rights to actions listed under Business Stakeholder for Customer Service Management.
 
 **Parent Topic:**[Components and Roles installed with Public Sector Digital Services Core](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/government-industry/installed-with-public-sector-digital-services-core.md)
 
