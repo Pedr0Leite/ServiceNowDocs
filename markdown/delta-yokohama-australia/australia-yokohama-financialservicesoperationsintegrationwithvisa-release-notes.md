@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/delta-yokohama-australia/australia-yokohama-financialservicesoperationsintegrationwithvisa-release-notes.html
 release: australia
 topic_type: reference
-last_updated: "2026-09-24"
+last_updated: "2026-11-06"
 reading_time_minutes: 5
 breadcrumb: [Products combined by family]
 ---
@@ -154,7 +154,16 @@ Australia
 
 </td><td>
 
--   **[Updated subflows](https://www.servicenow.com/docs/access?context=components-installed-with-the-financial-services-operations-integration-with-visa&family=australia&ft:locale=en-US)**
+-   **Updated questionnaire field labels and validation**
+
+Renamed the question "Explain why credit presented does not apply" to "Provide the Transaction Identifier\(s\) or Acquirer Reference Number\(s\) and the Transaction Date that the credit\(s\) was applied to and why the credit\(s\) does not resolve the Dispute," and renamed "Certification that the merchant facilities were withdrawn" to "Certification that the facilities were withdrawn." The **Name** field is no longer required, and **Key Factors** now accepts up to 200 characters.
+
+-   **Updated Spoke action wiring for new questionnaire fields**
+
+Added the **Date facilities were withdrawn** and **Date cardholder checked out from hotel** fields to the **Submit Dispute Questionnaire** and **Look up Dispute Details Response Parser** spoke actions, and added **CE Transaction Details** as a read-back field on **Look up Dispute Details Response Parser**. See [Financial Services Card Operations 2026 September Monthly release notes](https://www.servicenow.com/docs/access?context=financial-services-card-operations-rn-2026-09&family=australia&ft:locale=en-US) for the corresponding questionnaire questions.
+
+
+ -   **[Updated subflows](https://www.servicenow.com/docs/access?context=components-installed-with-the-financial-services-operations-integration-with-visa&family=australia&ft:locale=en-US)**
 
 The following subflows have been updated to support integration with the Card data security application:
 

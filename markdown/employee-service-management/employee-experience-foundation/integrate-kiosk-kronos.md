@@ -7,9 +7,9 @@ release: australia
 product: Employee Experience Foundation
 classification: employee-experience-foundation
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
-breadcrumb: [Employee Center Pro Kiosk, Employee Center Integrations, Unified Employee Experience, Employee Service Management]
+breadcrumb: [Employee Center Pro Kiosk, Employee Center Integrations, EmployeeWorks, Employee Service Management]
 ---
 
 # Integrate with the UKG spoke
@@ -36,12 +36,12 @@ If you don't plan to activate the HR Service Delivery with Ultimate Kronos Group
 
 1.  Set up the UKG spoke.
 
-    -   For more information on the setup, see [Configuring HR Service Delivery with Ultimate Kronos Group](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/employee-service-management/hr-service-delivery/set-up-ukg.md).
+    -   For more information on the setup, see .
     -   The schedule and time off data on the Employee Center Pro kiosk is enabled with the existing UKG spoke actions.
         -   **Look up Employee Schedule**: To get the shift schedule data.
         -   **Get Employee Accruals by Person Number**: To get the time off balance data.
 
-            For more information on creating requests, see [Create request as manager using the catalog item](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/integrate-applications/kronos-serv-cat.md).
+            For more information on creating requests, see [Create request as manager using the Kronos catalog item](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/integrate-applications/kronos-serv-cat.md).
 
 
 -   **[Receive employee data from UKG to the Employee Center Pro Kiosk](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/employee-service-management/employee-experience-foundation/user-map-kronos-kiosk.md)**  

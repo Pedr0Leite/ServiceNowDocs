@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/application-development/create-page-existing-servicenow-ai-experience-lab-for-vs-code.html
 release: australia
 topic_type: task
-last_updated: "2026-08-06"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
-breadcrumb: [Extend an existing experience, Use, ServiceNow Lux Lab for VS Code extension, Building pro-code applications, Developing your application, Building applications]
+breadcrumb: [Extend an existing experience, Use, ServiceNow Lux Lab for VS Code extension, Building pro-code applications, Developing your application, Classic app development, Building applications]
 ---
 
 # Create a page
@@ -42,7 +42,7 @@ Visual Studio Code
 
 </td><td>
 
-1.97 later
+1.97 or later
 
 </td><td>
 
@@ -78,7 +78,7 @@ ServiceNow SDK
 
 </td><td>
 
-4.10 or later
+4.14 or later
 
 </td><td>
 
@@ -106,7 +106,7 @@ ServiceNow instance
 
 2.  Access the command palette by pressing Ctrl+Shift+P on Windows or Command+Shift+P on macOS, or by navigating to **View** &gt; **Command Palette**.
 
-3.  Select **AIUX: Create Page**.
+3.  Select **Lux: Create Page**.
 
 4.  From the list, select **AIUX: New Page**.
 
@@ -119,6 +119,8 @@ ServiceNow instance
 6.  Enter a URL route for the new page and select the Enter key.
 
     After entering the URL route, the ServiceNow Lux Lab for VS Code extension creates the folder and page file using the information you provided.
+
+    \[Omitted image "servicenow-lux-lab-vs-code-page-folder.png"\] Alt text: The pages folder showing a new page subfolder containing page.js.
 
 
 ## Result

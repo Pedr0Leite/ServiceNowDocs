@@ -9,7 +9,7 @@ classification: software-asset-management
 topic_type: reference
 last_updated: "2026-03-12"
 reading_time_minutes: 12
-breadcrumb: [Reference, Software Asset Management, IT Asset Management, Asset Management]
+breadcrumb: [Software Asset Management references, Software Asset Management, IT Asset Management, Asset Management]
 ---
 
 # Software Asset Management properties
@@ -19,6 +19,8 @@ You can set default reconciliation properties such as grouping and reconciliatio
 These properties are available for the Software Asset Management application.
 
 To access these properties, navigate to **All** &gt; **Software Asset** &gt; **Administration** &gt; **Properties**.
+
+You can also access the SAM properties using the Configuration Console for Software Asset Management. For more details about the Configuration Console for Software Asset Management, see [Configuration Console for Software Asset Management](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/config-console-sam.md).
 
 <table id="table_ygc_2lb_dbb"><thead><tr><th>
 
@@ -43,6 +45,16 @@ Determines how rights and software installations are grouped during reconciliati
 -   **Country**
 -   **Department**
 -   **Region**
+
+</td></tr><tr><td>
+
+com.snc.sam.auto\_suite\_inference
+
+</td><td>
+
+Automatically infers the parent software model suite for a software model based on its child software models.
+
+ Default value is **false**. When enabled, individual software installations get mapped to the appropriate suite entitlement for accurate license compliance calculations.
 
 </td></tr><tr><td>
 
@@ -318,10 +330,17 @@ samp.spend\_prediction\_service.max\_label\_attempts
 
 </td><td>
 
-Sets the maximum number of times the **SAM - Label Spend Transactions** scheduled job attempts to label a Pending spend transaction.
-
- The default value is 3.
+Sets the maximum number of times the **SAM - Label Spend Transactions** scheduled job attempts to label a pending spend transaction. The default value is 3.
 
 </td></tr></tbody>
 </table>**Parent Topic:**[Software Asset Management references](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/references.md)
+
+**Related topics**  
+
+
+[Configuration Console for Software Asset Management](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/config-console-sam.md)
+
+[Configuration Console overview](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/config-console-overview.md)
+
+[Configure Software Asset Management using the Configuration Console](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/configure-sam-from-config-console.md)
 

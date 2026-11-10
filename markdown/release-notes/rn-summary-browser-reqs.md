@@ -1,18 +1,18 @@
 ---
-title: Browser requirements for all Australia features and products
-description: Cumulative release notes summary on browser requirements for Australia features and products.
+title: Browser requirements for all Brazil features and products
+description: Cumulative release notes summary on browser requirements for Brazil features and products.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/release-notes/rn-summary-browser-reqs.html
 release: australia
 topic_type: reference
-last_updated: "2026-09-23"
-reading_time_minutes: 3
-breadcrumb: [Release notes summaries for Australia features, Release notes for upgrading from Zurich, Learn about the Australia release, Australia release notes]
+last_updated: "2026-11-04"
+reading_time_minutes: 2
+breadcrumb: [Release notes summaries for Brazil features, Release notes for upgrading from Australia, Learn about the Brazil release, Brazil release notes]
 ---
 
-# Browser requirements for all Australia features and products
+# Browser requirements for all Brazil features and products
 
-Cumulative release notes summary on browser requirements for Australia features and products.
+Cumulative release notes summary on browser requirements for Brazil features and products.
 
 Several products have specific browser requirements. Review this information to ensure you are using the correct browsers and browser versions.
 
@@ -26,22 +26,6 @@ Details
 
 </th></tr></thead><tbody><tr><td>
 
-AI Admin Center
-
-</td><td>
-
-The AI Admin Center application supports various browsers, including Google Chrome and Microsoft Edge. AI Admin Center isn’t supported in Internet Explorer.
-
-</td></tr><tr><td>
-
-AI Admin Hub
-
-</td><td>
-
-Now Assist supports various browsers, including Google Chrome and Microsoft Edge. Now Assist isn’t supported in Internet Explorer.
-
-</td></tr><tr><td>
-
 AI Agent Studio
 
 </td><td>
@@ -50,11 +34,25 @@ AI agents and AI Agent Studio support various browsers, including Google Chrome 
 
 </td></tr><tr><td>
 
-Advanced Work Assignment \(AWA\)
+AI Desktop Actions
 
 </td><td>
 
-Advanced Work Assignment doesn’t support mobile devices or Microsoft Edge browsers. Instead, use Microsoft Edge - Chromium or one of the other supported browsers that are listed in [Browser support](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/release-notes/browser-support.md).
+-   ****
+
+ServiceNow Otto AI agents support various browsers, including Google Chrome and Microsoft Edge. ServiceNow Otto AI agents aren't supported in Internet Explorer.
+
+
+</td></tr><tr><td>
+
+AI Search
+
+</td><td>
+
+-   ****
+
+For optimal performance, use AI Search in the latest release of Google Chrome or Mozilla Firefox. AI Search doesn’t support Internet Explorer.
+
 
 </td></tr><tr><td>
 
@@ -62,15 +60,10 @@ Agent experience for CSM
 
 </td><td>
 
-ServiceNow workspaces don’t support mobile devices, Internet Explorer, or Microsoft Edge. Instead, use Microsoft Edge - Chromium or one of the other supported browsers listed in [Browser support](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/platform-user-interface/browser-support.md).
+-   ****
 
-</td></tr><tr><td>
+ServiceNow workspaces don’t support mobile devices, Internet Explorer, or Microsoft Edge. Instead, use Microsoft Edge Chromium or one of the other supported browsers listed in Browser support.
 
-Configurable Workspace
-
-</td><td>
-
-Configurable Workspace doesn’t support mobile devices, Internet Explorer, or Microsoft Edge. Instead, use Microsoft Edge, Chromium or one of the other supported browsers that are listed in [Browser support](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/release-notes/browser-support.md).
 
 </td></tr><tr><td>
 
@@ -78,7 +71,21 @@ Data Management for CSM
 
 </td><td>
 
-Starting with the Australia release, data management for Customer Service Management doesn't support mobile devices and Internet Explorer. For more information, see [Browser support](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/release-notes/browser-support.md).
+-   ****
+
+Starting with the Brazil release, data management for Customer Service Management doesn't support mobile devices and Internet Explorer. For more information, see [Browser support](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/release-notes/browser-support.md).
+
+
+</td></tr><tr><td>
+
+Data Privacy and Discovery
+
+</td><td>
+
+-   ****
+
+For optimal performance with Data Privacy and Discovery features, use the latest release of Chrome, Firefox, or Safari. Internet Explorer is not supported. Modern browsers with JavaScript enabled are required for all interactive features.
+
 
 </td></tr><tr><td>
 
@@ -86,23 +93,51 @@ Digital End-User Experience
 
 </td><td>
 
-Enable the DEX browser extension to monitor web applications for various operational or performance-based metrics on your system. For more information, see [Enable DEX browser extension](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/it-service-management/enable-dex-browser-extension.md).
+Enable the DEX browser extension to monitor web applications for various operational or performance-based metrics on your system. For more information, see .
 
 </td></tr><tr><td>
 
-Live Connect
+Domain Separation
 
 </td><td>
 
-Live Connect is a backend connectivity layer with no browser-specific requirements. Browser compatibility depends on the third-party client tools used to connect to Live Connect.
+-   ****
+
+For optimal performance with Domain Separation features, use the latest release of Chrome, Firefox, or Safari. Internet Explorer is not supported. Modern browsers with JavaScript enabled are required for all administrative and policy configuration interfaces.
+
 
 </td></tr><tr><td>
 
-Manufacturing Commercial Operations
+External Content Connectors
 
 </td><td>
 
-ServiceNow workspace doesn’t support mobile devices, Internet Explorer, or Microsoft Edge. Instead, use Microsoft Edge - Chromium or one of the other supported browsers listed in [Browser support](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/platform-user-interface/browser-support.md).
+-   ****
+
+For optimal performance, use External Content Connectors in the latest release of Google Chrome or Mozilla Firefox. Internet Explorer isn't supported.
+
+
+</td></tr><tr><td>
+
+Firewall Audits and Reporting
+
+</td><td>
+
+-   ****
+
+Use the latest version of Chrome, Firefox, Safari, or Edge for optimal performance.
+
+
+</td></tr><tr><td>
+
+Kubernetes Visibility Agent \(KVA\)
+
+</td><td>
+
+-   ****
+
+Use the latest version of Chrome, Firefox, Safari, or Edge for optimal performance when accessing the Kubernetes explorer dashboard.
+
 
 </td></tr><tr><td>
 
@@ -110,44 +145,10 @@ Next Experience
 
 </td><td>
 
-The Australia release doesn't support Internet Explorer 11. The iOS version of Firefox is also not supported.
+-   ****
 
-</td></tr><tr><td>
+Next Experience doesn’t support Internet Explorer 11. The iOS version of Firefox is also not supported.
 
-Next Experience Developer \(NED\) Tools
-
-</td><td>
-
-Next Experience Developer Tools requires Google Chrome.
-
-</td></tr><tr><td>
-
-Policy and Compliance Management
-
-</td><td>
-
-Policy and Compliance Management supports the latest public release and the two preceding versions of the following web browsers:
-
--   Google Chrome
--   Firefox and Firefox Extended Support Release \(ESR\)
--   Microsoft Edge Chromium
--   Safari 12.0 and later versions
-
-</td></tr><tr><td>
-
-Predictive AI for CSM
-
-</td><td>
-
-ServiceNow workspaces don’t support mobile devices, Internet Explorer, or Microsoft Edge. Instead, use Microsoft Edge - Chromium or one of the other supported browsers listed in [Browser support](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/platform-user-interface/browser-support.md).
-
-</td></tr><tr><td>
-
-RPA Hub
-
-</td><td>
-
-ServiceNow workspaces don’t support mobile devices. For more information about the list of supported browsers, see [Browser support](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/release-notes/browser-support.md).
 
 </td></tr><tr><td>
 
@@ -155,15 +156,21 @@ Self-service and omnichannel engagement for CSM
 
 </td><td>
 
-Starting with the Australia release, self-service and omnichannel application don't support Internet Explorer. For more information, see [Browser support](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/release-notes/browser-support.md).
+-   ****
+
+The WebRTC voice call widget is not supported on mobile browsers.
+
 
 </td></tr><tr><td>
 
-ServiceNow Otto for Legal Service Delivery \(LSD\)
+ServiceNow Otto for Virtual Agent
 
 </td><td>
 
-To see the list of supported browsers for ServiceNow Otto for Legal Service Delivery \(LSD\), see [Browser support](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/release-notes/browser-support.md).
+-   ****
+
+Virtual Agent supports various browsers, including Google Chrome and Microsoft Edge. For more information, see [Browser support](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/release-notes/browser-support.md).
+
 
 </td></tr><tr><td>
 
@@ -171,16 +178,33 @@ Table Builder
 
 </td><td>
 
-Internet Explorer isn’t supported.
+-   ****
+
+Internet Explorer isn't supported.
+
 
 </td></tr><tr><td>
 
-UI Builder
+Workforce Optimization for CSM
 
 </td><td>
 
-Internet Explorer isn't supported for UI Builder
+-   ****
+
+ServiceNow workspaces don’t support mobile devices, Internet Explorer, or Microsoft Edge. Instead, use Microsoft Edge - Chromium or one of the other supported browsers listed in Browser support.
+
+
+</td></tr><tr><td>
+
+Zing text indexing and search engine
+
+</td><td>
+
+-   ****
+
+For optimal performance, use Zing text indexing and search engine in the latest release of Google Chrome or Mozilla Firefox. Zing text indexing and search engine doesn’t support Internet Explorer.
+
 
 </td></tr></tbody>
-</table>**Parent Topic:**[Release notes summaries for Australia features](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/release-notes/release-notes-summaries.md)
+</table>**Parent Topic:**[Release notes summaries for Brazil features](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/release-notes/release-notes-summaries.md)
 

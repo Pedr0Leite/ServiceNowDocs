@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/application-development/vc-refine-using-ide.html
 release: australia
 topic_type: concept
-last_updated: "2026-06-05"
+last_updated: "2026-09-10"
 reading_time_minutes: 4
-breadcrumb: [Build Agent overview, Develop, Agentic development, Agentic development on the ServiceNow AI Platform, Building applications]
+breadcrumb: [Build Agent overview, Develop, Agentic development guide, Build, AI Workflow Factory Prime, Agentic app development, Building applications]
 ---
 
 # Agentic development app refinement in the ServiceNow IDE
@@ -43,7 +43,7 @@ To refine your app in the ServiceNow IDE, follow these steps:
 6.  Validate security and roles.
     -   Review ACLs to confirm that the correct roles and conditions are applied.
     -   Tighten permissions and remove any overly permissive logic introduced during scaffolding.
-7.  Use Build Agent to generate and run Automated Test Framework. For more information, see [Test what you built](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/build-agent-testing.md).
+7.  Use Build Agent to generate and run Automated Test Framework. For more information, see [Test what you built with Build Agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/build-agent-testing.md).
 8.  Move to local development with the ServiceNow SDK for deeper refactoring.
     -   Use the ServiceNow SDK command line interface \(CLI\) for build, deploy, and fetch operations, version control, and CI integration.
     -   Use the Source Control extension within the ServiceNow IDE to move changes between local versions and the ServiceNow IDE. For more information, see [Using source control in the ServiceNow IDE](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/servicenow-ide-family-release/using-source-control-servicenow-ide.md).
@@ -70,7 +70,7 @@ With ServiceNow Fluent, you can:
 
 ServiceNow Fluent works with agentic development and Build Agent. You can generate an app or flow using conversational prompts, then refine, extend, and harden it using the ServiceNow Fluent code-centric tools. Both pro-code and low-code developers can collaborate and iterate, using the strengths of agentic and modern development.
 
-**Important:** Build Agent only creates metadata supported by ServiceNow® Fluent. For more information, see [ServiceNow Fluent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/servicenow-fluent.md). For the latest API reference, see [https://servicenow.github.io/sdk/](https://servicenow.github.io/sdk/)
+**Important:** Build Agent and Autonomous Engineer only create metadata supported by ServiceNow® Fluent. For more information, see [ServiceNow Fluent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/servicenow-fluent.md). For the latest API reference, see [https://servicenow.github.io/sdk/](https://servicenow.github.io/sdk/)
 
 ## When to choose the ServiceNow IDE or ServiceNow Studio
 

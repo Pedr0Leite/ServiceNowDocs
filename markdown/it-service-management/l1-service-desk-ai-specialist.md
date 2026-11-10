@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/it-service-management/l1-service-desk-ai-specialist.html
 release: australia
 topic_type: reference
-last_updated: "2026-08-25"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 breadcrumb: [IT Service Management]
 ---
@@ -58,15 +58,17 @@ This application requires data to be transferred from ServiceNow customers' indi
 
 ServiceNow collects and uses the inputs, outputs, and edits to outputs of this application to develop and improve ServiceNow technologies including ServiceNow models and AI products. Customers can opt out of future data collection at any time, as described in the [AI Opt-Out page](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/opt-out-of-data-sharing-for-now-assist.md).
 
-For more information, see the [Now Assist documentation](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/platform-now-assist-landing.md).
+For more information, see the [ServiceNow AI documentation](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/ai-products.md).
+
+For more information, see the [ServiceNow AI documentation](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/ai-products.md).
 
 ## Helpful resources
 
 Some ServiceNow resources that can provide you with helpful information are:
 
--   **\[Omitted image "dcx-icon-community.svg"\]ServiceNow Community**
+-   **Brazil release notes**
 
-    [ServiceNow Community](https://community.servicenow.com/community)
+    [https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/release-notes/l1-it-service-desk-ai-specialist-rn.md](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/release-notes/l1-it-service-desk-ai-specialist-rn.md)
 
 -   **\[Omitted image "dcx-icon-dev-portal.svg"\] Developer**
 

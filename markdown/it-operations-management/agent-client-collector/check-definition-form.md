@@ -127,7 +127,7 @@ Interval-based scheduling
 
 </td><td>
 
-
+When selected, enables configuring a time interval \(in seconds\) to wait between check executions.
 
 </td></tr><tr><td>
 
@@ -138,6 +138,8 @@ Interval
 The amount of time, in seconds, to wait between check executions.For example, a value of 60 means that the check runs every 60 seconds.
 
 Specified value must be an integer.
+
+Appears only when selecting **Interval-based scheduling**.
 
 </td></tr><tr><td>
 
@@ -212,6 +214,26 @@ Plugins
 </td><td>
 
 Select the plugins to be associated with the check. Once this is done, the plugins download before the check executes.
+
+</td></tr><tr class="sub-head"><td colspan="2">
+
+Advanced Check Configuration
+
+</td></tr><tr><td>
+
+Run check in the background
+
+</td><td>
+
+Select the checkbox for the check to run in the background, without the agent waiting for the check's process to finish.
+
+</td></tr><tr><td>
+
+Disable Token replacement
+
+</td><td>
+
+Select to disable token replacement if the command contains tokens designated within \{\{ \}\} that should pass through as command parameters.
 
 </td></tr></tbody>
 </table>-   **[Check definition form parameters tab](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/agent-client-collector/check-definition-parameters-tab.md)**  

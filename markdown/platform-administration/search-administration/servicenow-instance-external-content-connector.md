@@ -1,13 +1,13 @@
 ---
 title: ServiceNow instance external content connector
-description: The ServiceNow instance external content connector retrieves KB article records \(and their attachments\) from your ServiceNow AI Platform source instance and makes their content and metadata searchable in AI Search applications in your ServiceNow AI Platform destination instance.
+description: The ServiceNow instance external content connector retrieves KB article, Service Catalog item, and incident records \(and their attachments\) from an ServiceNow AI Platform source instance and makes their content and metadata searchable in AI Search applications in your ServiceNow AI Platform destination instance.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/platform-administration/search-administration/servicenow-instance-external-content-connector.html
 release: australia
 product: Search Administration
 classification: search-administration
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-10-21"
 reading_time_minutes: 2
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Configure, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -15,7 +15,7 @@ breadcrumb: [Configure, External Content Connectors, Search administration, Conf
 
 # ServiceNow instance external content connector
 
-The ServiceNow instance external content connector retrieves KB article records \(and their attachments\) from your ServiceNow AI Platform source instance and makes their content and metadata searchable in AI Search applications in your ServiceNow AI Platform destination instance.
+The ServiceNow instance external content connector retrieves KB article, Service Catalog item, and incident records \(and their attachments\) from an ServiceNow AI Platform source instance and makes their content and metadata searchable in AI Search applications in your ServiceNow AI Platform destination instance.
 
 The ServiceNow AI Platform instance that you want the external content connector to retrieve searchable content and metadata from is your source instance. The instance where the connector runs and populates search applications with the retrieved data is your destination instance.
 
@@ -23,7 +23,7 @@ Search administrators can run or schedule content crawls to retrieve updated con
 
 In your destination instance, the indexed content and metadata are stored as records in a connector-specific indexed source. Search administrators can create search sources from this indexed source and link them to search profiles to make the indexed records searchable in AI Search applications.
 
-**Important:** Your source and destination instances must be distinct from one another. The ServiceNow® instance external content connector is not designed to feed an instance's content back into itself.
+**Important:** Your source and destination instances must be distinct from one another. Don't use the ServiceNow® instance external content connector to feed an instance's content back into itself.
 
 ## User permissions
 
@@ -34,7 +34,7 @@ To view search results from the source instance, a user on the destination insta
 
 If these conditions aren't satisfied, the destination instance user won't be able to see search results crawled from the source instance.
 
--   **[Configure your ServiceNow AI Platform instance for external content indexing](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-administration/search-administration/configure-sn-aip-instance-external-content-indexing.md)**  
+-   **[Configure your ServiceNow AI Platform source instance for external content indexing](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-administration/search-administration/configure-sn-aip-instance-external-content-indexing.md)**  
 Create and configure a non-interactive service user account on your ServiceNow AI Platform® source instance to allow access by the ServiceNow instance external content connector.
 -   **[Create a ServiceNow instance external content connector](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-administration/search-administration/create-ext-cont-connector-snow-instance.md)**  
 Create an external content connector to retrieve searchable content and security principals from a ServiceNow AI Platform instance.

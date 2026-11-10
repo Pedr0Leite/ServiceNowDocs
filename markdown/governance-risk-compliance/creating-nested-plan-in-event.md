@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/governance-risk-compliance/creating-nested-plan-in-event.html
 release: australia
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 7
-breadcrumb: [Structured workflows for Exercises, Manage, Business Continuity Management, Governance, Risk, and Compliance]
+breadcrumb: [Structured workflows for exercises, Manage, Business Continuity Management, Governance, Risk, and Compliance]
 ---
 
 # Using nested plans
@@ -129,6 +129,8 @@ The example shows an activated plan \(ACP0010119\) that depends on another activ
 
 **Note:** An event task from a primary or related plan can be associated as a dependency with an event task from the same or another primary or related plan. An event task from a child plan can only be associated as a dependency within the same child plan.
 
+Dependencies for a child plan's event tasks aren't configured manually. During the nested plan process, the child plan inherits matching dependencies from the direct parent plan's recovery tasks. These dependencies are carried forward automatically into the child plan's event tasks.
+
 Whenever any event task is updated, as shown in the example, a message indicates that the event tasks have been updated. Selecting **Refresh** loads the updated data.
 
 You can add task dependencies in primary and related plans, but not in child plans. For an event task in a child plan, dependencies can only be selected from the same child plan. For example, in Plan 4, task 3 \(EVNTSK0010331\) depends on tasks \(EVNTSK0010329 and EVNTSK0010330\) within the same child plan.
@@ -153,12 +155,13 @@ Follow these steps to create a nested plan:
 
 1.  Create an event.
 2.  Add a plan to the event. An activated plan is created with the plan type set as primary.
-3.  An event is triggered to create related plans. If the plan has related plans without task associations and the plan level is below the default property value, an activated plan is created as a related plan.
+3.  An event is triggered to create related plans. If the plan has related plans without task associations and the plan level is less than the default value, an activated plan is created. The type is set as related plan.
 4.  An event is created to generate one or more event assets.
 5.  After the assets are created, an event is triggered to create event tasks.
-6.  If the event task has a related plan and its level is below the property-defined level, an activated plan is created as a child plan.
+6.  If the event task has a related plan and its level is less than the level defined in the property, an activated plan is created. The type is set as child plan.
+7.  After the child plan's event tasks are created, the system checks the direct parent plan's recovery task dependencies. Any matching dependencies are carried forward into the corresponding event tasks of the child plan.
 
-**Parent Topic:**[Structured workflows for Exercises](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/governance-risk-compliance/performing-tasks-to-manage-exercise-events.md)
+**Parent Topic:**[Structured workflows for exercises](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/governance-risk-compliance/performing-tasks-to-manage-exercise-events.md)
 
-**Parent Topic:**[Structured workflows for Crisis events](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/governance-risk-compliance/perform-tasks-to-manage-crisis-events.md)
+**Parent Topic:**[Structured workflows for crisis events](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/governance-risk-compliance/perform-tasks-to-manage-crisis-events.md)
 

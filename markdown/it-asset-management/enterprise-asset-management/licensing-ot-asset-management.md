@@ -7,7 +7,7 @@ release: australia
 product: Enterprise Asset Management
 classification: enterprise-asset-management
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 5
 breadcrumb: [OT Asset Management, Industry-specific EAM solutions, Enterprise Asset Management, Asset Management]
 ---
@@ -279,7 +279,7 @@ View details of the subscriptions consumed by your organization for the OT Asset
 **Related topics**  
 
 
-[Install OT Asset Management]()
+[Installing OT Asset Management]()
 
 [Installed with OT Asset Management]()
 

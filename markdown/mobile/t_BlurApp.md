@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/mobile/t\_BlurApp.html
 release: australia
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [System properties, Before implementation, Configuration detail, Configuring the Mobile Platform, Mobile Platform]
 ---
@@ -32,8 +32,6 @@ Before you enable the **glide.sg.blur\_ui\_when\_backgrounded** system property,
 -   **iOS specific**
 
     ServiceNow mobile apps appear blurred when not in focus on a mobile device.
-
-    **Note:** For BlackBerry and Microsoft Intune variants, screen recordings and screenshots remain enabled.
 
 -   **Android specific**
 

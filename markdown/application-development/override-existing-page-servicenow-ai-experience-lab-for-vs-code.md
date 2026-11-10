@@ -5,10 +5,10 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/application-development/override-existing-page-servicenow-ai-experience-lab-for-vs-code.html
 release: australia
 topic_type: task
-last_updated: "2026-08-04"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 keywords: [Override existing page, ServiceNow AI Experience Lab for VS Code]
-breadcrumb: [Extend an existing experience, Use, ServiceNow Lux Lab for VS Code extension, Building pro-code applications, Developing your application, Building applications]
+breadcrumb: [Extend an existing experience, Use, ServiceNow Lux Lab for VS Code extension, Building pro-code applications, Developing your application, Classic app development, Building applications]
 ---
 
 # Override an existing page
@@ -43,7 +43,7 @@ Visual Studio Code
 
 </td><td>
 
-1.97 later
+1.97 or later
 
 </td><td>
 
@@ -79,7 +79,7 @@ ServiceNow SDK
 
 </td><td>
 
-4.10 or later
+4.14 or later
 
 </td><td>
 
@@ -107,9 +107,9 @@ ServiceNow instance
 
 2.  Access the command palette by pressing Ctrl+Shift+P on Windows or Command+Shift+P on macOS, or by navigating to **View** &gt; **Command Palette**.
 
-3.  Select **AIUX: Create Page**.
+3.  Select **Lux: Create Page**.
 
-4.  From the list, select **AIUX: New Page**.
+4.  From the list, select **Lux: New Page**.
 
     You can also create pages that extend existing pages. For more information, see [Extend an existing page](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/extend-existing-page-servicenow-ai-experience-lab-for-vs-code.md).
 

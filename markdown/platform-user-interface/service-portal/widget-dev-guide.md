@@ -7,8 +7,8 @@ release: australia
 product: Service Portal
 classification: service-portal
 topic_type: concept
-last_updated: "2026-04-22"
-reading_time_minutes: 5
+last_updated: "2026-09-10"
+reading_time_minutes: 6
 breadcrumb: [Service Portal, Configure UIs and portals, Configure user experiences]
 ---
 
@@ -73,10 +73,10 @@ Like Angular directives, widgets execute a specified behavior within a Service P
 
     An optional widget component.
 
-    Enables a Service Portal admin to configure a widget. Use the option schema to:
+    Allows a Service Portal admin to configure a widget. Use the option schema to:
 
     -   Specify the parameters for a widget.
-    -   Enable admin users to define instance options for a widget instance.
+    -   Allow admin users to define instance options for a widget instance.
     -   Develop flexible, reusable widgets.
 -   **Angular Providers**
 
@@ -99,7 +99,7 @@ Like Angular directives, widgets execute a specified behavior within a Service P
 
 When a widget begins to render for the first time on a page, the server script executes first and accesses three global objects: **input**, **options**, and **data**. Because the **input** variable is a data object sent from the client script, this variable is undefined when first initialized.
 
-\[Omitted image "Server-ClientGlobalScripts.png"\] Alt text: Available variables in server and client script global.
+\[Omitted image "Server-ClientGlobalScripts.png"\] Alt text: Available variables in server and client script global
 
 When a widget is first instantiated, the server script:
 
@@ -111,7 +111,7 @@ The client script:
 
 1.  Accesses the server **data** object using `c.data`.
 
-    **Note:** By default, widgets use the **c** variable to represent the controller instance using `controller as` syntax. You can change this variable when creating or copying widgets.
+    **Note:** By default, widgets use the **c** variable to represent the controller instance using `controller as` syntax. You can change this variable when creating or cloning widgets.
 
 2.  Uses `server.update()` to post changes to the data model. This method updates the server script using the **input** object.
 
@@ -125,7 +125,7 @@ When you create a widget, a record is created in the sp\_widget table. However, 
 
 **Note:** For server-side scripts, you can turn on using the ECMAScript 2021 \(ES12\) JavaScript mode if your application uses ES5 Standards mode or Compatibility mode. Scripts in applications with the JavaScript mode set to ECMAScript 2021 \(ES12\) use ECMAScript 2021 \(ES12\) by default. For more information, see [Turn on ECMAScript 2021 \(ES12\) mode for a script](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/api-reference/scripts/set-es12-mode-scripts.md).
 
-\[Omitted image "basic-widget.png"\] Alt text: Widget Editor in Service Portal Configuration as a script editor.
+\[Omitted image "basic-widget.png"\] Alt text: Widget editor IDE
 
 -   **[General guidelines for developing widgets](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-user-interface/service-portal/general-guidelines-developing-widgets.md)**  
 When developing custom widgets, keep these general guidelines in mind for optimal performance, scalable development, and a good user experience.
@@ -151,6 +151,8 @@ Use the `${}` or `gs.getMessage()` syntax in the **HTML Template**, **Client Scr
 You can use widgets in Service Portal to replace UI Macros. If your Service Catalog form includes a UI Macro that references other fields or variables on the form, you can create a widget to hold reusable code and embed it within the Service Catalog form. Use special syntax to access any variable fields on the form.
 -   **[Widget troubleshooting guide](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-user-interface/service-portal/widget-troubleshooting-guide.md)**  
 Use the following tools to investigate and resolve unexpected behavior in your custom Service Portal widgets.
+-   **[Embeddables in Service Portal](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-user-interface/service-portal/embeddables-service-portal.md)**  
+Embeddables are UI Builder components that you can embed into Service Portal pages, external websites, and other web interfaces. Using embeddables, you can reuse existing components across multiple platforms without requiring an AngularJS rebuild. Embeddables enable low-code configuration of components, reducing development time and improving integration flexibility across your ServiceNow® ecosystem.
 
 **Parent Topic:**[Service Portal](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-user-interface/service-portal/c_ServicePortal.md)
 

@@ -1,13 +1,13 @@
 ---
 title: Create a Fluid Topics external content connector
-description: Create an external content connector to retrieve searchable content and security principalsFor connectors that don't support user permission crawls, remove this phrase element. from your Fluid Topics source system.
+description: Create an external content connector to retrieve searchable content and security principals from your Fluid Topics source system.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/platform-administration/search-administration/create-ext-cont-connector-fluid-topics.html
 release: australia
 product: Search Administration
 classification: search-administration
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-15"
 reading_time_minutes: 6
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Fluid Topics external content connector, Configure, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -27,9 +27,7 @@ Role required: sn\_ext\_conn.xcc\_admin
 
 1.  Navigate to **All** &gt; **External Content Connectors** &gt; **External Content Admin Home**.
 
-2.  If prompted, select **Switch scope** to switch to the External Content Connectors Admin scope.
-
-    You must be in this scope to create or edit external content connectors.
+2.  If prompted to switch scope, select **Switch scope** and select the application scope specified in the prompt.
 
 3.  In the Connectors section, select **New**.
 
@@ -80,9 +78,9 @@ API key used to authenticate requests to your Fluid Topics tenant.If you don't h
 
     If you want to skip this step for now, select **Skip** instead of **Next**. You can modify the crawl settings for this connector from the External Content Admin Home page. For details on this procedure and the available crawl settings, see [Configure crawl settings for a Fluid Topics external content connector](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-administration/search-administration/configure-crawl-settings-fluid-topics-external-content-connector.md).
 
-9.  On the User permission settings page, modify any default user permission settings that you want to override for this connector.
+9.  On the User mapping settings page, modify any default user mapping settings that you want to override for this connector.
 
-    If you want to skip this step for now, select **Skip** instead of **Next**. You can modify the user permission settings for this connector from the External Content Admin Home page. For details on this procedure and user permission settings, see [Configure user permission settings for an external content connector](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-administration/search-administration/configure-user-mapping-settings-external-content-connector.md).
+    If you want to skip this step for now, select **Skip** instead of **Next**. You can modify the user mapping settings for this connector from the External Content Admin Home page. For details on this procedure and user mapping settings, see [Configure user mapping settings for an external content connector](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-administration/search-administration/configure-user-mapping-settings-external-content-connector.md).
 
 10. On the Create crawl page, create a content crawl for this connector by selecting a crawl scope \(if supported\) and any desired options, then select **Next**.
 

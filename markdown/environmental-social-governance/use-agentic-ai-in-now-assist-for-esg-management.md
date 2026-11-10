@@ -5,10 +5,10 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/environmental-social-governance/use-agentic-ai-in-now-assist-for-esg-management.html
 release: australia
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 keywords: [use]
-breadcrumb: [ServiceNow Otto, Use, Operational Sustainability Management \(formerly Environmental, Social, and Governance\)]
+breadcrumb: [Now Assist, Use, Operational Sustainability Management \(formerly Environmental, Social, and Governance\)]
 ---
 
 # Use agentic AI in ServiceNow Otto for Operational Sustainability \(formerly ESG\)
@@ -47,9 +47,7 @@ Accelerate carbon reporting with AI-powered calculations, validation, and insigh
 </td></tr></tbody>
 </table>## Supported Large Language Models
 
-**Note:**
-
--   -   For the Now LLM Service updates, see [Model provider updates](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/now-llm-model-updates.md).
+**Note:** For the Now LLM Service updates, see [Model provider updates](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/now-llm-model-updates.md).
 
 ## Security implementation considerations
 
@@ -69,5 +67,5 @@ To run the AI agents autonomously, you must first [duplicate the agentic workflo
 -   **[Generate Scope 3 carbon calculations](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/environmental-social-governance/generate-carbon-calculcations-for-metrics.md)**  
 Use the AI-driven workflow to create calculated metric definitions \(CMD\) for Scope 3 carbon emissions. The workflow employs conversational agents and integrated tools to guide methodology selection, map metrics, and simplify sustainability reporting with accuracy and efficiency.
 
-**Parent Topic:**[ServiceNow Otto for Operational Sustainability](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/environmental-social-governance/now-assist-for-esg.md)
+**Parent Topic:**[ServiceNow Otto for Operational Sustainability \(formerly ESG\)](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/environmental-social-governance/now-assist-for-esg.md)
 

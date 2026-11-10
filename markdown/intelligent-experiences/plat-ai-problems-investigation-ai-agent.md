@@ -7,7 +7,7 @@ release: australia
 topic_type: reference
 last_updated: "2026-08-14"
 reading_time_minutes: 1
-breadcrumb: [ServiceNow AI Platform AI agents, ServiceNow AI Platform, AI agents library, AI assets, Enable AI experiences]
+breadcrumb: [ServiceNow AI Platform AI agents, ServiceNow AI Platform, AI agents library, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Problems investigation AI agent
@@ -62,11 +62,11 @@ Tools
 
 -   **Script**
 
-Get Problem Details with Relevant Incidents
+Get Problem Details
 
--   **Generative AI skill**
+-   **Conversational topic**
 
-Problems investigation skill
+Problems Investigation Analyzer
 
 
 </td></tr><tr><td>

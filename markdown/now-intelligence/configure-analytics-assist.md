@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/now-intelligence/configure-analytics-assist.html
 release: australia
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Configure, Platform Analytics in the ServiceNow Otto panel, ServiceNow Otto for Platform Analytics, Platform Analytics]
 ---
@@ -28,7 +28,7 @@ Role required: admin
 
 2.  In the product area pane, select **Data and Analytics** &gt; **Analytics**.
 
-3.  In AI skills for Analytics, search for the data visualization generation skill.
+3.  In AI skills for Analytics, filter for Analytics Skills andsearch for the data visualization generation skill.
 
     \[Omitted image "nowass-data-viz-gen-skill.png"\] Alt text: AI Skills tab of AI Admin Hub, showing the Data visualization generation skill under Data and Analytics.
 

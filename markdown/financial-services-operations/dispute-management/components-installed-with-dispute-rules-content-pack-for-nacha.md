@@ -7,7 +7,7 @@ release: australia
 product: Dispute Management
 classification: dispute-management
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Dispute Rules Content Pack for Nacha reference, Dispute Rules Content Pack for Nacha, Dispute Management, Banking applications, Financial Services Operations \(FSO\)]
 ---
@@ -40,6 +40,16 @@ Used to reference dispute transactions and related disputes data.
 </table>## Tables
 
 No tables are included with Dispute Rules Content Pack for Nacha. Chargeback reason codes are stored in Financial Services Operations Core.
+
+## Roles
+
+No custom roles are shipped with Dispute Rules Content Pack for Nacha. Access to dispute records and determination results is governed entirely by roles defined in Financial Services Card Operations:
+
+|Role|Description|
+|----|-----------|
+|sn\_bom\_credit\_card.dispute\_agent|Full read/write access to dispute records; can trigger NACHA determination through the parent application's workflow.|
+|sn\_bom\_credit\_card.dispute\_viewer|Read-only access to dispute records, including NACHA determination results.|
+|sn\_bom\_credit\_card.dispute\_manager|Managerial and reporting access to dispute records, including NACHA determination results.|
 
 ## Dispute Reason Codes
 

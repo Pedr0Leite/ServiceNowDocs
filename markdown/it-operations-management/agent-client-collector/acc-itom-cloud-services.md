@@ -1,20 +1,22 @@
 ---
 title: Installing MID-less Agent Client Collector
-description: Installing MID-less Agent Client Collector enables you to send data from the agent to the instance through the cloud. Sending information through the cloud allows the MID Server to be used for more persistent resources.
+description: Installing MID-less Agent Client Collector \(ACC\) enables you to send data from the agent to the instance through the cloud. Sending information through the cloud allows the MID Server to be used for more persistent resources.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/it-operations-management/agent-client-collector/acc-itom-cloud-services.html
 release: australia
 product: Agent Client Collector
 classification: agent-client-collector
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 breadcrumb: [Configuring MID-less ACC, ACC deployment - endpoints, Configuring Agent Client Collector, Agent Client Collector, IT Operations Management]
 ---
 
 # Installing MID-less Agent Client Collector
 
-Installing MID-less Agent Client Collector enables you to send data from the agent to the instance through the cloud. Sending information through the cloud allows the MID Server to be used for more persistent resources.
+Installing MID-less Agent Client Collector \(ACC\) enables you to send data from the agent to the instance through the cloud. Sending information through the cloud allows the MID Server to be used for more persistent resources.
+
+**Note:** MID-less ACC requires ServiceNow cloud infrastructure and is not supported for customer-hosted, on-premises ServiceNow instances. For on-premises instances, install Agent Client Collector with a MID Server, as described in [Configuring Agent Client Collector with a MID Server](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/agent-client-collector/acc-configuring-with-mid.md).
 
 Before using MID-less Agent Client Collector, do the following:
 

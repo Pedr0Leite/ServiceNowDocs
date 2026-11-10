@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/customer-service-management/system-properties-for-configuring-email-as-an-interaction.html
 release: australia
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 keywords: [Email Interaction for CSM]
 breadcrumb: [Email Interaction, Configure Email, Configure omnichannel, Configure, Customer Service Management]
@@ -62,12 +62,14 @@ Specify the default email address for creating email interactions. This can cont
 
 </td></tr><tr><td>
 
-**sn\_eaai\_csm.email.reroute.enabled**
+**period\_for\_reminders\_to\_customers\_interaction**
 
 </td><td>
 
-Enable or disable the rerouting of interactions that are currently on hold.-   Type: Boolean \(true \| false\)
--   Default value: false
+Specify the number of days after which an automatic email reminder is sent to customers. This value determines how long the system waits after receiving the last email response from the customer before sending a reminder. Reminders are sent only on interactions that are on hold. **Note:** The value must be a positive integer. If the value is set to zero or a negative number, the system defaults to 2 days.
+
+-   Type: Integer
+-   Default value: 2
 -   Location: **All** &gt; **System Properties** &gt; **All Properties**.
 
 </td></tr><tr><td>

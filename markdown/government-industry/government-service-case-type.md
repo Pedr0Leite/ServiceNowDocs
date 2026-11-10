@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/government-industry/government-service-case-type.html
 release: australia
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 9
 breadcrumb: [Case Management, Configure agent workspaces, Configure, Public Sector Digital Services \(PSDS\)]
 ---
@@ -18,13 +18,13 @@ You can use a public service case, which is based on the Government Service case
 
 A case type represents the processes and data needed to resolve a specific type of constituent request. For example, within Public Sector, government service agents can use case types for different constituent needs such as requests for information, requests for maintenance, social benefits application processing, or managing licenses and permits. You can associate record producers with a certain type of case so that when you submit that record producer through the portal, it creates a case of the correct type. In addition to using service definitions, you can use the case types feature to create and configure the different types of government service cases that your agency handles. For more information on service definitions, see [Service definitions for Public Sector Digital Services](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/government-industry/psds-service-definitions.md).
 
-The base Government Service case type is called a public service case, and is an extension of the Customer Service case type from the Customer Service Management application. Each Public Sector Digital Services playbook application comes with its own case type \(for example, Information Request Playbook has an Information Request case type that comes by default, which is an extension of the base Government Service case type\). The Information Request case type can be extended further if your specific use case goes beyond what it offers.
+The base Government Service case type is called a public service case, and is an extension of the Customer Service case type from the Customer Service Management application. Each Public Sector Digital Services playbook application comes with its own case type \(for example, Information Request Administration has an Information Request case type that comes by default, which is an extension of the base Government Service case type\). The Information Request case type can be extended further if your specific use case goes beyond what it offers.
 
 As an administrator, you can extend from existing base case types that are provided in applications out-of-the-box to create additional case types for various government services that your agency offers, or you can create and configure an entirely new case type that extends the Case table, in order to implement specific case application types, and enabling you to take advantage of prebuilt roles, business rules, and other business logic.
 
 Creating a new case type can include creating a new table that is an extension of an existing case, or creating an entirely new case type. Typically this involves creating new roles, modules, workspaces, and other required entities. For additional information on case types, see [Customer Service Case Types](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/customer-service-management/customer-service-case-types.md)
 
-All Public Sector Digital Services applications have a base case type table. Use the base case type table when adding a new case type for that application. For example, if you need a new case type in License and Permit Playbook, extend the License and Permit Base Case table, which is itself an extension of the Government Service base case table and was created to capture more specific information related only to a License and Permit case. However, if there is need for a new case type for which there is no base application in PSDS that works, extend the base PSDS case \[sn\_govservice\_case\] table.For more information on the base tables installed with each Public Sector Digital Services application, see [Public Sector Digital Services Data Model](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/government-industry/public-sector-digital-services-data-model.md).
+All Public Sector Digital Services applications have a base case type table. Use the base case type table when adding a new case type for that application. For example, if you need a new case type in License and Permit Administration, extend the License and Permit Base Case table, which is itself an extension of the Government Service base case table and was created to capture more specific information related only to a License and Permit case. However, if there is need for a new case type for which there is no base application in PSDS that works, extend the base PSDS case \[sn\_govservice\_case\] table.For more information on the base tables installed with each Public Sector Digital Services application, see [Public Sector Digital Services Data Model](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/government-industry/public-sector-digital-services-data-model.md).
 
 You can use both case types and service definitions to define the data and processes that are needed to resolve a government service request. For more information on service definitions in Public Sector Digital Services, see [Service definitions for Public Sector Digital Services](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/government-industry/psds-service-definitions.md)
 
@@ -100,7 +100,7 @@ Provides an end-to-end workflow for handling applications for one or more social
 
 </td></tr><tr><td>
 
-License and Permit Playbook\(sn\_gsm\_license\_permit\)
+License and Permit Administration\(sn\_gsm\_license\_permit\)
 
 </td><td>
 
@@ -108,7 +108,7 @@ Playbook that provides step-by-step guidance through the life cycle of license o
 
 </td></tr><tr><td>
 
-Information Request Playbook\(sn\_gsm\_info\_req\)
+Information Request Administration\(sn\_gsm\_info\_req\)
 
 </td><td>
 
@@ -116,7 +116,7 @@ Playbook that provides step-by-step guidance through the life cycle of an inform
 
 </td></tr><tr><td>
 
-Service Request Playbook \(sn\_gsm\_srvc\_req\)
+Service Request Administration \(sn\_gsm\_srvc\_req\)
 
 </td><td>
 

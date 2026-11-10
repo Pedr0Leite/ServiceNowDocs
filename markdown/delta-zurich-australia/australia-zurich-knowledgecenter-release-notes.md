@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/delta-zurich-australia/australia-zurich-knowledgecenter-release-notes.html
 release: australia
 topic_type: reference
-last_updated: "2026-09-24"
+last_updated: "2026-11-06"
 reading_time_minutes: 12
 breadcrumb: [Products combined by family]
 ---
@@ -77,7 +77,7 @@ Build a complete and accurate knowledge base, focus on continuous improvement by
 Improve the quality and health of your knowledge articles by using the Article Optimization tool in the Knowledge Center to scan the articles, and get instant, actionable feedback.
 
 
- -   **[Generate and edit articles using Now Assist in the Knowledge Center article editor](https://www.servicenow.com/docs/access?context=kc-article-editor&family=zurich&ft:locale=en-US)**
+ -   **[Generate and edit articles using ServiceNow Otto in the Knowledge Center article editor](https://www.servicenow.com/docs/access?context=kc-article-editor&family=zurich&ft:locale=en-US)**
 
 Use the editing tools in the Knowledge Center to format knowledge article content such as text, images, and media.
 
@@ -104,6 +104,10 @@ Article optimization scan comes with a new capability to identify stale and expi
 -   **[SharePoint as a content source for Knowledge Center](https://www.servicenow.com/docs/access?context=create-article-using-sharepoint&family=australia&ft:locale=en-US)**
 
 Connect ServiceNow Otto to a SharePoint site through an external content connection \(XCC\) so its content can be used when creating knowledge articles with AI. Microsoft SharePoint appears as an available source in the source list when you create an article using AI in Knowledge Center. ServiceNow Otto searches, aggregates, and summarizes relevant Microsoft SharePoint content to help generate the article.
+
+-   **[Using style guides in the Knowledge Center](https://www.servicenow.com/docs/access?context=using-style-guides-in-the-knowledge-center&family=australia&ft:locale=en-US)**
+
+Style guides are now available in Knowledge Center, so you can define the tone, voice, and terminology that AI follows when it generates knowledge articles. Administrators create a style guide, assign it to a knowledge base, and set its order. Authors then select it when they generate an article.
 
 
  -   **[Auto-fix article optimization findings](https://www.servicenow.com/docs/access?context=auto-update-articles&family=australia&ft:locale=en-US)**
@@ -287,7 +291,7 @@ Australia
 
 -   **Now LLM Service deprecation notice**
 
-Starting with the September 2026 release, Gemma 4 joins our growing portfolio of open-weight models available through Now LLM Service. We're committed to bringing you the latest industry advancements while maintaining sovereignty-focused options, all hosted and governed by ServiceNow with the infrastructure and data protections you rely on today. Older models will remain available for existing published AI skills, agents, and agentic workflows, but will no longer be available for new development or configuration. For details, see the [KB3066214: ServiceNow Otto Model Upgrades](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB3066214) article in the Now Support Knowledge Base.
+Starting with the September 2026 release, Gemma 4 joins our growing portfolio of open-weight models available through Now LLM Service. The latest industry advancements are available alongside sovereignty-focused options. All models are hosted and governed by ServiceNow with the same infrastructure and data protections. Older models will remain available for existing published AI skills, agents, and agentic workflows, but will no longer be available for new development or configuration. For details, see the [KB3066214: ServiceNow Otto Model Upgrades](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB3066214) article in the Now Support Knowledge Base.
 
 
 </td></tr></tbody>
@@ -483,7 +487,7 @@ Australia
 
 </td><td>
 
-[\[Placeholder link text to key australia-patch-6\]](https://www.servicenow.com/docs/access?context=australia-patch-6&family=australia&ft:locale=en-US)
+[Australia Patch 6](https://www.servicenow.com/docs/access?context=australia-patch-6&family=australia&ft:locale=en-US)
 
 -   Prioritize what matters most by assigning custom weights to individual scans at both the Article and Knowledge Base level in the Health Score configuration page.
 -   Catch outdated content with the new stale and expiring article detection in the Article Optimization scan, available at both the article and knowledge base level.

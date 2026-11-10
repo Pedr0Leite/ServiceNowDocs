@@ -7,7 +7,7 @@ release: australia
 product: Now Assist for CSM
 classification: now-assist-for-csm
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 keywords: [generative AI, generative AI for Customer Service Management, generative AI for customer service agents]
 breadcrumb: [Domain separation, Configure, ServiceNow Otto for CSM, Customer Service Management]
@@ -24,8 +24,6 @@ Role required: admin
 ## About this task
 
 Enable the **csm\_auto\_account\_domain\_generation** system property. This system property is installed with the CSM application and is available only after the domain separation plugin is active. When this property is enabled \(the value is set to True\), the CSM application automatically creates a domain of the same name when a new account is created.
-
-**Note:** Enabling this property doesn’t add domains for existing accounts. It only creates the domains for new accounts. Adding domains for existing accounts requires a migration script.
 
 When creating a domain, follow these general guidelines:
 

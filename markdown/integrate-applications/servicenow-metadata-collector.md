@@ -6,7 +6,7 @@ canonical_url: https://www.servicenow.com/docs/r/australia/integrate-application
 release: australia
 topic_type: concept
 last_updated: "2026-03-12"
-reading_time_minutes: 4
+reading_time_minutes: 6
 breadcrumb: [Configuring metadata collectors, Data Catalog, Workflow Data Fabric]
 ---
 
@@ -42,7 +42,7 @@ System Application
 
 </td><td>
 
-App Name, Vendor, Version, Active status, Short Description, Source Table
+App Name, Vendor, Version, Active status, Short Description, Source Table, Description
 
 </td></tr><tr><td>
 
@@ -94,6 +94,22 @@ Maps To Table, WHERE clause conditions, Is Left Join, Variable Prefix, Mapping O
 
 </td></tr><tr><td>
 
+Transform Map
+
+</td><td>
+
+Map Name, Source Table, Target Table, Active status
+
+</td></tr><tr><td>
+
+Transform Entry
+
+</td><td>
+
+Source Field, Target Field, Coalesce, Transform Map \(parent\)
+
+</td></tr><tr><td>
+
 Data Product
 
 </td><td>
@@ -115,6 +131,14 @@ Vault Data Classification
 </td><td>
 
 Classification Name, Description, Classification Type, Parent Classification \(for hierarchical relationships\), Source Table
+
+</td></tr><tr><td>
+
+Vault Data Classification Assignment​
+
+</td><td>
+
+Created, Created by
 
 </td></tr><tr><td>
 
@@ -181,7 +205,9 @@ Data Collection Job
 Name, Description, Active, Run Type, Run Time, Collect Scope \(scores only, text indexes only, or both\), Created By, Modified By, Created At, Last Modified At
 
 </td></tr></tbody>
-</table>## Relationships between objects
+</table>**Note:** ServiceNow Vault data classifications can be generated automatically for ServiceNow assets using the Classifying ServiceNow assets with Vault agents agentic workflow. Classifications produced by the agent are written to Vault's classification tables and are picked up by the metadata collector on its next run. Avoid running the agent and the collector at the same time to prevent a mismatch between source data and the catalog.
+
+## Relationships between objects
 
 Catalog pages show relationships between the following data asset types:
 
@@ -190,14 +216,17 @@ Catalog pages show relationships between the following data asset types:
 |ServiceNow Instance|Contains Application Scopes, System Applications, Tables, Data Interfaces|
 |System Application|Contained within Application Scope|
 |Application Scope|Contains System Applications and Tables \(via has scoped data asset\), Data Interfaces|
-|Table|Contained within Application Scope, Has Fields, May extend another Table \(via extends table\), May be extended by child Tables|
+|Table|Contained within Application Scope, Has Fields, May extend another Table \(via extends table\), May be extended by child Tables, Has Inherited Field|
 |Data Fabric Table|Inherits all Table relationships, Plus: Derived from external DatabaseTable \(via prov:wasDerivedFrom\)|
 |View|Inherits all Table relationships, Has View Table Mappings|
 |Field|Belongs to a Table \(via has field\), May reference another Field \(for reference/foreign key fields\)|
+|Transform Map|Has Source Table, Has Target Table, Has Transform Entries|
+|Transform Entry|Belongs to a Transform Map \(via has transform entry\), Maps Source Field to Target Field|
 |View Table Mapping|Belongs to a View \(via has view table mapping\), Maps To Table \(via maps to table\), Selects data from Table|
 |Data Product|Contained within Application Scope, Has Data Content \(contains Tables and Views\)|
 |Data Interface|Contained within Application Scope, Has Fields, May extend another Table \(via extends table\), May be extended by child Tables|
 |Vault Data Classification|May have Parent Classification \(via parent classification\), May have Child Classifications, Classifies Fields and Tables \(via has classification\)|
+|Vault Data Classification Assignment|Applies Vault Data Classification \(the classification type\), Has Vault Data Classification Assignment|
 |Dashboard|Contained within Application Scope, Tabs contained in the Dashboard|
 |Dashboard Tab|Dashboard the Tab is contained within|
 |Data Collection Job|Contained within Application Scope, Indicators the Data Collection Job collects|
@@ -320,6 +349,40 @@ Breakdown Source
 </td><td>
 
 Breakdowns which the Breakdown Source defines segment values for, Fields it derives elements from
+
+</td></tr><tr><td>
+
+Data Snapshot Source
+
+</td><td>
+
+Snapshot indicator backed by this source
+
+</td></tr><tr><td>
+
+Data Snapshot Source
+
+</td><td>
+
+Table the source data comes from, snapshot indicator backed by this source
+
+</td></tr><tr><td>
+
+Transform map
+
+</td><td>
+
+Tables this table transforms into \(as source in an active transform map\), tables this table is populated from \(as target in an active transform map\)
+
+ Only harvested for active transform maps.
+
+</td></tr><tr><td>
+
+Transform field
+
+</td><td>
+
+Fields this field maps into \(as source in an active transform map entry\), fields this field is populated from \(as target in an active transform map entry\)
 
 </td></tr></tbody>
 </table>## ServiceNow version supported

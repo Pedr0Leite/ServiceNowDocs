@@ -1,13 +1,13 @@
 ---
 title: Banners in ServiceNow Otto for Customer Service Management \(CSM\)
-description: Banners display information about generative AI skills and the form fields that are generated or predicted by the those skills.
+description: Banners display information about generative AI skills and the form fields that are generated or predicted by those skills.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/customer-service-management/now-assist-for-csm/now-assist-csm-record-banner.html
 release: australia
 product: Now Assist for CSM
 classification: now-assist-for-csm
 topic_type: concept
-last_updated: "2025-07-31"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 keywords: [generative AI, generative AI for Customer Service Management, generative AI for customer service agents]
 breadcrumb: [Configure, ServiceNow Otto for CSM, Customer Service Management]
@@ -15,17 +15,17 @@ breadcrumb: [Configure, ServiceNow Otto for CSM, Customer Service Management]
 
 # Banners in ServiceNow Otto for Customer Service Management \(CSM\)
 
-Banners display information about generative AI skills and the form fields that are generated or predicted by the those skills.
+Banners display information about generative AI skills and the form fields that are generated or predicted by those skills.
 
 ## Overview of banners
 
-The generative AI banner displays information about the fields on a form that are generated or predicted by the skills available with ServiceNow Otto for CSM. Messages that appear in the banner:
+The generative AI banner displays information about the fields on a form that are generated or predicted by the skills available with ServiceNow Otto for Customer Service Management \(CSM\). Messages that appear in the banner:
 
 -   Alert agents when fields are being generated or predicted and when the process is complete.
 -   Remind agents to review the information in these fields.
 -   Inform agents if fields can't be generated or predicted.
 
-Messages also include links to the fields that are generated or predicted by ServiceNow Otto for CSM.
+Messages also include links to the fields that are generated or predicted by ServiceNow Otto for Customer Service Management \(CSM\).
 
 
 

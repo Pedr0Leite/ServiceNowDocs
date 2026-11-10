@@ -7,7 +7,7 @@ release: australia
 product: Field Service Scheduling
 classification: field-service-scheduling
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 breadcrumb: [Using Dispatcher Workspace, Assigning tasks from Dispatcher Workspace, Scheduling and dispatching, Use, Field Service Management]
 ---
@@ -41,6 +41,8 @@ When you select an agent pin in the dispatch map, the agent profile appears. If 
 -   Behind schedule, less than 30 minutes
 -   Behind schedule, between 30 to 60 minutes
 -   Behind schedule, more that an hour
+
+The agent pin on the Dispatcher Workspace map shows the technician's last known location — it doesn't revert to a home or team-based location when the technician goes off-shift.
 
 To display the agent schedule status in the user lists and records, navigate to **User Administration** &gt; **Users** and configure the User list and form to show the **On schedule** field. This action puts the schedule status field on all user records.
 

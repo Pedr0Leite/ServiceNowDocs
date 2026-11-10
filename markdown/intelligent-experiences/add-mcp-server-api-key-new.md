@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/add-mcp-server-api-key-new.html
 release: australia
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
-breadcrumb: [Adding an MCP Server Console in AI Agent Studio, Configuring Model Context Protocol Client, MCP Client, AI Agent Studio, Enable AI experiences]
+breadcrumb: [Adding an MCP Server Console in AI Agent Studio, MCP Client, AI Agent Studio, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Add an MCP Server with API Key
@@ -20,7 +20,7 @@ Role required: sn\_mcp\_client.admin
 
 ## Procedure
 
-1.  Navigate to **All** &gt; **AI Agent Studio** &gt; **Settings** &gt; **Manage Model Contextual Protocol \(MSCP\) Servers**.
+1.  Navigate to **All** &gt; **AI Agent Studio** &gt; **Settings** &gt; **Manage Model Contextual Protocol \(MCP\) Servers**.
 
 2.  Select **View** against **MCP Servers**.
 
@@ -85,7 +85,7 @@ A unique code or password to identify and authenticate the user or application w
 
 8.  Define the Tools for the Model Context Protocol Sever.
 
-    You can configure the MCP tools in the Assistant Designer. For more information see [Assign Model Context Protocol \(MCP\) servers to an assistant](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/conversational-interfaces/assign-mcp-servers.md).
+    You can configure the MCP tools in the Assistant Designer. For more information see .
 
 9.  Select **Save**.
 

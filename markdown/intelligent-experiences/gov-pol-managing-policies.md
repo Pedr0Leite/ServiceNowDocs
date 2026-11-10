@@ -5,10 +5,10 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/gov-pol-managing-policies.html
 release: australia
 topic_type: concept
-last_updated: "2026-08-27"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI, Policies, Explicit Block, Threat Response]
-breadcrumb: [Controlling AI asset usage, Govern AI assets, AI Control Tower, Enable AI experiences]
+breadcrumb: [Controlling AI asset usage, Govern AI assets, AI Control Tower, Establishing AI governance, Enable AI Experiences]
 ---
 
 # Managing policies in AI Control Tower
@@ -19,7 +19,7 @@ Create, change, or remove the policies that respond to detected threats or block
 
 Create a Threat Response policy to automatically contain an agent when a detected threat matches conditions you define, or an Explicit Block policy to stop specific AI usage outright.
 
-You can edit, clone, or deactivate a Threat Response policy directly. An Explicit Block policy can't be edited once published; clone it to change its conditions, or deactivate it to remove its effect entirely.
+Both policy types work the same way once published. Edit a policy to change what it enforces, clone it to try a variant without changing the original, or delete it to end its enforcement entirely. A policy has no pause or disable state, so deleting it is the only way to stop it from running.
 
-Once a policy is published, confirm it's doing what you designed it to do. See [Reviewing policy enforcement in AI Control Tower](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/gov-pol-reviewing-enforcement-activity.md).
+Once a policy is published, confirm it's doing what you designed it to do. See [Reviewing policy enforcement activities in AI Control Tower](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/gov-pol-reviewing-enforcement-activity.md).
 

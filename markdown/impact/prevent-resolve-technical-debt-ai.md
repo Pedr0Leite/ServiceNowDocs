@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/impact/prevent-resolve-technical-debt-ai.html
 release: australia
 topic_type: concept
-last_updated: "2026-09-24"
+last_updated: "2026-11-06"
 reading_time_minutes: 2
 breadcrumb: [Platform Health, Using Impact, Impact]
 ---
@@ -13,10 +13,6 @@ breadcrumb: [Platform Health, Using Impact, Impact]
 # Prevent and resolve technical debt with AI
 
 Use the Scan Engine and ServiceNow Otto AI agent to prevent technical debt as you code or remediate existing findings from completed scans.
-
-Impact Platform Health delivers AI-generated code fixes at two critical points in your development lifecycle. Whether you're actively writing code or cleaning up existing technical debt, the Scan Engine detects violations against your defined coding standards and ServiceNow Otto generates fixes automatically. This unified approach reduces manual remediation time and improves platform quality across your ServiceNow instances.
-
-The Scan Engine examines your instances for findings related to active definitions stored in the Scan Findings table. You can view findings, apply manual fixes, generate AI-suggested fixes, or submit exceptions for findings you believe aren't valid.
 
 ## Prevention and remediation workflows
 
@@ -42,6 +38,8 @@ Real-time Prevention
 
 -   You're actively writing or modifying code in your development environment.
 -   When you save a record, the Scan Engine detects violations inline and you generate an AI fix before committing or promoting the code.
+
+ **Note:** See [Supported record types for Real-time prevention monitoring with AI](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/impact/real-time-prevention-monitoring-supported-record-types.md) for the tables that are supported.
 
 </td><td>
 

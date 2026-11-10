@@ -5,17 +5,17 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/ac-issues.html
 release: australia
 topic_type: concept
-last_updated: "2026-07-16"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 keywords: [issue, action plan, remediation]
-breadcrumb: [Managing tasks and approvals, Address action items, AI Control Tower, Enable AI experiences]
+breadcrumb: [Managing tasks and approvals, Address action items, AI Control Tower, Establishing AI governance, Enable AI Experiences]
 ---
 
 # Issues
 
 Track a problem identified with an AI asset, such as a performance or compliance gap, through to resolution with a documented action plan.
 
-An issue tracks a problem identified with an AI asset that needs a resolution or an action plan, such as a gap surfaced during a governance review. Related issues can be grouped under a parent issue so they can be tracked and managed together. For more information about governance records associated with AI systems, see .
+An issue tracks a problem identified with an AI asset that needs a resolution or an action plan, such as a gap surfaced during a governance review. Related issues can be grouped under a parent issue so they can be tracked and managed together. For more information about governance records associated with AI systems, see [Governing AI asset risk and compliance](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/gov-airc-ai-asset.md).
 
 ## Issue lifecycle
 

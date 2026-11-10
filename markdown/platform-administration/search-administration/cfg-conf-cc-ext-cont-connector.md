@@ -7,7 +7,7 @@ release: australia
 product: Search Administration
 classification: search-administration
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 4
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Atlassian Confluence Cloud external content connector, Configure, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -62,7 +62,7 @@ To allow the connector to access your Atlassian Confluence Cloud source system v
 
 1.  In the Atlassian Developer console, register a new OAuth 2.0 integration for the Atlassian Confluence Cloud external content connector.
 
-    1.  Login to the Atlassian Developer console at [https://developer.atlassian.com/console/myapps/](https://developer.atlassian.com/console/myapps/).
+    1.  Log in to the Atlassian Developer console at [https://developer.atlassian.com/console/myapps/](https://developer.atlassian.com/console/myapps/).
 
     2.  In the My apps section, select **Create** &gt; **OAuth 2.0 integration**.
 
@@ -82,7 +82,7 @@ To allow the connector to access your Atlassian Confluence Cloud source system v
 
         \[Omitted image "conf-cloud-ad-conf-conf-api-perms.png"\] Alt text: Configure Confluence API button on Atlassian Permissions console.
 
-    6.  On the Granular scopes tab, select **Edit Scopes** and then select the options for each of the following scopes:
+    6.  On the **Granular scopes** tab, select **Edit Scopes** and then select the options for each of the following scopes:
 
         -   read:attachment:confluence
         -   read:blogpost:confluence
@@ -115,7 +115,7 @@ To allow the connector to access your Atlassian Confluence Cloud source system v
 
 2.  In Atlassian Administration, create a new admin API key.
 
-    1.  Login to Atlassian Administration at [https://admin.atlassian.com/](https://admin.atlassian.com/).
+    1.  Log in to Atlassian Administration at [https://admin.atlassian.com/](https://admin.atlassian.com/).
 
     2.  Select **Settings** in the tab list.
 

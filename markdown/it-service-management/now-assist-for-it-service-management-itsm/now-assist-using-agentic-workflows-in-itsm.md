@@ -7,7 +7,7 @@ release: australia
 product: Now Assist for IT Service Management \(ITSM\)
 classification: now-assist-for-it-service-management-itsm
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 keywords: [Now Assist, Agentic AI, generative AI, Gen AI]
 breadcrumb: [Use agentic AI in IT Service Management, ServiceNow Otto for IT Service Management \(ITSM\), IT Service Management]
@@ -17,7 +17,7 @@ breadcrumb: [Use agentic AI in IT Service Management, ServiceNow Otto for IT Ser
 
 Use the IT Service Management AI agents within an agentic workflow to complete tasks autonomously.
 
-## Agentic workflows for Now Assist IT Service Management
+## Agentic workflows for ServiceNow Otto IT Service Management
 
 <table id="table_lxk_lck_h2c"><thead><tr><th>
 
@@ -43,7 +43,7 @@ Enables fulfillers to determine the category, subcategory, and configuration ite
 
 1.  Categorize ITSM incident AI agent
 2.  Classify service and CI AI agent
-3.  Link major incident and link problem AI agent
+3.  Link major incident or problem AI agent
 
 </td></tr><tr><td>
 
@@ -129,18 +129,6 @@ Retrieves on-call roster information for specific shifts, groups, or time period
 </td><td>
 
 On Call Retrieval AI agent
-
-</td></tr><tr><td>
-
-Manage On Call Shifts
-
-</td><td>
-
-Creates on-call shifts for a group from a template or a natural-language description, including schedule, roster, and rotation details.
-
-</td><td>
-
-On Call Shift Creator AI agent
 
 </td></tr></tbody>
 </table>

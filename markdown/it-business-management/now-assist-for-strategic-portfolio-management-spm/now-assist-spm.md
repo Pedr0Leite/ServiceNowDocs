@@ -1,20 +1,20 @@
 ---
 title: ServiceNow Otto for Strategic Portfolio Management
-description: Use the ServiceNow Otto for Strategic Portfolio Management application to summarize feedback in Strategic Planning or text in Docs, create a demand with a conversational experience, generate insights for projects, and generate stories from epics. Product, project, and demand managers can use the Now Assist skills and AI agents to streamline their projects and workflows.
+description: Use the ServiceNow Otto for Strategic Portfolio Management application to summarize feedback in Strategic Planning or text in Docs, create a demand with a conversational experience, generate insights for projects, and generate stories from epics. Product, project, and demand managers can use the ServiceNow Otto skills and AI agents to streamline their projects and workflows.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/it-business-management/now-assist-for-strategic-portfolio-management-spm/now-assist-spm.html
 release: australia
 product: Now Assist for Strategic Portfolio Management \(SPM\)
 classification: now-assist-for-strategic-portfolio-management-spm
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 4
 breadcrumb: [Strategic Portfolio Management]
 ---
 
 # ServiceNow Otto for Strategic Portfolio Management
 
-Use the ServiceNow Otto for Strategic Portfolio Management application to summarize feedback in Strategic Planning or text in Docs, create a demand with a conversational experience, generate insights for projects, and generate stories from epics. Product, project, and demand managers can use the Now Assist skills and AI agents to streamline their projects and workflows.
+Use the ServiceNow Otto for Strategic Portfolio Management application to summarize feedback in Strategic Planning or text in Docs, create a demand with a conversational experience, generate insights for projects, and generate stories from epics. Product, project, and demand managers can use the ServiceNow Otto skills and AI agents to streamline their projects and workflows.
 
 ## Get started with AI
 
@@ -57,9 +57,9 @@ This application requires data to be transferred from ServiceNow customers' indi
 
 ## Data collection
 
-ServiceNow collects and uses the inputs, outputs, and edits to outputs of this application to develop and improve ServiceNow technologies including ServiceNow models and AI products. In addition, this application will collect task data \(for Case Assist\) and chat transcripts \(for Chat Assist\). Customers can opt out of future data collection at any time, as described in the [Now Assist Opt-Out page](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/opt-out-of-data-sharing-for-now-assist.md).
+ServiceNow collects and uses the inputs, outputs, and edits to outputs of this application to develop and improve ServiceNow technologies including ServiceNow models and AI products. In addition, this application will collect task data \(for Case Assist\) and chat transcripts \(for Chat Assist\). Customers can opt out of future data collection at any time, as described in the [AI Opt-Out page](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/opt-out-of-data-sharing-for-now-assist.md).
 
-For more information, see the [Now Assist documentation](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/platform-now-assist-landing.md).
+For more information, see the [ServiceNow Otto documentation](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/platform-now-assist-landing.md).
 
 **Related topics**  
 

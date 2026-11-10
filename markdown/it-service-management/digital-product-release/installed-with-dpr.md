@@ -7,7 +7,7 @@ release: australia
 product: Digital Product Release
 classification: digital-product-release
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 4
 breadcrumb: [Reference, Digital Product Release, IT Service Management]
 ---
@@ -220,7 +220,6 @@ Accesses Digital Product Release Workspace to view release details and update an
 -   sn\_devops.viewer
 -   sn\_dpr\_model.product\_feature\_read
 -   sn\_dpr\_workspace.workspace\_user
--   sn\_gf.goal\_user\_read
 -   sn\_incident\_read
 -   sn\_pace.policy\_reader
 -   sn\_problem\_read

@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/add-an-mcp-server-from-ai-agent-studio.html
 release: australia
 topic_type: task
-last_updated: "2026-09-03"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
-breadcrumb: [MCP server setup, Working with MCP server records, Discover and manage AI assets, AI Control Tower, Enable AI experiences]
+breadcrumb: [MCP server setup, Working with MCP server records, Discover and manage AI assets, AI Control Tower, Establishing AI governance, Enable AI Experiences]
 ---
 
 # Add an MCP server from AI Agent Studio
@@ -30,7 +30,7 @@ Role required: sn\_aia.admin, sn\_mcp\_client.admin
 
 2.  Select **New**.
 
-    **Note:** In the Create and manage tab of the AI Agent studio, you can add only those MCP servers that have been approved in the AI Control Tower.
+    **Note:** In the Create and manage tab of the AI Agent studio, you can add only those MCP servers that have been approved in AI Control Tower.
 
 3.  Enter the Name.
 
@@ -44,7 +44,7 @@ Role required: sn\_aia.admin, sn\_mcp\_client.admin
 
     AI Gateway registration in AI Agent Studio supports Dynamic Client Registration.
 
-    When the server allows dynamic client registration, it will automatically retrieve the necessary details. Otherwise, you will need to enter the details manually.
+    When the server allows dynamic client registration, it will automatically retrieve the necessary details. Otherwise, you have to enter the details manually.
 
 7.  Select the **Grant type**.
 

@@ -7,8 +7,8 @@ release: australia
 product: Contract Management Pro
 classification: contract-management-pro
 topic_type: reference
-last_updated: "2026-03-12"
-reading_time_minutes: 2
+last_updated: "2026-09-10"
+reading_time_minutes: 3
 breadcrumb: [Reference, Contract Management Pro, Legal and Contract Operations, Employee Service Management]
 ---
 
@@ -37,6 +37,8 @@ The UFX Add on Event mapping form to configure the display of declarative action
 
 [Contract request State and Contract document status in Contract Management Pro]()
 
+[Amendment and renewal interaction messages]()
+
 [Signatory roles]()
 
 [Clause Variation form]()
@@ -58,6 +60,10 @@ The UFX Add on Event mapping form to configure the display of declarative action
 [Contract Analysis Playbook form]()
 
 [Contract analysis playbook tool messages]()
+
+[Contract request ticket page actions]()
+
+[Default availability of out-of-the-box record producers]()
 
 [Contract Management Pro glossary]()
 

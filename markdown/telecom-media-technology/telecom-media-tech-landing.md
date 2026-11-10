@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/telecom-media-technology/telecom-media-tech-landing.html
 release: australia
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 5
 ---
 
@@ -121,6 +121,6 @@ Open Digital Architecture-aligned REST APIs available across TMT solutions — a
 -   Access real-time courses, self-paced training, and career resources at [ServiceNow University](https://learning.servicenow.com/lxp/en/pages/now-learning-get-certified?id=amap_detail&achievement_id=3436f09887952e9024e0bb39dabb3504&s=1&ssa=3).
 -   Find useful resources related to your role and explore general guidelines at [ServiceNow Impact](https://www.servicenow.com/success.html).
 -   Connect with Telecommunications, Media, and Technology users at the ServiceNow Community:
-    -   [Telecommunications](https://www.servicenow.com/community/telecom/ct-p/telecommunication) users.
-    -   [Technology Providers](https://www.servicenow.com/community/technology-provider/ct-p/technology).
+    -   [Telecommunications](https://www.servicenow.com/community/telecom/ct-p/telecommunication)
+    -   [Technology Providers](https://www.servicenow.com/community/technology-provider/ct-p/technology)
 

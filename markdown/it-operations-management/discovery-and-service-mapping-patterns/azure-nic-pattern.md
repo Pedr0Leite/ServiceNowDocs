@@ -7,7 +7,7 @@ release: australia
 product: Discovery and Service Mapping Patterns
 classification: discovery-and-service-mapping-patterns
 topic_type: reference
-last_updated: "2026-06-17"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 keywords: [Azure NIC, Azure network interface, Azure discovery, Azure patterns, NIC pattern]
 breadcrumb: [Microsoft Azure discovery, Available cloud discovery patterns, Discovery patterns used by ITOM Visibility, ITOM Visibility, IT Operations Management]
@@ -26,6 +26,10 @@ Discovery and Service Mapping Patterns finds Azure network interfaces Controller
 -   **Configure the Discovery schedule to support GovCloud**
 
     Discovering Azure GovCloud \(US\) accounts requires using a datacenter URL when setting up an Azure service account. For more information, see [Set up Azure service accounts](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/setup-azure-service-accounts.md).
+
+-   **\(Optional\) Exclude temporary Azure Databricks VMs**
+
+    Starting with Discovery and Service Mapping Patterns version 1.30.2, you can reduce short-lived configuration item \(CI\) records by excluding temporary Azure Databricks VMs. For more information, see [Exclude temporary Azure Databricks virtual machines]().
 
 
 ## Data collected by Discovery during horizontal discovery

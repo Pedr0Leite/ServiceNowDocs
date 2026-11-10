@@ -5,10 +5,10 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/aict-rules-and-templates.html
 release: australia
 topic_type: concept
-last_updated: "2026-04-28"
-reading_time_minutes: 1
+last_updated: "2026-09-10"
+reading_time_minutes: 2
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
-breadcrumb: [Configure, AI Control Tower, Enable AI experiences]
+breadcrumb: [Configure, AI Control Tower, Establishing AI governance, Enable AI Experiences]
 ---
 
 # Configuring rules and templates in AI Control Tower
@@ -29,15 +29,17 @@ Rules and templates settings bring together the configuration that drives automa
 
 -   **Templates**
 
-    Manage the value templates that define the productivity gain formula for AI assets. Configure default template rules that determine which template is applied to a new AI asset, and review the AI system mappings that show which template each asset is currently using. For more information, see .
+    Manage the value templates that define the productivity gain formula for AI assets. Configure default template rules that determine which template is applied to a new AI asset, and review the AI system mappings that show which template each asset is currently using. For more information, see [Value](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/mv-value.md).
 
 -   **AI skills**
 
-    Enable the **AI-generated enrichment** toggle to run LLM-based enrichments with the AI Inventory Intelligence Agent. For more information, see [AI Inventory Intelligence Agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/inventory-intelligence-agent.md)
+    Enable the **AI-generated enrichment** toggle to run LLM-based enrichments with the AI Inventory Intelligence Agent. For more information, see [AI Inventory Intelligence Agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/inventory-intelligence-agent.md).
+
+    Enable the **Intelligent Asset Deduplication** toggle to detect duplicate AI systems with LLM-powered detection. For more information, see [Duplicate AI assets](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/review-duplicates.md).
 
 -   **Cost**
 
-    Configure the AI cost settings used to calculate net AI returns and the cost dimension of value templates. For more information, see .
+    Configure the AI cost settings used to calculate net AI returns and the cost dimension of value templates. For more information, see [Cost](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/mc-cost.md).
 
 -   **Security**
 

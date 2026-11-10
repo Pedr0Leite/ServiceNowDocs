@@ -7,9 +7,9 @@ release: australia
 product: Software Asset Management
 classification: software-asset-management
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
-breadcrumb: [Software discovery and normalization, Explore, Software Asset Management, IT Asset Management, Asset Management]
+breadcrumb: [Software discovery and normalization, Exploring Software Asset Management, Software Asset Management, IT Asset Management, Asset Management]
 ---
 
 # Software discovery
@@ -35,7 +35,7 @@ Discovery uses patterns in the discovery process that can be created or customiz
 -   VMware vCenter
 -   Microsoft SQL Server
 -   Microsoft Exchange Server
--   Oracle Database Server
+-   Oracle Database
 
 You can also customize other patterns for Software Asset Management. For more information, see [Create or modify patterns](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/it-operations-management/t_CreatePatternPatDef.md).
 

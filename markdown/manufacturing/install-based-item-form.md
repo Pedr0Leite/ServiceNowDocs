@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/manufacturing/install-based-item-form.html
 release: australia
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 breadcrumb: [Repair form, Reference, Manufacturing Commercial Operations]
 ---
@@ -44,7 +44,7 @@ Configuration Item
 
 </td><td>
 
-Configuration item that is associated with the install base item.The sn\_customerservice\_manager role must also have the app\_service\_user role to create the install base items for the Application Service configuration item class. For more information, see Application services.
+Configuration item that is associated with the install base item.The sn\_customerservice\_manager role must also have the app\_service\_user role to create the install base items for the Application Service configuration item class. For more information, see [Application services](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/servicenow-platform/application-services.md).
 
 Service models have a model category called the Application Service, which links a service model to the Application Service CI class. For more information, see [Models](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/it-asset-management/c_Models.md) and [Model categories](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/it-asset-management/c_ModelCategories.md).
 

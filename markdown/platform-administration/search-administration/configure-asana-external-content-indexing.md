@@ -7,7 +7,7 @@ release: australia
 product: Search Administration
 classification: search-administration
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Asana external content connector, Configure, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -27,7 +27,7 @@ Role required: none
 
 The Asana external content connector retrieves projects, tasks, and comments from your Asana source system using the Asana API.
 
-To allow the connector to access your Asana source system via the Asana API, you must configure and authorize an OAuth 2.0 application in the Asana developer console. Your connector administrator can use settings copied from the OAuth 2.0 application to configure the Asana external connector for proper connection to your source system.
+To allow the connector to access your Asana source system via the Asana API, you must configure and authorize an OAuth 2.0 application in the Asana developer console. Your connector administrator can use settings copied from the OAuth 2.0 application to configure the Asana external content connector for proper connection to your source system.
 
 ## Procedure
 

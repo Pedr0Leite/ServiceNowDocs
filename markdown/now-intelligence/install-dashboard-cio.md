@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/now-intelligence/install-dashboard-cio.html
 release: australia
 topic_type: task
-last_updated: "2026-07-31"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Chief Information Officer \(CIO\) Dashboard, Executive dashboard overview, Platform Analytics]
 ---
@@ -43,8 +43,6 @@ Plugins:
 -   com.snc.pa.premium.sam
 -   com.snc.pa.pmo\_dashboards
 -   com.snc.pa.self\_service\_analytics
--   com.sn\_communities
--   com.snc.pa.request2
 
 Applications:
 
@@ -81,4 +79,9 @@ Applications:
 
     Users must log out and log back in to enable their new roles after the admin assigns them. For more information on user roles, see [Exploring user administration](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/platform-administration/exploring-user-administration.md).
 
+
+## What to do next
+
+-   Navigate to **CIO Dashboard** &gt; **Dashboard** to view the installed dashboard.
+-   Use the information in the Tabs, Data Visualizations, and Indicators topics to configure the dashboard.
 

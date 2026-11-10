@@ -7,7 +7,7 @@ release: australia
 product: Search Administration
 classification: search-administration
 topic_type: task
-last_updated: "2026-05-29"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Slack external content connector, Configure, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -100,7 +100,7 @@ Your connector administrator needs the Slack API application's client ID and sec
 
     1.  In the OAuth Tokens section, select the link to install the application to your Slack workspace.
 
-        The installation link's text will include the name of your Slack workspace. \[Omitted image "slack-api-install-workspace.png"\] Alt text: OAuth Tokens section of OAuth &amp; Permissions features page with installation button highlighted.
+        The installation link's text includes the name of your Slack workspace. \[Omitted image "slack-api-install-workspace.png"\] Alt text: OAuth Tokens section of OAuth &amp; Permissions features page with installation button highlighted.
 
     2.  On the confirmation page, select **Allow**.
 

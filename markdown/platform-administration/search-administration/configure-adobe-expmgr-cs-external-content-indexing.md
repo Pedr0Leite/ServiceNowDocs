@@ -7,7 +7,7 @@ release: australia
 product: Search Administration
 classification: search-administration
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Adobe Experience Manager as a Cloud Service external content connector, Configure, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -27,7 +27,7 @@ Role required: none
 
 The Adobe Experience Manager as a Cloud Service external content connector retrieves assets from nodes in your Adobe Experience Manager as a Cloud Service source system.
 
-To allow the connector to access your Adobe Experience Manager as a Cloud Service source system, you must create a Technical Account in Adobe Cloud Manager. Your connector administrator can use the Service Credentials from this Technical Account to configure the Adobe Experience Manager as a Cloud Service external connector for proper connection to your source system.
+To allow the connector to access your Adobe Experience Manager as a Cloud Service source system, you must create a Technical Account in Adobe Cloud Manager. Your connector administrator can use the Service Credentials from this Technical Account to configure the Adobe Experience Manager as a Cloud Service external content connector for proper connection to your source system.
 
 ## Procedure
 
@@ -47,7 +47,7 @@ To allow the connector to access your Adobe Experience Manager as a Cloud Servic
 
 2.  Download the Service Credentials for your new Technical Account as a JSON-format file.
 
-    1.  On the Technical Accounts tab, select the arrow icon to expand the private key entry for your new Technical Account.
+    1.  On the **Technical Accounts** tab, select the arrow icon to expand the private key entry for your new Technical Account.
 
         The private key name varies. As an example, the private key entry name for your new Technical Account might be `PRIVATE-KEY-1873000081275`.
 

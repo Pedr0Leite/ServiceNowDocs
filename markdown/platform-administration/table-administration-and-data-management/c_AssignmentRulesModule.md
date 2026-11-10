@@ -7,7 +7,7 @@ release: australia
 product: Table Administration and Data Management
 classification: table-administration-and-data-management
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Assignment rules, Working with Task table, Table admin, Tables and data, Configure core features, Administer the ServiceNow AI Platform]
 ---
@@ -16,7 +16,7 @@ breadcrumb: [Assignment rules, Working with Task table, Table admin, Tables and 
 
 The Assignment rules module allows you to automatically set a value in the assigned\_to and assignment\_group fields when a set of conditions occurs.
 
-An assignment rule must also meet these additional criteria to run:
+You can modify and create assignment rules by navigating to **All** &gt; **Routing and Assignment** &gt; **Assignment Rule**. An assignment rule must also meet these additional criteria to run:
 
 -   The task record has been created or updated. Assignment rules do not apply to unsaved changes on a form.
 -   The task record must be unassigned. The record cannot have an existing value for either the assigned\_to or assignment\_group fields. Assignment rules cannot overwrite existing assignments \(including assignments set by a default value or a previously run assignment rule\).

@@ -1,18 +1,18 @@
 ---
 title: Observable analysis AI agent
-description: This Operational Technology Security Incident Response agent performs threat lookups, observable enrichment, sighting searches, and block requests against observables in a security incident.
+description: This Security Incident Response agent performs threat lookups, observable enrichment, sighting searches, and block requests against observables in a security incident.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/sir-observable-analysis-ai-agent.html
 release: australia
 topic_type: reference
-last_updated: "2026-08-14"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
-breadcrumb: [Security Incident Response AI agents, Security Incident Response, AI agents library, AI assets, Enable AI experiences]
+breadcrumb: [Security Incident Response AI agents, Security Incident Response, AI agents library, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Observable analysis AI agent
 
-This Operational Technology Security Incident Response agent performs threat lookups, observable enrichment, sighting searches, and block requests against observables in a security incident.
+This Security Incident Response agent performs threat lookups, observable enrichment, sighting searches, and block requests against observables in a security incident.
 
 ## Workflow
 
@@ -116,7 +116,7 @@ Used in agentic workflows
 Resolve security incident
 
 </td></tr></tbody>
-</table>Learn more about Operational Technology Security Incident Response at .
+</table>Learn more about Security Incident Response at [Security Incident Response](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/security-management/sir-landing-page.md).
 
 **Parent Topic:**[Security Incident Response AI agents](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/sir-ai-agents-overview.md)
 

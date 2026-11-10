@@ -7,9 +7,9 @@ release: australia
 product: Software Asset Management
 classification: software-asset-management
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
-breadcrumb: [Success portal view in Software Asset Workspace, Software Asset Workspace, Explore, Software Asset Management, IT Asset Management, Asset Management]
+breadcrumb: [Success portal view in Software Asset Workspace, Software Asset Workspace, Exploring Software Asset Management, Software Asset Management, IT Asset Management, Asset Management]
 ---
 
 # Health check
@@ -46,7 +46,7 @@ Number of checks available for the following suites:-   SQL Server Config
 -   SQL Server CMDB
 -   Windows Server CMDB
 -   Windows Server Config
--   Database Server - Oracle
+-   Oracle Database
 -   Java - Oracle
 -   WebLogic Server - Oracle
 -   Microsoft 365
@@ -81,7 +81,7 @@ The number of open records for each of the following suites:-   SQL Server Confi
 -   SQL Server CMDB
 -   Windows Server CMDB
 -   Windows Server Config
--   Database Server - Oracle
+-   Oracle Database
 -   Java - Oracle
 -   WebLogic Server - Oracle
 -   Microsoft 365

@@ -7,7 +7,7 @@ release: australia
 product: AI Search
 classification: ai-search
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Synonyms, Search profiles, Configure, AI Search, Search administration, Configure core features, Administer the ServiceNow AI Platform]
 ---
@@ -22,7 +22,7 @@ Role required: ais\_admin
 
 ## About this task
 
-Cloning a synonym dictionary copies the source dictionary's settings and all of its all defined synonym terms. This process can save you time when you need multiple synonym dictionaries that have many synonym terms in common.
+Cloning a synonym dictionary copies the source dictionary's settings and all of its defined synonym terms. This process can save you time when you need multiple synonym dictionaries that have many synonym terms in common.
 
 ## Procedure
 

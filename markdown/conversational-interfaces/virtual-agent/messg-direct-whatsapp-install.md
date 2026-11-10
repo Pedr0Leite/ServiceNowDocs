@@ -7,9 +7,9 @@ release: australia
 product: Virtual Agent
 classification: virtual-agent
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
-breadcrumb: [Configure, Conversational Integration with WhatsApp \(WhatsApp Cloud API\), Integrate VA with messaging apps, Integrate VA with other channels, Virtual Agent, Conversational Interfaces]
+breadcrumb: [Configure, WhatsApp Cloud API, Integrate VA with messaging apps, Conversational Integration apps for Virtual Agent, Conversational Interfaces]
 ---
 
 # Install Conversational Integration with WhatsApp \(WhatsApp Cloud API\)
@@ -47,7 +47,7 @@ The following applications or plugins are installed with Conversational Integrat
 
 1.  Navigate to **All** &gt; **System Applications** &gt; **All Available Applications** &gt; **All**.
 
-2.  Find the Conversational Integration with WhatsApp \(WhatsApp Cloud API\) application \(sn\_va\_whatsapp\_twi\) using the filter criteria and search bar.
+2.  Find the Conversational Integration with WhatsApp \(WhatsApp Cloud API\) application \(sn\_va\_whatsapp\) using the filter criteria and search bar.
 
     You can search for the application by its name or ID. If you cannot find the application, you might have to request it from the ServiceNow Store.
 

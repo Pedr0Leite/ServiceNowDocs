@@ -5,10 +5,10 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/gov-sec-use-map.html
 release: australia
 topic_type: task
-last_updated: "2026-05-02"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
-breadcrumb: [Managing AI asset security, Govern AI assets, AI Control Tower, Enable AI experiences]
+breadcrumb: [Managing AI asset security, Govern AI assets, AI Control Tower, Establishing AI governance, Enable AI Experiences]
 ---
 
 # Discover your agent network with the map
@@ -19,13 +19,13 @@ Use the agent map to visualize your entire agentic ecosystem, including ServiceN
 
 The agent map shows a holistic view of the relationships between your AI providers, AI models, MCP servers, AI agents, agentic workflows, and tools. You can use the map to review these relationships and get details about the AI assets in your enterprise.
 
-Below the map, all of your managed agentic AI assets are listed.
+All of your managed agentic AI assets are listed after the map.
 
-\[Omitted image "gov-sec-access-map.png"\] Alt text: Agent map with managed agentic assets list below it.
+\[Omitted image "gov-sec-access-map.png"\] Alt text: Agent map with managed agentic assets list.
 
 ## Before you begin
 
-Role required: AI steward \[sn\_ai\_governance\_ai\_steward\]
+Role required: AI steward \[sn\_ai\_governance.ai\_steward\]
 
 Configure Veza access intelligence to show risk score and other information for each AI asset in the map. For more information, see [Configure Veza access intelligence in the agent map](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/gov-sec-configure-veza-access-intelligence.md).
 
@@ -71,7 +71,9 @@ The user of the AI agent or model.
 The creator of the AI agent or model.
 
 </td></tr></tbody>
-</table><table><thead><tr><th>
+</table>    **Note:** If you haven't yet authenticated with Veza, or your access token has expired, you're prompted to select **Re-Authenticate** to reconnect before you can view risk score and other access intelligence information.
+
+<table><thead><tr><th>
 
 Node
 

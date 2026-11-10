@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/aia-refernce-new.html
 release: australia
 topic_type: reference
-last_updated: "2026-09-24"
+last_updated: "2026-10-16"
 reading_time_minutes: 10
-breadcrumb: [AI Agent Studio, Enable AI experiences]
+breadcrumb: [AI Agent Studio, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # ServiceNow Otto AI agents reference
@@ -32,7 +32,7 @@ AI Agent admin \[sn\_aia.admin\]
 
 </td><td>
 
-Administrator of the application. A user with the sn\_aia\_admin role can create, read, update, and delete records.
+Administrator of the application. A user with the sn\_aia.admin role can create, read, update, and delete records.
 
 </td></tr><tr><td>
 
@@ -40,7 +40,7 @@ AI Agent Viewer \[sn\_aia.viewer\]
 
 </td><td>
 
-Read-only access to the application. A user with the sn\_aia\_viewer role has read and report access on all tables.
+Read-only access to the application. A user with the sn\_aia\_viewer role has read and report access on all tables. **Note:** The sn\_aia.admin and the sn\_aia.viewer roles should not be given to the same user. If a user has both roles, then AI Agent Studio will only be accessible in read-only mode for that user.
 
 </td></tr><tr><td>
 
@@ -48,7 +48,7 @@ agent\_role\_config\_admin
 
 </td><td>
 
-With this role, user can access and modify Agent role configurations with AI Agent admin \[sn\_aia\_admin\] being the parent role.
+With this role, the user can access and modify Agent role configurations with AI Agent admin \[sn\_aia.admin\] being the parent role.
 
 </td></tr><tr><td>
 
@@ -91,7 +91,7 @@ snc\_internal
 Overly permissive system role, use only if agent requires true system-level privileges \(rare\).**Note:** Don't use as fallback.
 
 </td></tr></tbody>
-</table>**Note:** The roles can be assigned manually through the user record directly. For the assigned roles to take effect, logout and login back to the application.
+</table>**Note:** The roles can be assigned manually through the user record directly. For the assigned roles to take effect, log out and log back in to the application.
 
 ## AI agents system properties
 
@@ -289,7 +289,7 @@ sn\_aia.follow\_up\_qna\_failure\_limit
 
 </td><td>
 
-Defines the limit to exit execution if the number of consecutive questions and answers aren’t available in the follow-up.Default value: **1**.
+Defines the limit to exit execution if the number of consecutive questions and answers aren't available in the follow-up.Default value: **1**.
 
 </td></tr><tr><td>
 
@@ -297,7 +297,7 @@ sn\_aia.ltm.use\_memory\_for\_ai\_agent
 
 </td><td>
 
-Enables long-term memory for AI agent interactions. When enabled, stored user memories are utilized in AI agent interactions.Default value: **true.**
+Enables long-term memory for AI agent interactions. When enabled, stored user memories are utilized in AI agent interactions.Default value: **true**.
 
 </td></tr><tr><td>
 
@@ -356,16 +356,6 @@ Specifies the maximum number of cursor-based pagination iterations to perform wh
 
 </td></tr><tr><td>
 
-mcp\_guardian\_check
-
-</td><td>
-
-Determines whether AI Guardian runs on MCP tool executions.You can enable guardian check for MCP Client when the value is set to **true**. The default value is **false**.
-
-**Note:** To enable guardian check for MCP Client, ensure that you enable AI Guardian on **AI Agent Studio** &gt; **Settings** page.
-
-</td></tr><tr><td>
-
 com.glide.agentic\_processes\_view.enabled
 
 </td><td>
@@ -395,9 +385,7 @@ sn\_aia.enable\_episodic\_memory
 
 </td><td>
 
-Enables episodic memory. When enabled, episodic memories from past interactions are collected and stored in sn\_aia\_memory and utilized in future interactions to enhance the overall experienceDefault value: **true**.
-
-.
+Enables episodic memory. When enabled, episodic memories from past interactions are collected and stored in sn\_aia\_memory and used in future interactions to enhance the overall experience.Default value: **true**.
 
 </td></tr><tr><td>
 
@@ -510,7 +498,7 @@ enable\_agent\_tool\_input\_value\_overrides
 
 </td><td>
 
-Determines whether tool input values can be overriden by the AI agent or other tools for use by another tool
+Determines whether tool input values can be overridden by the AI agent or other tools for use by another tool
 
 </td><td>
 
@@ -571,6 +559,18 @@ false
 
 </td></tr><tr><td>
 
+mcp\_guardian\_check
+
+</td><td>
+
+Determines whether AI Guardian runs on MCP tool executions.**Note:** To enable guardian check for MCP Client, ensure that you enable AI Guardian on **AI Agent Studio** &gt; **Settings** page.
+
+</td><td>
+
+You can enable guardian check for MCP Client when the value is set to **true**. The default value is **false**.
+
+</td></tr><tr><td>
+
 kill\_switch.mode
 
 </td><td>
@@ -590,7 +590,7 @@ kill\_switch.consecutive\_windows\_duration
 
 </td><td>
 
-The total look back span.
+The total look-back span.
 
 </td><td>
 
@@ -635,7 +635,19 @@ Length of one observation window.
 </td></tr></tbody>
 </table>The following properties are used to detect and avoid infinite recursion or execution loops. If you reach the max executions that match the query within the time window, any new executions matching the query will abort. You can adjust these values if you want to lower the threshold for detecting recursion.
 
-<table><tbody><tr><td>
+<table><thead><tr><th>
+
+Name
+
+</th><th>
+
+Description
+
+</th><th>
+
+Default value
+
+</th></tr></thead><tbody><tr><td>
 
 recursive\_check.create\_max\_executions
 
@@ -770,14 +782,6 @@ List of teams mapped to an agent.
 
 </td></tr><tr><td>
 
-Agent Tools \[sn\_aia\_agent\_tool\_m2m\]
-
-</td><td>
-
-List of tools mapped to an AI agent.
-
-</td></tr><tr><td>
-
 AIA Trigger Configurations \[sn\_aia\_trigger\_configuration\]
 
 </td><td>
@@ -794,7 +798,7 @@ List of tasks by execution plan ID.
 
 </td></tr><tr><td>
 
-Messages \[/sn\_aia\_message\]
+Messages \[sn\_aia\_message\]
 
 </td><td>
 
@@ -806,7 +810,7 @@ Tools Executions \[sn\_aia\_tools\_execution\]
 
 </td><td>
 
-List of tools executed by the plan ID.**Note:** The records in the Tools Executions table expire and is set to unavailable after a period of 13 months.
+List of tools executed by the plan ID.**Note:** The records in the Tools Executions table expire and are set to unavailable after a period of 13 months.
 
 </td></tr><tr><td>
 
@@ -822,7 +826,7 @@ Agent Tools \[sn\_aia\_agent\_tool\_m2m\]
 
 </td><td>
 
-List of tools and maximum automatic executions.
+List of tools mapped to an AI agent, and the maximum number of automatic executions for each tool.
 
 </td></tr><tr><td>
 
@@ -846,7 +850,7 @@ Gen AI Metadata M2M \[sn\_aia\_gen\_ai\_m2m\]
 
 </td><td>
 
-List of Gen AI metadata and the maximum automatic executions.Maintains the mapping between sn\_aia\_execution\_task and Gen AI log metadata. If two large language model \(LLM\) calls are made to the sn\_aia\_execution\_task, then the sn\_aia\_gen\_ai\_m2m table has two records.
+List of Gen AI metadata and the maximum automatic executions. Maintains the mapping between sn\_aia\_execution\_task and Gen AI log metadata. If two large language model \(LLM\) calls are made to the sn\_aia\_execution\_task, then the sn\_aia\_gen\_ai\_m2m table has two records.
 
 </td></tr><tr><td>
 

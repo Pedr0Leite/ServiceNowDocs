@@ -7,7 +7,7 @@ release: australia
 product: Work Order Management
 classification: work-order-management
 topic_type: task
-last_updated: "2025-01-30"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Prioritizing on ServiceNow Agent, ServiceNow Agent mobile app, Completing work on mobile, Use, Field Service Management]
 ---
@@ -19,6 +19,10 @@ Complete the answers to questions associated with a work order task and store th
 ## About this task
 
 Agents can’t view each others completed questionnaire, even if the agent impersonates the other agent’s profile.
+
+The **Change Approval Policy** activity generates approvals from the associated change approval policy. Approval timing, due dates, and escalation are governed by the approval definitions in the policy and not by the activity. To set due dates and automatic resolution \(approve, reject, or cancel on due date\), use the Apply Change Approval policy flow action.
+
+**Note:** The **Finish condition** completes the activity ahead of time when the change request changes. For example, when the change request is on hold, it doesn't escalate pending approvals.
 
 ## Before you begin
 
@@ -43,6 +47,8 @@ Role required: wm\_agent or wm\_dispatcher
     If the questionnaire is required, you can’t close the task until you complete the questionnaire.
 
 7.  Tap **Get Started** and answer each question in the questionnaire.
+
+    **Note:** In the Now Mobile Agent application, you can edit only the questionnaires on a work order task that are assigned to you. Questionnaires assigned to other users are view-only.
 
 8.  Perform one of the following actions.
 

@@ -5,10 +5,10 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/application-development/exploring-servicenow-ai-experience-lab-for-vs-code.html
 release: australia
 topic_type: concept
-last_updated: "2026-07-29"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 keywords: [explore]
-breadcrumb: [ServiceNow Lux Lab for VS Code extension, Building pro-code applications, Developing your application, Building applications]
+breadcrumb: [ServiceNow Lux Lab for VS Code extension, Building pro-code applications, Developing your application, Classic app development, Building applications]
 ---
 
 # Exploring ServiceNow Lux Lab for VS Code extension
@@ -17,7 +17,11 @@ The ServiceNow Lux Lab for VS Code extension provides framework intelligence and
 
 ## ServiceNow Lux Lab for VS Code extension overview
 
+\[Omitted video\] Description: ServiceNow Lux Lab for VS Code extension
+
 The ServiceNow Lux Lab for VS Code extension enables you to create and extend ServiceNow experiences. With built-in framework intelligence, you can run quick commands, preview entire applications, and see which files are relevant for your work from inside the explorer. Create experiences, pages, and widgets that support tailored functionality in your ServiceNow applications.
+
+\[Omitted image "servicenow-lux-lab-vs-code-welcome.png"\] Alt text: ServiceNow Lux Lab for VS Code welcome screen.
 
 ## ServiceNow Lux Lab for VS Code users
 

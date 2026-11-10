@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/application-portfolio-management/eaw-configure-tech-debt.html
 release: australia
 topic_type: task
-last_updated: "2026-08-24"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 breadcrumb: [Technical debt settings, Configure EA Workspace using the Setup page, Configuring Enterprise Architecture Workspace, Enterprise Architecture Workspace, Enterprise Architecture]
 ---
@@ -22,7 +22,7 @@ Role required: sn\_apm.apm\_admin
 
 ## About this task
 
-\[Omitted image "trm-tech-debt-settings.png"\] Alt text: Technical debt settings page in the EA Workspace Setup page.
+\[Omitted image "trm-tech-debt-settings.png"\] Alt text: Technical debt settings page in the Enterprise Architecture Workspace Setup page.
 
 Use the technical debt settings to control how the scheduled job **Populate TRM technical debts in the EA Workspace** identifies and creates technical debt records.
 

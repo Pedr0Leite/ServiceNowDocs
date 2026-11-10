@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/platform-security/naai-permissions-based-access-control.html
 release: australia
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 breadcrumb: [Agentic AI security and governance]
 ---
@@ -16,7 +16,7 @@ Use Agent Role Inheritance, identity types, and granular roles to verify your AI
 
 ServiceNow uses AI Agents to perform tasks that range from simple automated responses to complex problem solving. AI agents are restricted by their assigner roles, and are subject to the same ACL limitations as standard users.
 
-Now Assist provides several mechanisms to enforce least-privilege access across your
+ServiceNow Otto provides several mechanisms to enforce least-privilege access across your instance.
 
 -   Access control lists \(ACLs\) that determine who can invoke an agent, user identities that define what data an agent can access once invoked.
 -   Role masking that limits inherited permissions during tool execution
@@ -31,7 +31,7 @@ The following topics describe how to implement, configure, and verify access con
 
     Understand how ACLs and user identities work together across agentic workflows, AI agents, and tools to control who can invoke an agent and what resources it can access once invoked.
 
--   **[Role masking in AI agents](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/aia-role-masking.md)**
+-   ****
 
     Use role masking to define an allow-list of roles that agentic workflows and AI agents can inherit from invoking users, enforcing least-privilege access during tool execution.
 
@@ -64,7 +64,7 @@ The following reference topics describe the roles installed with Now Assist and 
 
     A reference list of the roles installed with AI Admin Hub, including the permissions required to activate and manage Now Assist features and skills.
 
--   **[AI Admin Hub \[sn\_nowassist\_admin.nsa\_admin\]](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/roles-installed-with-now-assist-admin.md)**
+-   **[Now Assist Admin \[sn\_nowassist\_admin.nsa\_admin\]](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/roles-installed-with-now-assist-admin.md)**
 
     Details the **sn\_nowassist\_admin.nsa\_admin** role, which allows users to create, edit, and configure Now Assist skills and settings.
 

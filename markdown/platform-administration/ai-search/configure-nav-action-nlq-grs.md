@@ -7,7 +7,7 @@ release: australia
 product: AI Search
 classification: ai-search
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 4
 breadcrumb: [NLQ Genius Results, Genius Result configurations in the base system, Genius Results, Search profiles, Configure, AI Search, Search administration, Configure core features, Administer the ServiceNow AI Platform]
 ---
@@ -35,7 +35,7 @@ As a search administrator, you can customize the actions available for NLQ Geniu
 
     1.  Select **All**.
 
-    2.  In the **Filter** field, enter `ais_nlq_navigation.list`.
+    2.  In the navigation field, enter `ais_nlq_navigation.list`.
 
     3.  Press Enter.
 

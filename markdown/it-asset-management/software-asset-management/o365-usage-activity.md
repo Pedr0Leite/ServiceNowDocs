@@ -7,7 +7,7 @@ release: australia
 product: Software Asset Management
 classification: software-asset-management
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 7
 breadcrumb: [Integrating with Microsoft 365, Microsoft 365 integration, Software Asset Management publisher pack for Microsoft, Supported software publisher licenses, Software Asset Management, IT Asset Management, Asset Management]
 ---
@@ -27,9 +27,9 @@ The following table lists the sources for collecting the software usage activity
 |Microsoft Graph APIs|Desktop, Web, Mobile|Outlook, Word, PowerPoint, Excel, OneNote, Teams, Exchange Online, SharePoint Online, Power BI|
 |Microsoft SCCM or ACC-V|Desktop|Microsoft Office 365 apps for Enterprise|
 |Jamf for macOS devices|Desktop|Microsoft Office 365 apps for Enterprise|
-|Manual upload of the usage reports on the ServiceNow instance from the Microsoft Office 365 admin center|Desktop, Web, Mobile|Microsoft 365 Copilot, Visio Online, and Project Online|
+|Manual upload of the usage reports on the ServiceNow instance from the Microsoft Office 365 admin center|Desktop, Web, Mobile|Microsoft 365 Copilot, Visio Online, Planner, and Project|
 
-**Note:** You can download the usage for Microsoft 365 Copilot, Visio Online, and Project Online from the Microsoft Office 365 admin center. For details, see [Upload the Microsoft 365 Copilot, Visio Online, and Project Online usage reports to your ServiceNow instance](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/upload-usage-reports-copilot-visio-project.md).
+**Note:** You can download the usage for Microsoft 365 Copilot, Visio Online, and Project Online from the Microsoft Office 365 admin center. For details, see [Upload the Microsoft 365 Copilot, Visio Online, Planner, and Project usage reports to your ServiceNow instance](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/upload-usage-reports-copilot-visio-project.md).
 
 After completing the [Microsoft 365 integration](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/integrate-with-microsoft.md), you can view the usage activity information using any of the following tables:
 

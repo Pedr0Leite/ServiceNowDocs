@@ -5,8 +5,8 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/now-intelligence/create-dv-pareto-vd.html
 release: australia
 topic_type: task
-last_updated: "2026-03-12"
-reading_time_minutes: 10
+last_updated: "2026-09-10"
+reading_time_minutes: 11
 keywords: [Create pareto bar report, Create pareto bar visualization]
 breadcrumb: [Create, Data visualizations, Platform Analytics experience, Platform Analytics]
 ---
@@ -17,7 +17,7 @@ Use a Pareto bar visualization to Identify the most important dimension in a lar
 
 ## Before you begin
 
-Role required: Anyone with access to data can create a visualization of that data on any dashboard that they can edit. Users with the itil, report\_user, admin, or viz\_creator role can create a visualization in the Visualization Designer. When you create a visualization in the Visualization Designer, it is saved to the Library. For more information on access, see [Report\_view access control](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/reporting/report-view-access-control.md) and [Platform Analytics roles](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/platform-analytics-roles.md).
+Role required: Anyone with access to data can create a visualization of that data on any dashboard that they can edit. Users with the itil, report\_user, admin, or viz\_creator role can create a visualization in the Visualization Designer. When you create a visualization in the Visualization Designer, it is saved to the Library. For more information on access, see [Report\_view access control](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/report-view-access-control.md) and [Platform Analytics roles](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/platform-analytics-roles.md).
 
 ## About this task
 
@@ -32,6 +32,8 @@ For information about the use of a Pareto bar visualization in a dashboard, see 
 3.  Select the Pareto bar visualization \(\[Omitted image "inline-data-vis-pareto.png"\] Alt text: pareto bar icon\) visualization type.
 
 4.  Configure the **Header and border**. Header and border options are the same for all data sources.
+
+    None of the **Header and border** fields is required.
 
 <table id="table_ly5_djk_c5b"><thead><tr><th>
 
@@ -135,7 +137,7 @@ Show refresh option
 
 </td><td>
 
-Option to show or hide the refresh option from data visualizations. If cache is enabled on a dashboard, the Refresh option is always hidden.
+Option to show or hide the refresh option from data visualizations. If cache is enabled on a dashboard, the Refresh option is hidden.
 
 </td></tr><tr id="ac-dv-show-export-option"><td>
 
@@ -176,7 +178,7 @@ Specify the text color of the title. The default title color is black, but you c
 
     -   Indicator \(available in the base system\). You can filter the indicator scores by breakdowns and elements. Automated indicators can be configured with selected breakdowns. Formula indicators inherit their breakdowns from the parent indicators. Data snapshots indicator breakdowns are configured in the indicator. In both cases, only those breakdowns are available when you configure a visualization based on those indicators.
 
-        **Note:** Benchmark indicators are not supported.
+        **Note:** Benchmark indicators aren't supported.
 
         \[Omitted image "dv-ind-source-con-filter.png"\] Alt text: Conditional filter for indicator data source on data visualization.
 
@@ -191,12 +193,26 @@ Specify the text color of the title. The default title color is black, but you c
     -   Usage Insights \(available with the User Experience PAR Integration application, to users with a required role\). Choose one of up to three KPIs included with this application, depending on the visualization type. For more information, see [Usage Insights data sources for data visualizations](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/uxa-data-sources.md).
     **Note:** You can choose multiple data sources for this visualization. However, all data sources must be of the same type: table, indicator, or Usage Insights. For more information, see [Multiple data sources](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/multiple-data-sources.md).
 
-6.  Select the options for your data source.
+    Pivot table visualizations support a maximum of 15 data sources.
+
+6.  Duplicate the data source.
+
+    1.  Select the data source's More Actions menu \[Omitted image "more-actions-menu-icon.png"\] and choose **Duplicate**.
+
+        \[Omitted image "dv-duplicate-data-source.png"\] Alt text: Data source's More Actions menu with Duplicate selected
+
+    2.  Select the copy of the data source and edit it.
+
+        For example, if the original data source has multiple conditions, you can duplicate it if you want to add more conditions and not lose the original configuration.
+
+    Both the original data source and duplicated and edited data source apply to the visualization.
+
+7.  Select the options for your data source.
 
     -   If your visualization represents table data, go to [Table data options for Pareto bar visualizations](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/config-dv-pareto-table-data.md).
     -   If your visualization represents indicator data, go to [Indicator data options for pareto bar visualizations](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/config-dv-pareto-ind-data.md).
     -   If your visualization represents Usage Insights data, go to [Usage Insights for Pareto bar visualizations](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/config-dv-pareto-uxa-data.md).
-7.  Under **Presentation**, provide display and color information.
+8.  Under **Presentation**, provide display and color information.
 
     Under **Display settings**, you can show the data table. This table shows graph and visualization data for easier screen reader access. You can also select whether hovering on a data value opens a tooltip with all the data values or only the details of the selected data value.
 
@@ -349,7 +365,7 @@ Type of color scheme to apply to the component. Options include:
 This option is available only for Table data sources and only if no more than one data source or metric is added, and a Group by is defined.
 
 </td></tr></tbody>
-</table>8.  Under **Chart interaction**, set what if anything happens when a viewer clicks a chart or a chart segment on the visualization.
+</table>9.  Under **Chart interaction**, set what if anything happens when a viewer selects a chart or a chart segment on the visualization.
 
 <table id="table_qnp_d2d_b1c"><thead><tr><th>
 
@@ -365,7 +381,7 @@ Allow chart interaction
 
 </td><td>
 
-Enable an event to occur when a user clicks in a visualization or one of its segments.
+Enable an event to occur when a user selects a visualization or one of its segments.
 
 </td></tr><tr><td>
 
@@ -373,20 +389,20 @@ Action
 
 </td><td>
 
-Choose the event that occurs when a user clicks in a visualization or one of its segments. Choices depend on the visualization type and data source. Applies only when **Allow chart interaction** is on. For more information, see [Chart interactions in a data visualization](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/dv-chart-interactions.md).
+Choose the event that occurs when a user selects in a visualization or one of its segments. Choices depend on the visualization type and data source. Applies only when **Allow chart interaction** is on. For more information, see [Chart interactions in a data visualization](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/dv-chart-interactions.md).
 
 -   **Go to data view** opens a list view, KPI Details page, or Usage Insights overview page relevant to the associated segment or visualization. For table data, a system property determines whether a Core UI list or a Platform Analytics list opens. For more information, see [Data views for different data sources](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/visualization-drilldown-in-config-ws.md).
 -   **Go to URL** opens the specified URL, which can be on the instance or external. You have the option of specifying a page name to appear in the tooltip, for those visualizations with tooltips.
 -   **Drill down to chart** \(Visualization Designer only\) Opens a different data visualization that is filtered by the selected data. You can add a drill-down visualization for each metric on the parent visualization.
 
-**Note:** The last level of drill down in the Platform Analytics experience is always a Core UI list. Records do not open in Workspace embedded lists.
+**Note:** The last level of drill down in the Platform Analytics experience is always a Core UI list. Records don't open in Workspace embedded lists.
 
 **Drill down to chart** supports only table data sources.
 
 </td></tr></tbody>
-</table>9.  Select **Save**.
+</table>10. Select **Save**.
 
-    Navigate to **All** &gt; **Platform Analytics** &gt; **Library** &gt; **Data Visualizations** to return to the Data Visualization list.
+    Navigate to **All** &gt; **Platform Analytics** &gt; **Library** &gt; **Data Visualizations** to return to the data visualization list.
 
 
 ## What to do next

@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/it-service-management/perf-l1-sd-ai-spec.html
 release: australia
 topic_type: task
-last_updated: "2026-08-25"
+last_updated: "2026-10-08"
 reading_time_minutes: 1
 breadcrumb: [Use, L1 IT Service Desk AI Specialist, IT Service Management]
 ---
@@ -33,6 +33,14 @@ With the performance analytics information provided, you can make choices about 
 4.  Review the AI specialist performance dashboard.
 
     Performance visualizations for the L1 IT Service Desk AI Specialist use the ZTSD Worker Template for the IT Service Management AI agent collection. You can get the agent collection by installing ServiceNow Otto for IT Service Management \(ITSM\).
+
+    **Note:** Selecting a coaching opportunity from the **Quality** tab opens a read-only record page tailored for SOW. This page excludes some fields, such as Frequency, Related KPIs, and Snapshot Settings, but retains the **Quality metric type** field from Surveys. If you instead open the coaching opportunity record from AI Agent Studio, it opens in the standard record form.
+
+    **Note:** The Analytics tab isn't visible if you open the coaching opportunity record from AI Agent Studio.
+
+5.  Select a visualization to open a list of the matching incidents in Service Operations Workspace.
+
+    The list applies the visualization's conditions together with the dashboard's active filters and date range. For averages such as Mean time to resolution, the list shows the incidents the average was calculated from. Incidents open in a Service Operations Workspace tab.
 
 
 ## What to do next

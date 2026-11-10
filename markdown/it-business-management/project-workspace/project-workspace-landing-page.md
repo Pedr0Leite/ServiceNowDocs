@@ -7,7 +7,7 @@ release: australia
 product: Project Workspace
 classification: project-workspace
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 breadcrumb: [Project Portfolio Management, Strategic Portfolio Management]
 ---
@@ -26,7 +26,7 @@ Use playbooks to deliver a guided, stage-based experience within the project wor
 
 Create a status report for your projects and run analytics for your projects. Experience the Gen AI feature in Project Workspace. Summarize, elaborate, or shorten the selected content on Docs to quickly understand the key information in documents using Project Gen AI Docs skill.
 
-Refine planning item descriptions using write items skill to improve the clarity and completeness of your work item and reduce the rework due to missing or unclear planning item information.
+Refine planning item descriptions using write items skill to improve the clarity and completeness of your work item. This reduces rework due to missing or unclear planning item information.
 
 ## Get started
 
@@ -65,7 +65,7 @@ Use the features of Project Workspace to plan and manage your project.
 -   **[Manage Risk, Issue, Decision, Action, or Request Change \(RIDAC\)](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-business-management/project-workspace/manage-ridac-pw.md)**  
 Use RIDAC to identify, track, and manage risks, issues, decisions, actions, and change requests in Project Workspace.
 -   **[Managing financials for your projects](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-business-management/project-workspace/using-financials-prj-wrkspc.md)**  
-Manage budget, cost plans as forecasts, actual expenses as expense lines, generate labor costs, create financial baselines, and view, analyze, and compare the financial performance of your projects at required cadence in Project Workspace.
+Manage budget, cost plans as forecasts, actual expenses as expense lines, generate labor costs, create financial baselines. View, analyze, and compare the financial performance of your projects at required cadence in Project Workspace.
 -   **[Resource planning with Project Workspace](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-business-management/project-workspace/use-resource-mgmt-prj-wksp.md)**  
 Use the Resource Management application to allocate and manage your resources in the Project Workspace.
 -   **[Project Workspace integration with CWM](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-business-management/project-workspace/cwm-integration-pw.md)**  

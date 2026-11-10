@@ -7,7 +7,7 @@ release: australia
 product: Workforce Optimization for Field Service
 classification: workforce-optimization-for-field-service
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Set up workforce, Configure, Field Service Management]
 ---
@@ -43,4 +43,6 @@ The steps for configuring users are:
 [Roles installed with Field Service Management](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/field-service-management/r_UserRoleInstallWFieldSrvMgmnt.md)
 
 [Setting up Field Service user groups](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/field-service-management/workforce-optimization-for-field-service/setting-up-field-service-user-groups.md)
+
+[Workforce Optimization for Field Service components](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/field-service-management/components-wfo-fsm.md)
 

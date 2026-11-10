@@ -7,7 +7,7 @@ release: australia
 product: ITOM Visibility
 classification: itom-visibility
 topic_type: reference
-last_updated: "2026-08-24"
+last_updated: "2026-09-17"
 reading_time_minutes: 3
 breadcrumb: [Database discovery, Data collected by ITOM Visibility, ITOM Visibility reference, ITOM Visibility, IT Operations Management]
 ---
@@ -18,9 +18,9 @@ Discovery can find running instances of PostgreSQL on Windows and Linux systems.
 
 ## Credentials and other prerequisites
 
--   **Create credentials for PostgreSQL discovery**
-    -   [SSH credentials](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/platform-security/r_SSHCredentialsForm.md)
-    -   \[optional\] [Applicative credentials](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/platform-security/applicative-creds.md)
+-   **Create SSH credentials for PostgreSQL discovery**
+
+    For more information, see [SSH credentials](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/platform-security/r_SSHCredentialsForm.md).
 
 -   **Verify root-level access to the database**
 
@@ -32,7 +32,7 @@ Discovery can find running instances of PostgreSQL on Windows and Linux systems.
 
 -   **Differentiate multiple PostgreSQL instances on the same host by port number**
 
-    Starting with Discovery and Service Mapping Patterns version 1.35.0, you can make multiple PostgreSQL instances on the same host distinguishable by port number by creating the **mid.discovery.postgresql.include\_port\_in\_name** MID Server property. For more information, see [Include the port number in PostgreSQL instance names](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/itom-visibility/enable-postgresql-port-in-name.md).
+    Starting with Discovery and Service Mapping Patterns version 1.35.1, you can make multiple PostgreSQL instances on the same host distinguishable by port number by creating the **mid.discovery.postgresql.include\_port\_in\_name** MID Server property. For more information, see [Include the port number in PostgreSQL instance names](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/itom-visibility/enable-postgresql-port-in-name.md).
 
 
 **Note:** For information on Probe to Pattern migration see the knowledge article [KB0694477](https://support.servicenow.com/kb_view.do?sysparm_article=KB0694477).

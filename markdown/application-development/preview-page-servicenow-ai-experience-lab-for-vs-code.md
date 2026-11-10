@@ -5,10 +5,10 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/application-development/preview-page-servicenow-ai-experience-lab-for-vs-code.html
 release: australia
 topic_type: task
-last_updated: "2026-08-04"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 keywords: [Preview inline, Inline preview, ServiceNow AI Experience Lab for VS Code, Preview page]
-breadcrumb: [Use, ServiceNow Lux Lab for VS Code extension, Building pro-code applications, Developing your application, Building applications]
+breadcrumb: [Use, ServiceNow Lux Lab for VS Code extension, Building pro-code applications, Developing your application, Classic app development, Building applications]
 ---
 
 # Preview a page
@@ -43,7 +43,7 @@ Visual Studio Code
 
 </td><td>
 
-1.97 later
+1.97 or later
 
 </td><td>
 
@@ -79,7 +79,7 @@ ServiceNow SDK
 
 </td><td>
 
-4.10 or later
+4.14 or later
 
 </td><td>
 
@@ -107,9 +107,11 @@ ServiceNow instance
 
 3.  Select the expand icon for the page that you want to preview.
 
-4.  Right click or select and hold the page.js file that you want to preview and select **AIUX: Launch Preview**.
+4.  Right click or select and hold the page.js file that you want to preview and select **Lux: Launch Preview**.
 
     A preview of your page appears. You can preview how your page appears on different devices, expand the preview panel, and interact with page elements.
+
+    \[Omitted image "servicenow-lux-lab-vs-code-preview.png"\] Alt text: A rendered page shown in the Preview panel.
 
 
 ## What to do next

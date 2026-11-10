@@ -7,7 +7,7 @@ release: australia
 topic_type: concept
 last_updated: "2026-08-04"
 reading_time_minutes: 1
-breadcrumb: [ServiceNow AI Platform AI agents, ServiceNow AI Platform, AI agents library, AI assets, Enable AI experiences]
+breadcrumb: [ServiceNow AI Platform AI agents, ServiceNow AI Platform, AI agents library, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # MID Server AI agents
@@ -17,7 +17,7 @@ The following AI agents are available for MID Server.
 -   **[MID common AI agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/plat-mid-mid-common-ai-agent.md)**  
 This AI agent helps users and support personnel to identify, analyze, and resolve MID Server issues.
 -   **[MID keystore AI agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/plat-mid-mid-keystore-ai-agent.md)**  
-This AI agent helps users diagnose and resolve MID Server keystore problems. This AI agent is designed for IT administrators who manage MID Server health.
+This AI agent helps IT administrators diagnose and resolve MID Server keystore problems and manage MID Server health.
 -   **[MID network AI agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/plat-mid-mid-network-ai-agent.md)**  
 This AI agent helps administrators and support personnel diagnose and resolve MID Server connectivity issues in a ServiceNow instance.
 -   **[MID upgrade AI agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/plat-mid-mid-upgrade-ai-agent.md)**  

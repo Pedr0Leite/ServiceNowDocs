@@ -7,8 +7,9 @@ release: australia
 product: Change Management
 classification: change-management
 topic_type: concept
-last_updated: "2026-03-12"
-reading_time_minutes: 1
+last_updated: "2026-09-10"
+reading_time_minutes: 3
+keywords: [predictive intelligence change, change risk prediction, standard change candidates]
 breadcrumb: [Configure, Change Management, IT Service Management]
 ---
 
@@ -21,6 +22,15 @@ Predictive Intelligence for Change Management delivers the following benefits:
 -   Enhanced change risk calculation using machine-learning algorithms to assess change risk.
 -   Uses Predictive Intelligence clustering capability to identify and suggest Standard Change templates to create a change.
 
+Confirm that you have the admin role to configure the intelligent solution definitions and system properties. Users with itil or sn\_change\_write role view the resulting risk predictions and standard change suggestions on the change request. For the full list of roles installed with Change Management, see [Components installed with ITSM Roles - Change Management](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-service-management/change-management/installed-with-cm-itsm-roles.md).
+
+## Roles and access for intelligent solutions
+
+Access to the Predictive Intelligence for Change Management capability depends on the action you perform:
+
+-   Configure solution definitions and system properties: you must have admin privileges. For the configurable properties, see [Intelligent solutions system properties](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-service-management/change-management/change-mgmt-intelligentsoln-properties.md). To train the standard change proposal solution, see [Train the clustering solution for standard change proposal](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-service-management/change-management/train-std-chg-proposal-soln.md).
+-   View risk predictions and standard change suggestions on a change request: you must have the itil or sn\_change\_write role.
+
 ## Solution definitions for Predictive Intelligence for Change Management
 
 The Solutions definitions for Predictive Intelligence for Change Management capability are available after you activate the following plugins:
@@ -28,7 +38,7 @@ The Solutions definitions for Predictive Intelligence for Change Management capa
 -   Change Management - Risk Intelligence plugin \(com.snc.change\_management.ml.risk\)
 -   Change Management - Standard Change Template Intelligence plugin \(com.snc.change\_management.ml.sctp\)
 
-**Note:** Predictive intelligent for Change Management plugins can be requested through the Now Support Customer Service system.
+**Note:** Predictive intelligence for Change Management plugins can be requested through the Now Support Customer Service system.
 
 For more information, see [Change Management plugins](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-service-management/change-management/change-plugins.md).
 
@@ -70,9 +80,11 @@ Analyzes and suggests opportunities for Standard Change proposal templates that 
 
 </td></tr></tbody>
 </table>-   **[Intelligent solutions system properties](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-service-management/change-management/change-mgmt-intelligentsoln-properties.md)**  
-Administrators can configure the Change Management Intelligent solutions system properties to use predictive intelligence \(PI\) capabilities.
+Administrators can configure the Change Management Intelligent solutions system properties to use Predictive Intelligence capabilities.
 -   **[Train the Risk Intelligence solution](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-service-management/change-management/train-risk-intelligence-solution.md)**  
 Create Risk categorization or similarity solution definitions to use the predictive intelligence that helps in accessing change risk.
+-   **[Configure Risk Intelligence](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-service-management/change-management/configure-risk-intelligence.md)**  
+Configure the Risk Intelligence properties to control how the Predictive Intelligence solution predicts the risk of a change request and how the predicted risk is used.
 -   **[Train the clustering solution for standard change proposal](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-service-management/change-management/train-std-chg-proposal-soln.md)**  
 Train the Standard change proposal solution definition to use clustering capabilities to identify and suggest Standard Change templates to create a change.
 

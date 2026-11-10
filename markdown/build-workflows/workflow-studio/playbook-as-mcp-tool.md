@@ -7,10 +7,10 @@ release: australia
 product: Workflow Studio
 classification: workflow-studio
 topic_type: concept
-last_updated: "2026-07-23"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
-breadcrumb: [Creating and managing Playbooks, Build Playbooks, Playbooks, Workflow Studio, Build workflows]
+breadcrumb: [Playbooks, Workflow Studio, Build workflows]
 ---
 
 # Playbooks as an MCP tool
@@ -67,7 +67,7 @@ We take an example of enabling an employee onboarding playbook to new employees 
 
 -   **Step 3: Configure the MCP client**
 
-    Configure MCP clients to connect to the server and use the tool. For more information, see [Connecting to an MCP server from an MCP client](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/connect-mcp-server-client.md)
+    Configure MCP clients to connect to the server and use the tool. For more information, see 
 
 -   **Step 4: Use the playbook from the MCP client**
 
@@ -79,9 +79,4 @@ We take an example of enabling an employee onboarding playbook to new employees 
 
     After all the activities of the playbook are completed, Claude displays a confirmation message with a summary. \[Omitted image "example-playbook-claude-summary.png"\] Alt text: The playbook is complete. Claude displays the confirmation along with the summary.
 
-
--   **[Add a playbook as an MCP tool](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/build-workflows/workflow-studio/add-playbook-as-mcp-tool.md)**  
-Create a tool in the MCP Server Console and expose it in an MCP server so that MCP clients can invoke the playbook through the MCP.
-
-**Parent Topic:**[Creating and managing Playbooks](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/build-workflows/workflow-studio/creating-managing-playbooks.md)
 

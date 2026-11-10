@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/healthcare-life-sciences/pss-config-playbook.html
 release: australia
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Configure, Patient Support Services, Healthcare and Life Sciences Service Management, Healthcare and Life Sciences]
 ---
@@ -26,5 +26,5 @@ The playbooks in the Patient Support Services application use the CRM Workspace 
 
 Configure a playbook by navigating to **All** &gt; **Process Automation** &gt; **Process Automation Designer**. You can either select an existing process definition or create a new process definition for the playbook associated with enrollment cases.
 
-**Note:** When configuring a process definition for the playbook associated with enrollment cases, ensure that the application scope is set to Patient Support Services or Healthcare and Life Sciences Service Management Core using the application picker. For more information, see [Application picker](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/application-development/c_ApplicationPicker.md).
+**Note:** When configuring a process definition for the playbook associated with enrollment cases, ensure that the application scope is set to Patient Support Services or Healthcare and Life Sciences Service Management Core using the application picker. For more information, see Application picker.
 

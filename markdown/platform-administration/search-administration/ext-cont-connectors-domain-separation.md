@@ -7,7 +7,7 @@ release: australia
 product: Search Administration
 classification: search-administration
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Explore, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -26,7 +26,7 @@ For more information on support levels, see [Application support for domain sepa
 
 ## Overview of domain separation in External Content Connectors
 
-The External Content Connectors ServiceNow® Store application allows you to make content from external source system documents searchable in AI Search applications. External content connectors don't support domain separation.
+The External Content Connectors ServiceNow® Store application enables you to make content from external source system documents searchable in AI Search applications. External content connectors don't support domain separation.
 
 **Note:** The External Content Connectors application includes an External Content Connectors Service Account user that's assigned to the global domain by default. If your instance has domain separation configured, assigning this user to another domain can prevent user permission crawls from correctly mapping permissions to users in your instance. To correct this behavior, reassign the External Content Connectors Service Account user to the global domain. For details on this procedure, see [Reassign the External Content Connectors Service Account user to the global domain](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-administration/search-administration/reassign-ext-cont-connectors-svc-acct-usr-global-domain.md).
 

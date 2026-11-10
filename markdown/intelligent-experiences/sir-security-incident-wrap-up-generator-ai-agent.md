@@ -1,18 +1,18 @@
 ---
 title: Security incident wrap up generator AI agent
-description: This Operational Technology Security Incident Response agent can close a security incident by performing all pre-closure validations. It can also generate close notes, generate post incident analysis, post work note, and update the state of the security incident to close it.
+description: This Security Incident Response agent can close a security incident by performing all pre-closure validations. It can also generate close notes, generate post incident analysis, post work note, and update the state of the security incident to close it.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/sir-security-incident-wrap-up-generator-ai-agent.html
 release: australia
 topic_type: reference
-last_updated: "2026-08-14"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
-breadcrumb: [Security Incident Response AI agents, Security Incident Response, AI agents library, AI assets, Enable AI experiences]
+breadcrumb: [Security Incident Response AI agents, Security Incident Response, AI agents library, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Security incident wrap up generator AI agent
 
-This Operational Technology Security Incident Response agent can close a security incident by performing all pre-closure validations. It can also generate close notes, generate post incident analysis, post work note, and update the state of the security incident to close it.
+This Security Incident Response agent can close a security incident by performing all pre-closure validations. It can also generate close notes, generate post incident analysis, post work note, and update the state of the security incident to close it.
 
 ## Workflow
 
@@ -115,7 +115,7 @@ Used in agentic workflows
 Wrap up security incident
 
 </td></tr></tbody>
-</table>Learn more about Operational Technology Security Incident Response at .
+</table>Learn more about Security Incident Response at [Security Incident Response](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/security-management/sir-landing-page.md).
 
 **Parent Topic:**[Security Incident Response AI agents](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/sir-ai-agents-overview.md)
 

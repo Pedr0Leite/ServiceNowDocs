@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/help-optimize-productivity.html
 release: australia
 topic_type: concept
-last_updated: "2026-07-21"
+last_updated: "2026-10-27"
 reading_time_minutes: 6
-breadcrumb: [Platform agentic workflows, Agentic workflows, AI assets, Enable AI experiences]
+breadcrumb: [Platform agentic workflows, Agentic workflows, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Platform Help optimize team productivity agentic workflow
@@ -32,7 +32,7 @@ The agents, tools, and triggers that are associated with the Help optimize team 
 
 To access this workflow, you must have ServiceNow Otto for Platform installed on your instance, which you can get if you install any other AI application.
 
-## Role masking
+## Role filtering
 
 Required role: sn\_uxc\_gen\_ai.platform\_ai\_help\_allocate\_work.
 
@@ -164,7 +164,13 @@ How often the scheduled job runs and triggers the agentic workflow.
 </td></tr></tbody>
 </table>## Accessing the Help optimize team productivity agentic workflow
 
-To access the agentic workflow:
+To access the agentic workflow in AI Agent Studio:
+
+1.  Navigate to **All** &gt; **AI Agent Studio** &gt; **Agentic Solutions**.
+2.  Select the **Agentic workflows** tab.
+3.  Select **Help optimize team productivity**.
+
+To access the agentic workflow in the legacy AI Agent Studio:
 
 1.  Navigate to **All** &gt; **AI Agent Studio** &gt; **Create and manage**.
 2.  Select **Help optimize team productivity**.

@@ -1,5 +1,5 @@
 ---
-title: Digital Product Release properties
+title: Digital Product Release system properties
 description: Configure the system properties to customize various features of Digital Product Release according to your organization's needs.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/it-service-management/digital-product-release/digital-product-release-properties.html
@@ -7,12 +7,12 @@ release: australia
 product: Digital Product Release
 classification: digital-product-release
 topic_type: reference
-last_updated: "2026-07-27"
+last_updated: "2026-09-10"
 reading_time_minutes: 7
 breadcrumb: [Reference, Digital Product Release, IT Service Management]
 ---
 
-# Digital Product Release properties
+# Digital Product Release system properties
 
 Configure the system properties to customize various features of Digital Product Release according to your organization's needs.
 

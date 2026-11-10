@@ -7,7 +7,7 @@ release: australia
 product: Software Asset Management
 classification: software-asset-management
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 4
 breadcrumb: [Software Asset Management, IT Asset Management, Asset Management]
 ---
@@ -78,7 +78,7 @@ Software Asset Management Professional for Oracle \(com.snc.samp.oracle\)
 
 </td><td>
 
-Provides additional capabilities to reconcile Oracle software, such as Oracle DB Server.
+Provides additional capabilities to reconcile Oracle software, such as Oracle Database.
 
 </td></tr><tr><td>
 

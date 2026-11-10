@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/customer-service-management/create-staff-household-relationship.html
 release: australia
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Business Organizations, Configure Service Model Foundation, Data models, Set up your environment, Configure, Customer Service Management]
 ---
@@ -20,7 +20,7 @@ Role required: admin, sn\_crm\_household\_relationship\_data\_manager, sn\_custo
 
 ## About this task
 
-Users who have been added as staff members to a business organization \(formerly business location\) can be assigned a household relationship.
+Users who have been added as staff members to a business organization can be assigned a household relationship.
 
 Relationships are based on responsibilities. A responsibility definition describes a role or a function that supports a customer or consumer. To create a household relationship, use the Relationship Manager responsibility.
 

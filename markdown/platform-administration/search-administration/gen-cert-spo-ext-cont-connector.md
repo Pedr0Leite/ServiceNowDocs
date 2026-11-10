@@ -7,7 +7,7 @@ release: australia
 product: Search Administration
 classification: search-administration
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 4
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Microsoft SharePoint Online external content connector, Configure, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -82,7 +82,7 @@ To configure public/private key pair authentication for the connector, you need 
     keytool -export -alias ms-spo-connector-cert -file ms-spo-connector-cert.cer -keystore ms-spo-connector-cert.jks -storepass "C?yuR4hrt2GU7g}3" -storetype JKS
     ```
 
-    The keytool utility exports a copy of your public key as an DER-encoded binary X.509 format certificate file with your chosen filename.
+    The keytool utility exports a copy of your public key as a DER-encoded binary X.509 format certificate file with your chosen filename.
 
     **Important:** Ignore the keytool warning message about migrating your keystore to the PKCS12 format. The external content connector only supports the Java KeyStore format.
 

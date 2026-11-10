@@ -7,7 +7,7 @@ release: australia
 product: Search Administration
 classification: search-administration
 topic_type: concept
-last_updated: "2026-05-31"
+last_updated: "2026-09-10"
 reading_time_minutes: 8
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Explore, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -92,7 +92,7 @@ Connector administrators can configure crawl settings for each external content 
 
 [Configure crawl settings for a Workvivo external content connector](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-administration/search-administration/configure-crawl-settings-workvivo-external-content-connector.md)
 
-[Configure crawl settings for a Zendesk Guide external crawl connector](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-administration/search-administration/configure-crawl-settings-zendesk-guide-external-crawl-connector.md)
+[Configure crawl settings for a Zendesk Guide external content connector](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-administration/search-administration/configure-crawl-settings-zendesk-guide-external-content-connector.md)
 
 [Configure crawl settings for a Zoom external content connector](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-administration/search-administration/configure-crawl-settings-zoom-external-content-connector.md)
 

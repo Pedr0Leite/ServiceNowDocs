@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/wdf-ac-automation-table-discovery-ai-agent.html
 release: australia
 topic_type: reference
-last_updated: "2026-08-14"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
-breadcrumb: [Workflow Data Fabric AI agents, Workflow Data Fabric AI agents, AI agents library, AI assets, Enable AI experiences]
+breadcrumb: [Workflow Data Fabric AI agents, Workflow Data Fabric AI agents, AI agents library, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Automation table discovery AI agent
@@ -16,7 +16,13 @@ This Workflow Data Fabric agent collects asset, time, and scope inputs from the 
 
 ## Workflow
 
-1.  Prompt the user for an automation asset they want to analyze. If the user selects **Other**, switch to an alternate path that collects a free-text description and discovers matching execution tables.
+1.  Prompt the user for an automation asset they want to analyze. Only six asset types are supported:
+    -   ServiceNow Flows
+    -   Subflows
+    -   Actions
+    -   Catalog Items
+    -   Playbooks
+    -   RPA Bots
 2.  Ask the user what time range to analyze.
 3.  Ask which application scope\(s\) to search across.
 4.  Display a confirmation message summarizing the selections, then output a structured JSON payload for a downstream workflow to execute the actual search.
@@ -60,10 +66,6 @@ Tools
 </td><td>
 
 -   **Scripts**
-
-Discover &amp; Resolve Exec Tables
-
-LoadBaseCtx
 
 Questionnaire
 

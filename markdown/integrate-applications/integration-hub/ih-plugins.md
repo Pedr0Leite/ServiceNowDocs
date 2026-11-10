@@ -7,7 +7,7 @@ release: australia
 product: Integration Hub
 classification: integration-hub
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 4
 breadcrumb: [Request Integration Hub, Configure, Integration Hub, Workflow Data Fabric]
 ---
@@ -185,6 +185,7 @@ Enables the licensed components for working with message-based streaming data in
 -   ServiceNow IntegrationHub ETL Consumer - Kafka \[com.glide.hub.etl\_consumer.kafka\]: Enables the ability to consume Kafka messages from a topic using RTE, a transform map, or a script.
 -   ServiceNow Stream Connect Replication - Kafka \[com.glide.hub.stream\_connect.replication.kafka\]: Enables support for replicating Stream Connect topics via a MID Server with a customer Kafka cluster.
 -   ServiceNow Integration Hub Stream Connect Schema \[com.glide.hub.stream\_connect.schema\]: Enables importing and creating schemas to send and receive messages in an Apache Avro format.
+-   ServiceNow Stream Producer \[com.glide.hub.stream\_connect.stream\_producer\]: Enables Stream Producer to automatically stream changes from ServiceNow tables to Kafka topics.
 
 </td></tr><tr><td>
 

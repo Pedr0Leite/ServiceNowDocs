@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/field-service-management/territory-planning-components-fsm.html
 release: australia
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 7
 breadcrumb: [Components installed with additional plugins, Reference, Field Service Management]
 ---
@@ -452,6 +452,13 @@ Field Service Territory Planning adds the following Schedule Optimization adds t
 |Territory Planning- Calculate Overlapping Territories - Geography|Calculates the overlaps for geographies. When executed, the scheduled job triggers events to calculate the overlap between two geographies.|
 
 **Parent Topic:**[Components installed with additional plugins for Field Service Management](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/field-service-management/components-inst-additional-plugin.md)
+
+**Related topics**  
+
+
+[Field Service Territory Planning](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/field-service-management/territory-planning-fsm.md)
+
+[Configuring Field Service Territory Planning](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/field-service-management/workforce-optimization-for-field-service/configuring-territory-planning-fsm.md)
 
 ## Field Service Territory Planning console properties
 

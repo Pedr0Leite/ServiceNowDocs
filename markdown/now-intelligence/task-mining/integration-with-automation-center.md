@@ -7,7 +7,7 @@ release: australia
 product: Task Mining
 classification: task-mining
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 breadcrumb: [Integrating Task Mining, Explore, Task Mining, Platform Analytics]
 ---
@@ -36,7 +36,7 @@ For more information, see [Building desktop automations from Task Mining data](h
     **Note:** The generate details option is available only if ServiceNow Otto for Platform is installed and the User Task Step Summarization skill is activated.
 
 
-\[Omitted image "tm-automation-request-done.png"\] Alt text: Screenshot showing the completed New Automation Request form.
+\[Omitted image "tm-automation-request-done.png"\] Alt text: The completed New Automation Request form.
 
 **Parent Topic:**[Integrating Task Mining](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/task-mining/integrations-for-task-mining.md)
 

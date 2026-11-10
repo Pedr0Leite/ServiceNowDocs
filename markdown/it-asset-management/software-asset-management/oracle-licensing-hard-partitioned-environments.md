@@ -7,7 +7,7 @@ release: australia
 product: Software Asset Management
 classification: software-asset-management
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 6
 breadcrumb: [Oracle licensing in partitioned environments, Software Asset Management publisher pack for Oracle, Supported software publisher licenses, Software Asset Management, IT Asset Management, Asset Management]
 ---
@@ -97,7 +97,7 @@ A logical domain \(LDOM\) is a distinct logical unit within a single computer sy
 
 The ServiceNow Discovery application uses the Solaris LDOM infrastructure pattern and Solaris LDOM shared library pattern to find all LDOM data. For information on Solaris LDOM discovery, see [Oracle Solaris LDOM discovery](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/it-operations-management/solaris-ldom-discovery.md).
 
-The Software Asset Management application supports licensing of Oracle Database Server and WebLogic Server installed on the Solaris LDOM, version 2.0 and above, for Per Processor and Named User Plus \(NUP\) license metrics. To license your Oracle Database or WebLogic server installations, rights should be allocated to the physical server that runs the Solaris LDOM configuration. For details on the licensing of Oracle products, see [Software model metric attributes](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/sw-metric-attributes.md).
+The Software Asset Management application supports licensing of Oracle Database and WebLogic Server installed on the Solaris LDOM, version 2.0 and above, for Per Processor and Named User Plus \(NUP\) license metrics. To license your Oracle Database or WebLogic server installations, rights should be allocated to the physical server that runs the Solaris LDOM configuration. For details on the licensing of Oracle products, see [Software model metric attributes](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/sw-metric-attributes.md).
 
 ## Solaris zones
 

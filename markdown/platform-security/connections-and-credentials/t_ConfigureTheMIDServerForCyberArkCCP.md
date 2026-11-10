@@ -7,7 +7,7 @@ release: australia
 product: Connections and Credentials
 classification: connections-and-credentials
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 breadcrumb: [CyberArk integration configuration, CyberArk credential storage integration, External credential storage, Get started with credentials, Connections and Credentials, Access Management]
 ---
@@ -64,7 +64,7 @@ Boolean parameter indicating that this MID Server is integrated with CyberArk.
 
 </td></tr><tr><td>
 
-ext.cred.ccp\_endpoint
+ext.cred.cyberark.ccp\_endpoint
 
 </td><td>
 
@@ -137,7 +137,7 @@ Default safe name used for all credential lookups. If parameters are in multiple
 
 </td></tr><tr><td>
 
-ext.cred.app\_id
+ext.cred.cyberark.app\_id
 
 </td><td>
 
@@ -176,7 +176,7 @@ When set to true, requires that the type of SSH credential returned from CyberAr
 
 </td></tr><tr><td>
 
-ext.cred.verify\_ssl
+ext.cred.cyberark.verify\_ssl
 
 </td><td>
 
@@ -188,7 +188,7 @@ The MID Server validates the CCP server certificate, verifying the server’s id
 
 </td></tr><tr><td>
 
-ext.cred.check\_revocation
+ext.cred.cyberark.check\_revocation
 
 </td><td>
 

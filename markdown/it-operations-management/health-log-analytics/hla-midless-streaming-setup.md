@@ -7,7 +7,7 @@ release: australia
 product: Health Log Analytics
 classification: health-log-analytics
 topic_type: task
-last_updated: "2026-05-04"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 breadcrumb: [MID-less log streaming via ITOM Gateway, MID-less integrations, Set up integrations from Integrations Launchpad, Set up HLA on your instance, Configuring, Health Log Analytics, ITOM AIOps, IT Operations Management]
 ---
@@ -46,6 +46,8 @@ Setup involves two stages: enabling ITOM Gateway and Hermes on your instance, an
 
 Supported log sources include [AWS Firehose](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/health-log-analytics/il-connector-hla-firehose.md), Cribl Stream, and OpenTelemetry Collector.
 
+For more information about connecting a Cribl Stream instance to the ServiceNow ITOM Gateway, see the [Set up Cribl to send data to HLA without a MID server](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB2271238) \[KB2271238\] article in the Now Support knowledge base.
+
 ## Procedure
 
 1.  Enable ITOM Gateway and the  Hermes  Messaging Service.
@@ -73,5 +75,5 @@ Supported log sources include [AWS Firehose](https://raw.githubusercontent.com/S
     If these values appear, log streaming via ITOM Gateway setup is complete.
 
 
-**Parent Topic:**[Set up Health Log Analytics on your ServiceNow instance](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/health-log-analytics/hla-implement.md)
+**Parent Topic:**[MID-less log streaming via ITOM Gateway in Health Log Analytics](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/health-log-analytics/hla-midless-streaming.md)
 

@@ -1,14 +1,14 @@
 ---
 title: ServiceNow Lux Lab for VS Code release notes
-description: The ServiceNow Lux Lab for VS Code extension transforms how you build on the ServiceNow AI Platform. Scaffold experiences, pages, and widgets with framework intelligence built in, cutting development time and ensuring consistency across your projects. See the following sections for release notes by version.
+description: The ServiceNow Lux Lab for VS Code extension transforms how you build on the ServiceNow AI Platform. Scaffold experiences, pages, and widgets with framework intelligence built in, cutting development time and ensuring consistency across your projects. See the following sections for release notes by version.Page collections are now page variants, including a new \_variants folder for new projects.Create a page collection for an existing route using the command palette or the file explorer, without leaving the editor.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/release-notes/servicenow-ai-experience-lab-for-vs-code-rn.html
 release: australia
 topic_type: topic
-last_updated: "2026-08-06"
-reading_time_minutes: 1
+last_updated: "2026-09-10"
+reading_time_minutes: 2
 keywords: [ServiceNow AI Experience Lab for VS Code, ServiceNow AI Experience Lab for VS Code release notes, AI Experience Framework, Extend ServiceNow experiences]
-breadcrumb: [App development and low-code release notes, Features and changes by product, Release notes for upgrading from Zurich, Learn about the Australia release, Australia release notes]
+breadcrumb: [App development and low-code release notes, Features and changes by product, Release notes for upgrading from Australia, Learn about the Brazil release, Brazil release notes]
 ---
 
 # ServiceNow Lux Lab for VS Code release notes
@@ -92,7 +92,7 @@ ServiceNow SDK
 
 </td><td>
 
-4.10 or later
+4.14 or later
 
 </td><td>
 
@@ -114,8 +114,27 @@ ServiceNow instance
 
 </td></tr></tbody>
 </table>
--   **[Version 1.0](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/release-notes/servicenow-lux-lab-for-vs-code-rn-2026-09.md)**  
-The ServiceNow AI Experience Lab for VS Code is now named ServiceNow Lux Lab for VS Code.
-
 **Parent Topic:**[App development and low-code release notes](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/release-notes/build-automate-rn-landing.md)
+
+## November 2026
+
+Page collections are now page variants, including a new `_variants` folder for new projects.
+
+### What's changed
+
+-   **Page collections renamed page variants**
+
+    Page collections are now called page variants. The **Lux: Create page variant** command and its prompts and messages use the new name. When you create a page variant in a new project, the extension saves it in the `_variants` folder. In projects that already have a `_collections` folder, the extension continues to create page variants in `_collections`.
+
+
+## October 2026
+
+Create a page collection for an existing route using the command palette or the file explorer, without leaving the editor.
+
+### What's new
+
+-   ****
+
+    Support multiple page variations on the same route by creating collection pages directly from the command palette or the file explorer. Show different content to different users based on role without maintaining a separate page and URL for each audience.
+
 

@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/now-intelligence/activate-aide-explorer.html
 release: australia
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 breadcrumb: [Configure, AI Data Explorer, ServiceNow Otto for Platform Analytics, Platform Analytics]
 ---
@@ -55,7 +55,7 @@ Assign the now\_assist\_explorer\_user role, and activate the AI Data Explorer s
 
 7.  Configure the analytics exploration skill.
 
-    1.  In the **Advanced analysis** page, you can activate record-level analysis or deactivate indicator support.
+    1.  In the **Advanced options** page, you can activate record-level analysis, or indicator support.
 
         For record-level analysis, you can also set which tables it applies to. For more information, see [Configure record level analysis in AI Data Explorer](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/record-level-analysis.md) and [Deactivate indicator support](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/aide-deactivate-indicator-support.md).
 
@@ -76,8 +76,6 @@ Assign the now\_assist\_explorer\_user role, and activate the AI Data Explorer s
 8.  To enable users to generate recommendations based on the findings in their exploration, turn on the exploration action recommendation skill.
 
     You can set the roles that can generate recommendations. The default role is now\_assist\_explorer\_user. This role contains sn\_query\_gen.user, granting necessary access to Query Generation.
-
-    Requires Australia Patch 1 and the associated application upgrade.
 
 9.  To enable users to generate summaries of explorations, turn on the exploration summarization skill.
 

@@ -6,8 +6,8 @@ canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experienc
 release: australia
 topic_type: concept
 last_updated: "2026-08-04"
-reading_time_minutes: 6
-breadcrumb: [Customer Service Management, AI agents library, AI assets, Enable AI experiences]
+reading_time_minutes: 3
+breadcrumb: [Customer Service Management, AI agents library, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Customer Service Management AI agents
@@ -38,10 +38,14 @@ The duplicate identification AI agent identifies duplicate records.
 The email response AI agent generates and sends an email response.
 -   **[Entity extraction AI agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/csm-entity-extraction-ai-agent.md)**  
 The entity extraction AI agent extracts entities from emails and information from documents. It matches the entities with a list of approved fields.
+-   **[Image to task plan template AI agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/csm-image-to-task-plan-template-ai-agent.md)**  
+This AI agent asks the user to upload an image, extracts the task dependencies from it, and returns the result as JSON.
 -   **[Informational queries AI agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/csm-informational-queries-ai-agent.md)**  
 The informational queries AI agent summarizes all informational answers for a record.
 -   **[Issue identifier complaint case intake AI agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/csm-cc-issue-identifier-complaint-case-intake-ai-agent.md)**  
 This AI agent is used for product and location-based grievances. It helps with intakes, documentation, and processing.
+-   **[Live interaction recommendations AI agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/csm-live-interaction-recommendations-ai-agent.md)**  
+The AI agent analyzes the conversation between a customer and a human agent. It recommends actions that help a human agent resolve the customer's issue.
 -   **[RMA Assistant AI agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/csm-rma-rma-assistant-ai-agent.md)**  
 This AI agent helps customers and human agents with RMA case creation and processing for product returns, repairs, and replacements.
 -   **[Transactional queries AI agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/csm-transactional-queries-ai-agent.md)**  

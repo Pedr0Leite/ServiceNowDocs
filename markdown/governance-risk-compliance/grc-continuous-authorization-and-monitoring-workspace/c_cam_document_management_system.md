@@ -7,7 +7,7 @@ release: australia
 product: GRC: Continuous Authorization and Monitoring Workspace
 classification: grc-continuous-authorization-and-monitoring-workspace
 topic_type: concept
-last_updated: "2026-08-17"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 keywords: [document management, authorization package, documents, versioning, DMS]
 breadcrumb: [Continuous authorization and monitoring tasks in the CAM Workspace, Use, Continuous Authorization and Monitoring, Governance, Risk, and Compliance]
@@ -74,6 +74,8 @@ Use ServiceNow Otto to summarize documents, ask questions, and generate audio su
 Link documents to external cloud storage such as Google Drive, OneDrive, or SharePoint to keep your documents synchronized across platforms.
 -   **[Edit document metadata](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/governance-risk-compliance/grc-continuous-authorization-and-monitoring-workspace/t_edit_document_metadata.md)**  
 Update document properties such as name, owner, classification, and access settings to organize documents and control permissions.
+-   **[Remove a document from a record](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/governance-risk-compliance/grc-continuous-authorization-and-monitoring-workspace/remove_document_task.md)**  
+Remove a document from the current record by unlinking it from the record, or delete it permanently from ServiceNow.
 
 **Parent Topic:**[Continuous authorization and monitoring tasks in the CAM Workspace](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/governance-risk-compliance/grc-continuous-authorization-and-monitoring-workspace/cam-ws-continuous-auth-monitor.md)
 

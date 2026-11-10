@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/it-operations-management/aws-trusted-credential-less.html
 release: australia
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 6
-breadcrumb: [Setting up AWS service accounts, Set up a cloud service account, Access to cloud environments for ITOM products, IT Operations Management]
+breadcrumb: [Setup AWS service accounts, Set up a cloud service account, Access to cloud environments for ITOM products, IT Operations Management]
 ---
 
 # Configure credential-less access using trusted AWS accounts
@@ -112,15 +112,15 @@ To use an account without AWS credentials, you must first configure that account
 
 7.  On the ServiceNow AI Platform, assign the AWS IAM role to the trusting account, using the relevant form, based on the relationship to the trusted account.
 
-<table id="choicetable_g1z_335_zfc"><thead><tr><th align="left" id="d141275e584">
+<table id="choicetable_g1z_335_zfc"><thead><tr><th align="left" id="d153318e584">
 
 Trusted account type
 
-</th><th align="left" id="d141275e587">
+</th><th align="left" id="d153318e587">
 
 Steps
 
-</th></tr></thead><tbody><tr><td id="d141275e593">
+</th></tr></thead><tbody><tr><td id="d153318e593">
 
 **Management account**
 
@@ -165,7 +165,7 @@ Name of the trusting account for which you are providing access using the IAM ro
 </table>4.  Select **Submit**.
 
 
-</td></tr><tr><td id="d141275e710">
+</td></tr><tr><td id="d153318e710">
 
 **Member or discrete account**
 
@@ -196,5 +196,5 @@ Verify that ServiceNow applications can access the trusting service account usin
     -   If the connection is successful, a message displays indicating the account validation is successful.
     -   If the connection isn't successful, an error message displays indicating the cause of failure.
 
-**Parent Topic:**[Setting up AWS service accounts](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/setup-aws-service-accounts.md)
+**Parent Topic:**[Setup AWS service accounts](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/setup-aws-service-accounts.md)
 

@@ -7,7 +7,7 @@ release: australia
 product: Collaborative Work Management
 classification: collaborative-work-management
 topic_type: concept
-last_updated: "2026-04-02"
+last_updated: "2026-09-10"
 reading_time_minutes: 9
 breadcrumb: [Collaborative Work Management, Strategic Portfolio Management]
 ---
@@ -274,7 +274,7 @@ Reference live ServiceNow AI Platform records such as Incidents, Risks, or Issue
 
 </td><td>
 
-[Enable ServiceNow AI Platform records in CWM Docs](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-business-management/collaborative-work-management/enable-now-platform-servicenow-records-cwm-docs.md)
+[Collaborative documentation using CWM](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-business-management/collaborative-work-management/cwm-docs.md)
 
 </td><td>
 

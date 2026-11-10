@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/delta-zurich-australia/australia-zurich-platformanalyticsexperience-release-notes.html
 release: australia
 topic_type: reference
-last_updated: "2026-09-24"
+last_updated: "2026-11-06"
 reading_time_minutes: 10
 breadcrumb: [Products combined by family]
 ---
@@ -195,6 +195,10 @@ When you are moved to Next Experience navigation:
     -   The Analytics Overview page and all library pages now contain their own Platform Analytics navigation tree.
     -   The navigation path **Self-Service** &gt; **Dashboards** redirects to **Platform Analytics** &gt; **Library** &gt; **Dashboards**.
     -   The navigation path **Reports** &gt; **View / Run** redirects to **Platform Analytics** &gt; **Library** &gt; **Data Visualizations**.
+-   **[ACL Assessment for Data Visualizations](https://www.servicenow.com/docs/access?context=report-view-acl-dashboard&family=australia&ft:locale=en-US)**
+
+The ACL Assessment for Reports, removed in Australia Patch 4, comes back in Patch 8 with support for Platform Analytics data visualizations. The condition builder for the data source is now also evaluated.
+
 -   **[Sort library records by column values](https://www.servicenow.com/docs/access?context=find-dashboard-library&family=australia&ft:locale=en-US)**
 
 Select the header of any column in a library page to sort the library by that column.
@@ -223,6 +227,10 @@ Filter data by the contents of string-type fields with a single-select or multip
 -   **[View the percentage each data segment contributes to the total](https://www.servicenow.com/docs/access?context=create-dv-donut-ac&family=australia&ft:locale=en-US)**
 
 Enable the **Show % of total in tooltip** option to show the percentage each data point contributes to the total alongside absolute values in the tooltip. Applies to time series, bar, bubble, donut, geomap, and heatmap visualizations.
+
+-   **Publish report functionality replaced with Read-only link option in Report Designer**
+
+It is no longer possible to publish a report. The **Read-only** option provides a URL that authenticated users can follow to view a report.
 
 -   **[Explore native data snapshots indicators in KPI Details](https://www.servicenow.com/docs/access?context=kpi-details&family=australia&ft:locale=en-US)**
     -   Employ intraday analysis with granularity based on work shifts.

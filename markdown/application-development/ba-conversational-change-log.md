@@ -1,17 +1,17 @@
 ---
-title: Build Agent checkpoints and conversation change log
+title: Checkpoints and conversation change log
 description: The conversation change log tracks every change Build Agent makes to your application. It appears automatically in an integrated tab in ServiceNow Studio and lets you view updates, roll back to a previous checkpoint, and deploy changes to an update set.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/application-development/ba-conversational-change-log.html
 release: australia
 topic_type: concept
-last_updated: "2026-08-25"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
-breadcrumb: [Use, Build Agent, Agentic development on the ServiceNow AI Platform, Building applications]
+breadcrumb: [Use, Build Agent, Build, AI Workflow Factory Prime, Agentic app development, Building applications]
 ---
 
-# Build Agent checkpoints and conversation change log
+# Checkpoints and conversation change log
 
 The conversation change log tracks every change Build Agent makes to your application. It appears automatically in an integrated tab in ServiceNow Studio and lets you view updates, roll back to a previous checkpoint, and deploy changes to an update set.
 
@@ -38,7 +38,7 @@ Changes from each checkpoint in the conversation are packaged together into an u
 
 Checkpoints are groups of changes that you made to an application that you can revert to at any time during your conversation with Build Agent. Checkpoints are created automatically after you approve each task plan.
 
-**Note:** With Australia Patch 3 and earlier, checkpoint 0 creates an update set in global scope, and subsequent checkpoints created update sets in your application scope. However, update sets that exist across different scopes and can't be merged.
+**Note:**
 
 -   Checkpoint 0 creates an update set in global scope, and subsequent checkpoints created update sets in your application scope. However, update sets that exist across different scopes and can't be merged.
 -   Checkpoint 0 doesn't create an update set. Instead, it serves as a placeholder in the UI that you can use to restore your application to its initial state.

@@ -1,22 +1,22 @@
 ---
 title: Create and run manual value jobs
-description: Set up manual value jobs for AI systems that you onboard manually, so that the AI Control Tower calculates their value on a monthly or quarterly cadence.
+description: Set up manual value jobs for AI systems that you onboard manually, so that AI Control Tower calculates their value on a monthly or quarterly cadence.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/mv-create-and-run-manual-value-jobs.html
 release: australia
 topic_type: task
-last_updated: "2026-09-24"
+last_updated: "2026-11-06"
 reading_time_minutes: 1
-breadcrumb: [Value, Configure, Measure AI system, Measure AI systems, AI Control Tower, Enable AI experiences]
+breadcrumb: [Value, Configure, Measure AI system, Measure AI systems, AI Control Tower, Establishing AI governance, Enable AI Experiences]
 ---
 
 # Create and run manual value jobs
 
-Set up manual value jobs for AI systems that you onboard manually, so that the AI Control Tower calculates their value on a monthly or quarterly cadence.
+Set up manual value jobs for AI systems that you onboard manually, so that AI Control Tower calculates their value on a monthly or quarterly cadence.
 
 ## Before you begin
 
-Role required: sn\_ai\_governance\_ai\_steward.
+Role required: sn\_ai\_governance.ai\_steward.
 
 ## About this task
 

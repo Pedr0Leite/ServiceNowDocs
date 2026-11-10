@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/a2a-protocol.html
 release: australia
 topic_type: concept
-last_updated: "2026-08-28"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
-breadcrumb: [Integrate external AI agents, AI Agent Studio, Enable AI experiences]
+breadcrumb: [Integrate external AI agents, AI Agent Studio, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Agent2Agent Protocol
@@ -16,7 +16,9 @@ Agent2Agent \(A2A\) is an open standard that enables cross-platform AI agent com
 
 ## Agent2Agent Protocol overview
 
-The standard relies on every AI agent having an Agent Card associated with it. The Agent Card provides basic information for providers like the ServiceNow AI Platform, Azure, and Google to use them. The supported A2A version is 0.3.
+The standard relies on every AI agent having an Agent Card associated with it. The Agent Card provides basic information for providers like the ServiceNow AI Platform, Microsoft Azure, and Google to use them.
+
+**Note:** The supported A2A version for on-glide is v0.3 and the supported A2A version when Premium Chat is enabled is v1.
 
 An AI agent's Agent Card uses standardized JSON to help different providers understand its capabilities. The Agent Card is accessed by a specific type of endpoint from a provider's server. Execution plans are communicated through an execution endpoint so that both the provider's server and the ServiceNow AI Platform can track what the external AI agent is doing.
 

@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/healthcare-life-sciences/pre-visit-config-playbook.html
 release: australia
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Configure, Pre-Visit Management, Healthcare and Life Sciences Service Management, Healthcare and Life Sciences]
 ---
@@ -26,5 +26,5 @@ The playbooks in the Pre-Visit Management application use the CRM Workspace play
 
 Configure a playbook by navigating to **All** &gt; **Process Automation** &gt; **Process Automation Designer**. You can either select an existing process definition or create a new process definition for the playbook associated with procedure request cases.
 
-**Note:** When configuring a process definition for the playbook associated with procedure request cases, ensure that the application scope is set to Pre-Visit Management or Healthcare and Life Sciences Service Management Core by using the application picker. For more information, see [Application picker](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/application-development/c_ApplicationPicker.md).
+**Note:** When configuring a process definition for the playbook associated with procedure request cases, ensure that the application scope is set to Pre-Visit Management or Healthcare and Life Sciences Service Management Core by using the application picker. For more information, see Application picker.
 

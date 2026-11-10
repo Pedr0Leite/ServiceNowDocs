@@ -7,7 +7,7 @@ release: australia
 product: Dispute Management
 classification: dispute-management
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Dispute Rules Content Pack for Nacha, Dispute Management, Banking applications, Financial Services Operations \(FSO\)]
 ---
@@ -19,6 +19,8 @@ If you have the admin role, you can install the Dispute Rules Content Pack for N
 ## Before you begin
 
 Role required: admin
+
+Before you install Dispute Rules Content Pack for Nacha, you must activate Financial Services Card Operations. For details, see [Plugins](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/financial-services-operations/dispute-management/components-installed-with-dispute-rules-content-pack-for-nacha.md).
 
 ## Procedure
 

@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/classify-tasks.html
 release: australia
 topic_type: concept
-last_updated: "2026-07-21"
+last_updated: "2026-10-27"
 reading_time_minutes: 8
-breadcrumb: [Platform agentic workflows, Agentic workflows, AI assets, Enable AI experiences]
+breadcrumb: [Platform agentic workflows, Agentic workflows, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Platform Classify tasks agentic workflow
@@ -28,7 +28,7 @@ To access this workflow, you must have ServiceNow Otto for Platform installed on
 
 For this agentic workflow to behave as expected, you must also configure Group Action Framework \(GAF\). See [Set up AI Search for Group Action Framework](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/setup-ai-search-gaf.md) and [Configure Group Action Framework](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/configure-gaf.md) for more information on getting started with GAF.
 
-## Role masking
+## Role filtering
 
 Required role: sn\_uxc\_gen\_ai.platform\_ai\_classify\_tasks
 
@@ -177,7 +177,13 @@ Options include Record-based and Utterance-based. Record-based derives search te
 </td></tr></tbody>
 </table>## Accessing the Classify tasks agentic workflow
 
-To access the agentic workflow:
+To access the agentic workflow in AI Agent Studio:
+
+1.  Navigate to **All** &gt; **AI Agent Studio** &gt; **Agentic Solutions**.
+2.  Select the **Agentic workflows** tab.
+3.  Select **Classify tasks**.
+
+To access the agentic workflow in the legacy AI Agent Studio:
 
 1.  Navigate to **All** &gt; **AI Agent Studio** &gt; **Create and manage**.
 2.  Select **Classify tasks**.

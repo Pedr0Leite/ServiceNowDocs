@@ -7,9 +7,9 @@ release: australia
 product: Workflow Studio
 classification: workflow-studio
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
-breadcrumb: [Reference, Agentic Playbooks, Workflow Studio, Build workflows]
+breadcrumb: [Reference, Agentic Playbooks, Playbooks, Workflow Studio, Build workflows]
 ---
 
 # Guidelines for writing AI agent instructions
@@ -88,14 +88,6 @@ Specify query operations
 </td><td>
 
 Using the keyword Query helps our data gathering AI agent to pick the more effective Knowledge Graph over the AI search.
-
-</td></tr><tr><td>
-
-Custom agents
-
-</td><td>
-
-To maintain accuracy, add a maximum of 5-6 custom agents to an activity.
 
 </td></tr></tbody>
 </table>

@@ -7,7 +7,7 @@ release: australia
 product: Search Administration
 classification: search-administration
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 4
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Google Drive external content connector, Configure, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -107,7 +107,7 @@ Your connector administrator can use settings copied from the Google Cloud conso
 Provide the following items to your connector administrator:
 
 -   Your Google Workspace domain name, in the format `example.com`. You can find your domain name by navigating to the [https://admin.google.com/ac/domains/manage](https://admin.google.com/ac/domains/manage) Google administration page.
--   The email address for a user account that has permission to access your Google Workspace domain’s user directory. The Google Drive external content connector uses this account to enumerate users and groups of the domain.
+-   The email address for a user account that has permission to access your Google Workspace domain's user directory. The Google Drive external content connector uses this account to enumerate users and groups of the domain.
 
     **Note:** This should be an email address from your organization's domain, not a service account email address from the `iam.gserviceaccount.com` domain.
 

@@ -7,7 +7,7 @@ release: australia
 product: Third-party Risk Management
 classification: third-party-risk-management
 topic_type: task
-last_updated: "2026-05-27"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 keywords: [Now Assist, Third-party Risk Management, Smart Assessment Engine, DMS, document-assisted drafting, AI-assisted questionnaire pre-fill]
 breadcrumb: [Smart Assessment Engine assessments, Configure, Third-party Risk Management, Governance, Risk, and Compliance]
@@ -21,7 +21,7 @@ Turn on AI-assisted questionnaire pre-fill for a smart assessment template categ
 
 -   ServiceNow Otto for Smart Assessment Engine \(SAE\) is installed and the Smart Assessment Response Assist skill is active.
 
-    For more information, see [Activate Smart Assessment response assist skill](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/governance-risk-compliance/smart-assessment-engine/activate-smart-assessment-response-assist-skill.md).
+    For more information, see [Activate smart assessment response assist skill](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/governance-risk-compliance/smart-assessment-engine/activate-smart-assessment-response-assist-skill.md).
 
 -   Smart Assessment Engine is enabled and your TPRM smart assessment and questionnaire templates are active.
 

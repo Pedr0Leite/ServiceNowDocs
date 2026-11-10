@@ -7,7 +7,7 @@ release: australia
 product: Project Management
 classification: project-management
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Importing and exporting projects, Using Project Management, Project Management, Project Portfolio Management, Strategic Portfolio Management]
 ---
@@ -29,7 +29,7 @@ The imported project uses the default schedule of a Monday to Friday workday fro
 
 [Project field mapping]()
 
-[Create custom field mapping for Microsoft Project import]()
+[Map custom fields for Microsoft Project import]()
 
 [Project import from Microsoft Project]()
 

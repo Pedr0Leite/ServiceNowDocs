@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/platform-administration/c\_ServiceNowPlugins.html
 release: australia
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 4
 breadcrumb: [Basic system configuration, Get started, Administer the ServiceNow AI Platform]
 ---
@@ -18,7 +18,7 @@ Plugins are software components that provide features and functionalities within
 
 Plugins and applications are separate components on the ServiceNow AI Platform.
 
--   A plugin adds features to installed applications and extends functionality on the ServiceNow AI Platform. For additional details about plugins, see [KB0716626](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0716626).
+-   A plugin adds features to installed applications and extends functionality on the ServiceNow AI Platform. For additional details about plugins, see [Plugin frequently asked questions for ServiceNow instances \[KB0716626\]](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB0716626).
 -   An application is a standalone piece of code that implements a collection of features on the ServiceNow AI Platform. You can install applications from the ServiceNow Store or create your own applications.
 
 ## Activating plugins
@@ -68,5 +68,5 @@ You can view all plugins available to you in the Application Manager if you have
 **Related topics**  
 
 
-[List of plugins \(Australia\)]()
+[List of plugins \(Brazil\)]()
 

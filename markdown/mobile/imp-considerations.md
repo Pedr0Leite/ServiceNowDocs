@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/mobile/imp-considerations.html
 release: australia
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 breadcrumb: [Configuration detail, Configuring the Mobile Platform, Mobile Platform]
 ---
@@ -19,7 +19,7 @@ Mobile push notifications are configurable pushed messages that appear directly 
 -   **[Location tracking for mobile](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/mobile/mobile-location-tracking.md)**  
 Location tracking enables you to track the activity and positioning of agents while they perform tasks. You can also use the feature to make sure your agents are safe and can be easily located.
 -   **[Localization on mobile devices](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/mobile/localization-mobile-device.md)**  
-ServiceNow mobile apps are localized in many languages, including both left-to-right and right-to-left languages. Additionally, you can customize non-default languages on the client-side. These features ensure that your translations remain consistent across your mobile applications.
+ServiceNow mobile apps are localized in many languages, including both left-to-right and right-to-left languages. Additionally, you can customize non-default languages on the client-side. These features verify that your translations remain consistent across your mobile applications.
 -   **[Offline mode](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/mobile/mobile-offline-mode.md)**  
 Configure offline mode to enable your users who have no internet connection to continue working from a mobile device.
 -   **[Siri shortcuts](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/mobile/siri-shortcuts.md)**  

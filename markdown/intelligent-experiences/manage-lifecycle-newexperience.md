@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/manage-lifecycle-newexperience.html
 release: australia
 topic_type: concept
-last_updated: "2026-04-16"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
-breadcrumb: [Working with AI asset records, Discover and manage AI assets, AI Control Tower, Enable AI experiences]
+breadcrumb: [Working with AI asset records, Discover and manage AI assets, AI Control Tower, Establishing AI governance, Enable AI Experiences]
 ---
 
 # Managing your AI asset lifecycle
@@ -22,7 +22,7 @@ Lifecycle is divided into three stages, displayed as a horizontal progress indic
 
 -   **Onboard**
 
-    The initial stage for a newly added AI asset. The **Onboard** sub tab contains the Onboarding playbook with tasks displayed. If tasks aren't already present in the Onboarding playbook, the sn\_ai\_governance\_ai\_steward role can create tasks by selecting **New** and assigning them to an asset owner or other AI stewards.
+    The initial stage for a newly added AI asset. The **Onboard** sub tab contains the Onboarding playbook with tasks displayed. If tasks aren't already present in the Onboarding playbook, the sn\_ai\_governance.ai\_steward role can create tasks by selecting **New** and assigning them to an asset owner or other AI stewards.
 
 -   **Maintain**
 

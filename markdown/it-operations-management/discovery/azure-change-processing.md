@@ -7,7 +7,7 @@ release: australia
 product: Discovery
 classification: discovery
 topic_type: concept
-last_updated: "2026-05-11"
+last_updated: "2026-09-10"
 reading_time_minutes: 6
 keywords: [Azure, CMDB, ITOM]
 breadcrumb: [Discovery for Microsoft Azure, Discovery for cloud environment, Discovery, ITOM Visibility, IT Operations Management]
@@ -23,7 +23,7 @@ By default, the Azure change processing scheduled jobs run in every 5 minutes. I
 
 When you execute the Azure change processing for the first time, it may run a few hours. This is due to processing resource changes that occurred in the last four hours. If you want to increase the default schedule execution period, ensure that enough worker nodes are available to execute the schedule.
 
-During event processing, the Cloud Event Scheduler identifies the domain of the service account and assigns to the event. If an error occurs in identifying the domain before processing, the event can sometimes stay unassigned and become visible to all domains. To restrict failed event visibility, set the **sn\_cmp.error\_events.default\_domain** property to the sys\_id of the service-provider domain. Failed events then appear only to the service-provider domain administrator.
+During event processing, the Cloud Event Scheduler identifies the domain of the associated service account and assigns it to the event. If domain identification fails before processing, the event can remain unassigned and be visible across all domains. To limit the visibility of failed events to the service-provider administrator, set the **sn\_cmp.error\_events.default\_domain** property to the sys\_id of the service-provider domain.
 
 **Note:**
 
@@ -40,7 +40,9 @@ Starting in the Discovery and Service Mapping Patterns 1.21.0 version, the sched
 
 Starting with Discovery and Service Mapping Patterns 1.21.0 version, Azure change processing enhancement populates the following tables:
 
--   **ACP Resource Type \[sn\_itom\_pattern\_acp\_supported\_resource\_types\]**
+-   **ACP Resource Type \[sn\_itom\_pattern\_acp\_resource\_types\]**
+
+    **Note:** In Discovery and Service Mapping Patterns versions 1.21.0-1.30.2, resource type information was stored in the sn\_itom\_pattern\_acp\_supported\_resource\_types table.
 
     You can use this table to review all supported resource types, add a resource type for change processing, and disable or enable the processing for a certain resource.
 

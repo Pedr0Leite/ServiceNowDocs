@@ -5,8 +5,8 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/delta-xanadu-australia/australia-xanadu-industrialprocessmanager-release-notes.html
 release: australia
 topic_type: reference
-last_updated: "2026-09-24"
-reading_time_minutes: 14
+last_updated: "2026-11-06"
+reading_time_minutes: 15
 breadcrumb: [Products combined by family]
 ---
 
@@ -176,7 +176,12 @@ Australia
 
 </td><td>
 
--   **[Discovered subnets supported by the AMAZING feature](https://www.servicenow.com/docs/access?context=automate-mappings-between-ot-assets-and-equipment-model-entity&family=australia&ft:locale=en-US)**
+-   **[Max search results system property](https://www.servicenow.com/docs/access?context=isa-equipment-model-system-properties&family=australia&ft:locale=en-US)**
+
+When you search for an equipment model entity in the Industrial Workspace, the search results show up to 200 matching entities. When there are more, a message asks you to refine your search. Using the sn\_otsm.equipment\_model.max\_search\_results system property, you can change the search result limit to up to 1000.
+
+
+ -   **[Discovered subnets supported by the AMAZING feature](https://www.servicenow.com/docs/access?context=automate-mappings-between-ot-assets-and-equipment-model-entity&family=australia&ft:locale=en-US)**
 
 Use the AMAZING feature, which uses discovered subnets, to identify OT devices and assign them to the correct equipment model entity during OT subnet mapping.
 
@@ -468,6 +473,8 @@ Yokohama
 Install Industrial Process Manager by requesting it from the ServiceNow Store. Visit the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/home) website to view all the available apps and for information about submitting requests to the store. For cumulative release notes information for all released apps, see the [ServiceNow Store version history release notes](https://www.servicenow.com/docs/access?context=sn-store-release-notes&family=yokohama&ft:locale=en-US).
 
 
+**Important:** Industrial Process Manager is available in the ServiceNow Store. For details, see the "Activation information" section of these release notes.
+
 </td></tr><tr><td>
 
 Zurich
@@ -479,6 +486,8 @@ Zurich
 Install Industrial Process Manager by requesting it from the ServiceNow Store. Visit the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/home) website to view all the available apps and for information about submitting requests to the store. For cumulative release notes information for all released apps, see the [ServiceNow Store version history release notes](https://www.servicenow.com/docs/access?context=sn-store-release-notes&family=zurich&ft:locale=en-US).
 
 
+**Important:** Industrial Process Manager is available in the ServiceNow Store. For details, see the "Activation information" section of these release notes.
+
 </td></tr><tr><td>
 
 Australia
@@ -489,6 +498,8 @@ Australia
 
 Install Industrial Process Manager by requesting it from the ServiceNow Store. Visit the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/home) to view all the available apps, and for information about submitting requests to the store. For cumulative release notes information for all released apps, see the [ServiceNow Store version history release notes](https://www.servicenow.com/docs/access?context=sn-store-release-notes&family=australia&ft:locale=en-US).
 
+
+**Important:** Industrial Process Manager is available in the ServiceNow Store. For details, see the "Activation information" section of these release notes.
 
 </td></tr></tbody>
 </table>## Additional requirements

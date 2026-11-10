@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/mobile/request-private-branded-ios-app.html
 release: australia
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 9
 breadcrumb: [Request, test, &amp; publish, Custom branded apps, Configuring the Mobile Platform, Mobile Platform]
 ---
@@ -139,10 +139,8 @@ Mobile Application Management vendor
 
 </td><td>
 
-Select one of the following MAM vendors form the list:
+Select one of the **Intune** MAM vendor form the list.
 
- -   **Blackberry**
--   **Intune**
  This field is only visible if you select the **Mobile Application Management \(MAM\)** toggle.
 
 </td></tr><tr><td>
@@ -334,7 +332,7 @@ Universal links enable users to follow links to content inside your app. The dis
 </td></tr></tbody>
 </table>8.  Select **Next**.
 
-9.  If you selected **iOS and Android** in the **Operating System** field on the **Add basic info** form in Step 3 above, see Step 8 in [Request a branded Android app for private distribution](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/mobile/request-private-branded-android-app.md) for information about filling out the **Set up for Android form**.
+9.  If you selected **iOS and Android** in the **Operating System** field on the **Add basic info** form in Step 3 above, see Step 8 in [Request a new branded Android app for private distribution](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/mobile/request-private-branded-android-app.md) for information about filling out the **Set up for Android form**.
 
     After you complete the optional Android configuration, return to Step 10 in this topic to complete your request for a private branded iOS app.
 

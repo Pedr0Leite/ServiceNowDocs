@@ -7,9 +7,9 @@ release: australia
 product: Hardware Asset Management
 classification: hardware-asset-management
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 5
-breadcrumb: [Manage the receiving of assets at stockrooms, Manage stockrooms, Use, Hardware Asset Management, IT Asset Management, Asset Management]
+breadcrumb: [Manage the receiving of assets at stockrooms in the Hardware Asset Workspace, Inventory and stockroom operations, Use, Hardware Asset Management, IT Asset Management, Asset Management]
 ---
 
 # Import and receive assets in bulk at your stockroom in the Hardware Asset Workspace
@@ -38,6 +38,7 @@ The asset data validation takes care of the following points:
     -   The asset quantity is valid.
     -   The Source type and Source ticket details are valid.
 -   Asset from purchase order lines can be received only in Zurich and later releases.
+-   Asset whose model doesn't match the model in the purchase order line can't be received.
 -   Asset bundles can't be received.
 
 ## Procedure

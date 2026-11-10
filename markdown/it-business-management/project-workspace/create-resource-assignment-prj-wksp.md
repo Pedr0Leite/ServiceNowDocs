@@ -7,9 +7,9 @@ release: australia
 product: Project Workspace
 classification: project-workspace
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
-breadcrumb: [Resource assignments in Project Workspace, Manage resources, Project Workspace, Project Portfolio Management, Strategic Portfolio Management]
+breadcrumb: [Resource assignments in Project Workspace, Resource planning with Project Workspace, Project Workspace, Project Portfolio Management, Strategic Portfolio Management]
 ---
 
 # Create resource assignments using Project Workspace
@@ -48,11 +48,7 @@ Role required: it\_project\_manager
 
     You can use this option to create a resource assignment using the resource form. On the New Resource Assignment form, fill in the fields and select **Submit**. For a description of the field names, see [New Resource Assignment form](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-business-management/resource-management/create-ra-form-rmw.md).
 
-7.  Select the expense type of the assignment based on the work as **Opex** or **Capex**.
-
-    A resource can use this information while capturing efforts using the time sheet portal. Once the time sheet is approved, an expense line is created for the project capturing the expense as capex or opex, based on the selected expense type.
-
-8.  View the resource allocations in the heatmap by enabling the **Allocation heatmap** toggle button.
+7.  View the resource allocations in the heatmap by enabling the **Allocation heatmap** toggle button.
 
     You can switch from the week view to the month view based on your requirement.
 
@@ -79,5 +75,5 @@ Create an attribute-based resource assignment in Project Workspace. You can pre-
 
 [Update the resource allocation in a heatmap](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-business-management/project-workspace/view-allocations-heatmap-prj-wksp.md)
 
-[Realign resource assignments with project dates](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-business-management/project-workspace/realign-resource-assignment-to-task.md)
+[Realign resource assignment to project task](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-business-management/project-workspace/realign-resource-assignment-to-task.md)
 

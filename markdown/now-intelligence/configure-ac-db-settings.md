@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/now-intelligence/configure-ac-db-settings.html
 release: australia
 topic_type: task
-last_updated: "2026-05-11"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 keywords: [How to schedule dashboard refresh interval, How to change dashboard background colors, Where to set up dashboard insights]
 breadcrumb: [Configure, Dashboards, Platform Analytics experience, Platform Analytics]
@@ -17,7 +17,7 @@ You can set refresh interval details and background colors, enable data caching 
 
 ## Before you begin
 
-Role required: dashboard\_admin for all dashboards, or any role for dashboards that you own or ones that you have been given the right to edit. See [Platform Analytics dashboard roles](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/pa-dashboard-roles.md) for more information about viewing and editing rights on dashboards. Additionally, dashboard\_admin is required to schedule automated refreshes even of dashboards that you own.
+Role required: dashboard\_admin for all dashboards, or any role for dashboards that you own or ones that you have been given the right to edit. See [Platform Analytics dashboard roles](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/pa-dashboard-roles.md) for more information about viewing and editing rights on dashboards. Users who only have viewing rights can make changes to the dashboard's content, but aren't able to save those changes. Additionally, dashboard\_admin is required to schedule automated refreshes even of dashboards that you own.
 
 ## Procedure
 
@@ -51,7 +51,7 @@ Role required: dashboard\_admin for all dashboards, or any role for dashboards t
 
         -   **Enable data cache**
 
-            shorten the load time on page refreshes for data visualizations based on table or indicator data. Data caching also applies to indicator scorecards. The dashboard uses the cached data instead of querying the database when the page is refreshed.
+            querying the database when the page is refreshed.
 
             **Note:**
 
@@ -64,6 +64,8 @@ Role required: dashboard\_admin for all dashboards, or any role for dashboards t
     -   In the **Presentation** section, set the margins of each element and edit the background color of one or more tabs on the dashboard.
 
         Select a color from a list of preconfigured colors, or use the color palette to specify a color. If there are multiple tabs, you can choose to customize the backgrounds of each tab.
+
+        **Note:** You can set custom background colors only on Platform Analytics dashboards, not on Core UI dashboards.
 
     -   In the **Dashboard Summary** section, choose whether to enable AI summary generation.
 

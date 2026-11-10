@@ -7,7 +7,7 @@ release: australia
 product: Problem Management
 classification: problem-management
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Reference section for Problem Management, Problem Management, IT Service Management]
 ---
@@ -166,7 +166,7 @@ Create saved problemcom.snc.problem.create\_from\_interaction.save
 
 </td><td>
 
--   Type: Boolean
+-   Type: true or false
 -   Default value:
     -   Upgrade customers: No
     -   New customers: Yes

@@ -7,9 +7,9 @@ release: australia
 product: Policy and Compliance Management
 classification: policy-and-compliance-management
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
-breadcrumb: [Acknowledge policy, Manage, Classic UI, Policy and Compliance Management, Governance, Risk, and Compliance]
+breadcrumb: [Acknowledge policy, Manage, Classic UI, Use, Policy and Compliance Management, Governance, Risk, and Compliance]
 ---
 
 # Set up a policy acknowledgement campaign

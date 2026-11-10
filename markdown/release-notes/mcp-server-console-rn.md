@@ -1,18 +1,18 @@
 ---
 title: MCP Server Console release notes
-description: The ServiceNow MCP Server Console application enables secure and governed access to functionality on a ServiceNow instance for AI applications with Model Context Protocol \(MCP\) servers. MCP servers extend ServiceNow AI Platform functionality into any external MCP client and employee experience over the Model Context Protocol. MCP Server Console is a new application in the Australia release.
+description: The ServiceNow MCP Server Console application enables secure and governed access to functionality on a ServiceNow instance for AI applications with Model Context Protocol \(MCP\) servers. MCP servers extend ServiceNow AI Platform functionality into any external MCP client and employee experience over the Model Context Protocol. MCP Server Console is a new application in the Brazil release.The ServiceNow MCP Server Console application enables secure and governed access to functionality on a ServiceNow instance for AI applications with Model Context Protocol \(MCP\) servers. MCP servers extend ServiceNow AI Platform functionality into any external MCP client and employee experience over the Model Context Protocol. MCP Server Console is a new application in the Brazil release.The ServiceNow MCP Server Console application enables secure and governed access to functionality on a ServiceNow instance for AI applications with Model Context Protocol \(MCP\) servers. MCP servers extend ServiceNow AI Platform functionality into any external MCP client and employee experience over the Model Context Protocol. MCP Server Console is a new application in the Brazil release.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/release-notes/mcp-server-console-rn.html
 release: australia
 topic_type: topic
-last_updated: "2025-11-04"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
-breadcrumb: [ServiceNow AI Platform administration release notes, Features and changes by product, Release notes for upgrading from Zurich, Learn about the Australia release, Australia release notes]
+breadcrumb: [ServiceNow AI Platform administration release notes, Features and changes by product, Release notes for upgrading from Australia, Learn about the Brazil release, Brazil release notes]
 ---
 
 # MCP Server Console release notes
 
-The ServiceNow® MCP Server Console application enables secure and governed access to functionality on a ServiceNow instance for AI applications with Model Context Protocol \(MCP\) servers. MCP servers extend ServiceNow AI Platform® functionality into any external MCP client and employee experience over the Model Context Protocol. MCP Server Console is a new application in the Australia release.
+The ServiceNow® MCP Server Console application enables secure and governed access to functionality on a ServiceNow instance for AI applications with Model Context Protocol \(MCP\) servers. MCP servers extend ServiceNow AI Platform® functionality into any external MCP client and employee experience over the Model Context Protocol. MCP Server Console is a new application in the Brazil release.
 
 ## About MCP Server Console
 
@@ -24,7 +24,7 @@ The ServiceNow® MCP Server Console application enables secure and governed acce
 -   Create MCP Server Console servers and tools based on various categories including Now Assist skills for different use cases.
 -   Connect to any MCP Server Console client using OAuth 2.0 authentication.
 
-See [MCP Server Console](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/mcp-platform-manager-landing.md) for more information.
+See  for more information.
 
 ## Activation and other requirements
 
@@ -32,15 +32,40 @@ See [MCP Server Console](https://raw.githubusercontent.com/ServiceNow/ServiceNow
 
 -   **Activation information**
 
-    MCP Server Console is available with activation of a Now Assist application. For more information, see [Installing Generative AI Controller](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/installing-generative-ai-controller.md) and [Install plugins for ServiceNow Otto](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/install-now-assist-feature-plugins.md).
+    MCP Server Console is available with activation of a Now Assist application. For more information, see  and .
 
     **Note:** For patch compatibility, see the [Model Context Protocol Server listing](https://store.servicenow.com/store/app/6e521bf447713e9482f632c4f16d434e#versionSummary) in the ServiceNow Store.
 
 
--   **[April 2026](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/release-notes/mcp-server-console-rn-2026-04.md)**  
-The ServiceNow® MCP Server Console application enables secure and governed access to functionality on a ServiceNow instance for AI applications with Model Context Protocol \(MCP\) servers. MCP servers extend ServiceNow AI Platform® functionality into any external MCP client and employee experience over the Model Context Protocol. MCP Server Console is a new application in the Australia release.
--   **[September 2026](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/release-notes/mcp-server-console-rn-release.md)**  
-The ServiceNow® MCP Server Console application enables secure and governed access to functionality on a ServiceNow instance for AI applications with Model Context Protocol \(MCP\) servers. MCP servers extend ServiceNow AI Platform® functionality into any external MCP client and employee experience over the Model Context Protocol. MCP Server Console is a new application in the Australia release.
-
 **Parent Topic:**[ServiceNow AI Platform administration release notes](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/release-notes/now-platform-admin-rn-landing.md)
+
+## Brazil Early Availability 2
+
+The ServiceNow® MCP Server Console application enables secure and governed access to functionality on a ServiceNow instance for AI applications with Model Context Protocol \(MCP\) servers. MCP servers extend ServiceNow AI Platform® functionality into any external MCP client and employee experience over the Model Context Protocol. MCP Server Console is a new application in the Brazil release.
+
+### What's new
+
+-   ****
+
+    Create a tool from a Playbook to expose it to Model Context Protocol \(MCP\) clients from MCP server.
+
+-   ****
+
+    Create a tool from a Search to expose it to Model Context Protocol \(MCP\) clients from MCP server.
+
+
+## Brazil Early Availability
+
+The ServiceNow® MCP Server Console application enables secure and governed access to functionality on a ServiceNow instance for AI applications with Model Context Protocol \(MCP\) servers. MCP servers extend ServiceNow AI Platform® functionality into any external MCP client and employee experience over the Model Context Protocol. MCP Server Console is a new application in the Brazil release.
+
+### What's new
+
+-   ****
+
+    Explore MCP Server monitoring dashboard to review the performance and usage of the MCP servers and tools in a specific time frame.
+
+-   ****
+
+    Explore an alternate way of OAth creation with Client Authorization option by integrating OAuth Client registration directly within the MCP Server Console. This feature eliminates the need to switch between different consoles.
+
 

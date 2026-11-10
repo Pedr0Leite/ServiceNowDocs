@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/customer-service-management/renamed-entities.html
 release: australia
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Reference, Customer Service Management]
 ---
@@ -57,4 +57,6 @@ The following foreign key field labels have been updated across impacted entitie
 |Customer Service Organization|service\_organization\_served|Service organizations served|Organizations served|
 |Responsibility Definition|service\_organization|Service Organization|Business Organization|
 |Responsibility Access Config|service\_organization|Service Organization|Business Organization|
+
+Also, the Business Location Service Portal has been renamed to Business Organization Support Portal.
 

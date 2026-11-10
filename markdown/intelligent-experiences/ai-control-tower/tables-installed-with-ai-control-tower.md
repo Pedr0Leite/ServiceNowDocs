@@ -7,9 +7,9 @@ release: australia
 product: AI Control Tower
 classification: ai-control-tower
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
-breadcrumb: [Reference, AI Control Tower \(legacy\), Enable AI experiences]
+breadcrumb: [AI Control Tower reference \(legacy\), AI Control Tower \(legacy\), Establishing AI governance, Enable AI Experiences]
 ---
 
 # Tables installed with AI Control Tower
@@ -40,4 +40,9 @@ The following table is provided to understand the AI assessment and AI task fiel
 |Approval|approval|Reference \(sysapproval\)|
 |State|state| |
 |Type|type|Choice|
+
+**Related topics**  
+
+
+[Enterprise Architecture for AICT plugin installation and upgrade considerations](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/aict-ea-common-upgrade-considerations.md)
 

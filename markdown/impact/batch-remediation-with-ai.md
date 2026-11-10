@@ -5,10 +5,10 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/impact/batch-remediation-with-ai.html
 release: australia
 topic_type: task
-last_updated: "2026-08-02"
+last_updated: "2026-10-28"
 reading_time_minutes: 4
 keywords: [batch remediation, AI-Eligible Findings, scan results, findings dashboard, bulk generate fixes]
-breadcrumb: [Understand scan results and findings, Prevent and resolve technical debt with AI, Platform Health, Using Impact, Impact]
+breadcrumb: [Prevent and resolve technical debt with AI, Platform Health, Using Impact, Impact]
 ---
 
 # Remediate existing findings with AI-suggested fixes
@@ -32,7 +32,7 @@ Before you begin:
 
 1.  Run a scan and wait for it to complete.
 
-    See [Run your first scan with the Scan Engine](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/impact/run-scan-engine.md) for details.
+    See [Run Scan Engine](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/impact/run-scan-engine.md) for details.
 
     When the scan completes, the findings are populated in the database and you can access the dashboard.
 
@@ -46,13 +46,16 @@ Before you begin:
 
     The table shows the following columns:
 
-    -   Application: The application where the finding was detected. Select the application name to expand and see child violations.
-    -   Description: A brief description of the violation. This corresponds to the scan definition that was triggered.
-    -   Category: The category assigned to this scan definition, for example, Performance, Security, or Style.
-    -   Finding counts: The number of violations with this finding. If a violation occurs in 5 different places in your code, the count is 5.
-    -   Impact to Instance: A number from 1 to 10 within the finding's enforcement level, where 10 is the highest priority.
-    -   Total Technical Debt \(time\): The estimated time it would take to manually fix all violations of this type. AI-suggested fixes can reduce this time significantly.
-    -   Fix Status: The current state of the fix: Ready for review, Reviewed, Revised, Processing, or Not applicable.
+    |Field|Description|
+    |-----|-----------|
+    |Application|The application where the finding was detected. Select the application name to expand and see child violations.|
+    |Description|A brief description of the violation. This corresponds to the scan definition that was triggered.|
+    |Category|The category assigned to this scan definition, for example, Performance, Security, or Style.|
+    |Finding counts|The number of violations with this finding. If a violation occurs in 5 different places in your code, the count is 5.|
+    |Impact to Instance|A number from 1 to 10 within the finding's enforcement level, where 10 is the highest priority.|
+    |Total Technical Debt \(time\)|The estimated time it would take to manually fix all violations of this type. AI-suggested fixes can reduce this time significantly.|
+    |Fix Status|The current state of the fix: Ready for review, Reviewed, Revised, Processing, or Not applicable.|
+
 4.  Sort by impact to instance or total technical debt to prioritize which findings to fix first.
 
     **Note:** ACT level findings must be fixed before you can save records. RECOMMEND level findings require either a fix or an exception. SUGGEST and REVIEW findings are lower priority but still important for code quality.
@@ -69,7 +72,9 @@ Before you begin:
 
     The code comparison displays your original code on the left and the AI-suggested code on the right. Color coding shows changes: green for added code and pink for removed code.
 
-8.  Select to **Review the suggested fixes** before accepting them.
+8.  Review the suggested fixes on the **Review suggested fixes** page before you accept them.
+
+    The **Scanned Records** panel lists the records that have suggested fixes, grouped by record type, with the fix status of each record. Use the **Select application** list to switch applications. The page has three tabs: **Code Comparison**, **Suggested fixes details**, and **Record**.
 
     \[Omitted image "review-suggested-fixes-2.png"\] Alt text: Review suggested fixes page.
 
@@ -85,7 +90,7 @@ Before you begin:
 
     3.  Select **Reject** if the suggested fixes aren't suitable.
 
-        The fixes are discarded and you must fix the violations manually or accept them as-is.
+        The Reject all suggested fixes? dialog opens. You can describe what doesn't work in the **Feedbacks** field, then select **Reject suggested fixes**. The suggested code fixes aren't applied, and you fix the violations manually.
 
 10. Navigate to the **Resolved findings** tab to verify that your accepted fixes appear in the list.
 

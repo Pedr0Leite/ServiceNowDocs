@@ -7,7 +7,7 @@ release: australia
 product: Search Administration
 classification: search-administration
 topic_type: task
-last_updated: "2026-08-20"
+last_updated: "2026-10-20"
 reading_time_minutes: 2
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Configure, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -23,31 +23,29 @@ Role required: sn\_ext\_conn.xcc\_admin
 
 ## About this task
 
-External content connectors depend on a variety of configuration settings, permissions, and operations. Incorrect or outdated settings or permissions in the ServiceNow AI Platform® or the source system can prevent a connector from operating properly. Issues encountered during crawls may prevent specific content items from being retrieved and indexed for search.
+External content connectors depend on a variety of configuration settings, permissions, and operations. Incorrect or outdated settings or permissions in the ServiceNow AI Platform® or the source system can keep a connector from operating properly. Issues encountered during crawls may keep specific content items from being retrieved and indexed for search.
 
-Specific occurrences that can prevent proper function of an external content connector include:
+Specific circumstances that can interfere with proper function of an external content connector include:
 
 -   Certificate expiration
 -   Permission mismatches after a source system policy change
 -   Connector plugin scope changes following an upgrade to External Content Connectors or the ServiceNow AI Platform
--   Quota exhaustion on the ServiceNow AI Platform side
 -   User identity mapping gaps that silently conceal connector search results from users
+-   Reaching the content indexing limit \(typically one million content items, but some connector types have different limits\)
 
-When an external content connector has one or more of these health issues, its status changes to **Action required**. Perform the following steps to view and resolve health issues for the affected connector.
+When an external content connector has one or more of these health issues, its status changes to **Action required**.
 
 ## Procedure
 
 1.  Navigate to **All** &gt; **External Content Connectors** &gt; **External Content Admin Home**.
 
-2.  If prompted, select **Switch scope** to switch to the External Content Connectors Admin scope.
+2.  If prompted to switch scope, select **Switch scope** and select the application scope specified in the prompt.
 
-    You must be in this scope to create or edit external content connectors.
-
-3.  In the Connectors list, select the record for the external content connector that you want to check or resolve health issues for.
+3.  In the Connectors list, select the record for the external content connector whose health issues you need to check or resolve.
 
     **Note:** Connectors with health issues show **Action required** status.
 
-4.  In the connector editor, select the Overview tab.
+4.  In the connector editor, select the **Overview** tab.
 
 5.  Review the health category cards in the **Connector health** section.
 
@@ -65,7 +63,7 @@ When an external content connector has one or more of these health issues, its s
         -   **Search profile**: Assignment to at least one search profile.
     -   **Status indicator**
 
-        The status indicator indicates the status of the health category for the external content connector. Typical values include **Ready**, **Not configured**, **Warning**, and **Error**.
+        The status indicator shows the state of the health category for the external content connector. Typical values include **Ready**, **Not configured**, **Warning**, and **Error**.
 
     -   **Context label**
 

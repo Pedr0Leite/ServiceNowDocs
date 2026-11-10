@@ -5,8 +5,8 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/delta-xanadu-australia/australia-xanadu-l1itservicedeskaispecialist-release-notes.html
 release: australia
 topic_type: reference
-last_updated: "2026-09-24"
-reading_time_minutes: 6
+last_updated: "2026-11-06"
+reading_time_minutes: 12
 breadcrumb: [Products combined by family]
 ---
 
@@ -99,7 +99,43 @@ Zurich
 
 </td><td>
 
--   **[Routing criteria configuration](https://www.servicenow.com/docs/access?context=config-tasks-l1-sd-ai-spec-sow&family=zurich&ft:locale=en-US)**
+-   **[Rate trend chart](https://www.servicenow.com/docs/access?context=perf-overview-l1-sd-ai-spec&family=zurich&ft:locale=en-US)**
+
+Track the durable auto-resolve and coverage rates over time with a Rate trend chart on the AI Specialist Performance dashboard, and select a day to see its incidents.
+
+-   **[Overview funnel](https://www.servicenow.com/docs/access?context=perf-overview-l1-sd-ai-spec&family=zurich&ft:locale=en-US)**
+
+Follow incidents from assignment to eligible groups through durable resolution in a four-step funnel on the Overview tab. Drill down into each step, and use the calculation cards to see how each rate is worked out.
+
+-   **[Cross-group reassignment outcomes](https://www.servicenow.com/docs/access?context=cross-group-reassignment-l1-sd-ai-spec&family=zurich&ft:locale=en-US)**
+
+See what your service desk team did with cross-group reassignment recommendations in a chart that shows which were adopted, overridden, or are awaiting a decision.
+
+-   **[Requester reference portal](https://www.servicenow.com/docs/access?context=config-tasks-ref-l1-sd-ai-spec&family=zurich&ft:locale=en-US)**
+
+AI Admins can set the portal that knowledge article and catalog item links open in for requesters. Links in work notes for Service Desk Agents continue to open in the platform view.
+
+
+ -   **[Configure task settings](https://www.servicenow.com/docs/access?context=config-tasks-l1-sd-ai-spec-sow&family=zurich&ft:locale=en-US) Response Templates**
+
+AI Admins can switch response templates between a fixed template and dynamic mode, where the AI Specialist writes activity notes, customer comments, work notes, and close notes from free-form instructions the administrator provides.
+
+-   **[Catalog request submission and tracking](https://www.servicenow.com/docs/access?context=catalog-variable-collection-slot-fill-l1-sd-ai-spec&family=zurich&ft:locale=en-US)**
+
+The L1 IT Service Desk AI Specialist can resolve incidents by submitting service catalog requests on behalf of users. The L1 IT Service Desk AI Specialist collects the required details through guided questions, submits or drafts the request, and resolves the linked incident so users can track fulfillment through the request.
+
+L1 IT Service Desk AI Specialist now uses dynamic response authoring for ZTS Action Agent and Catalog submission responses. Default instructions are provided so the agent composes each message fresh instead of relying on a fixed template.
+
+-   **[Catalog performance analytics](https://www.servicenow.com/docs/access?context=catalog-tab-l1-sd-ai-spec&family=zurich&ft:locale=en-US)**
+
+A new Catalog tab on the AI Specialist performance dashboard shows drafted, submitted, abandoned, and canceled request volumes by catalog item. This gives administrators visibility into how well the AI Specialist is handling catalog-based resolutions.
+
+-   **[Quality assessment skill](https://www.servicenow.com/docs/access?context=qa-l1-sd-ai-spec&family=zurich&ft:locale=en-US)**
+
+Evaluate L1 IT Service Desk AI Specialist's work, captured in a coaching assessment against the rubric defined on the coaching opportunity by using the AI Quality Assessment skill to get consistent, objective scoring.
+
+
+ -   **[Routing criteria configuration](https://www.servicenow.com/docs/access?context=config-tasks-l1-sd-ai-spec-sow&family=zurich&ft:locale=en-US)**
 
 Enable hand-offs between the AI specialist and human agents if work is better handled by a different group or requires additional human oversight.
 
@@ -112,15 +148,83 @@ Shows how many incidents over time were reassigned because routing decision crit
 Review how the AI Specialist measures up in each quality area using automatically generated quality assessments. You can monitor scores, compare different coaching opportunities, and pinpoint areas where quality can be enhanced.
 
 
+ The L1 IT Service Desk AI Specialist is an autonomous worker that helps handle incidents end-to-end without human intervention. It uses knowledge articles and historical data to investigate and resolve high-volume, repeatable level 1 \(L1\) incidents. It communicates directly with requesters and escalates incidents to human agents when confidence is low.
+
+ -   **[\[Placeholder link text to key bundle-itsm.autonomous-supervised\]](https://www.servicenow.com/docs/access?context=autonomous-supervised&family=zurich&ft:locale=en-US)**
+
+Choose from two types of execution modes for the L1 IT Service Desk AI Specialist during configuration or activation, Autonomous or Supervised. The execution mode of the L1 IT Service Desk AI Specialist determines its autonomy when performing tasks on incidents. You can change the execution mode at any time.
+
+-   **[Configure the L1 IT Service Desk AI Specialist](https://www.servicenow.com/docs/access?context=configuring-l1-sd-ai-specialist&family=zurich&ft:locale=en-US)**
+
+Configure how the L1 IT Service Desk AI Specialist works an incident across each stage of its task pipeline from classifying and assigning fields to which team or whom it reassigns incidents. Each stage is configurable, so you control how incidents are handled from intake to resolution.
+
+-   **[View the performance of the L1 IT Service Desk AI Specialist](https://www.servicenow.com/docs/access?context=perf-l1-sd-ai-spec&family=zurich&ft:locale=en-US)**
+
+Review performance analytics for the L1 IT Service Desk AI Specialist to track task execution success. You can use analytics to help make choices to tune the L1 IT Service Desk AI Specialist to suit your exact business needs.
+
+-   **[View the activity of the L1 IT Service Desk AI Specialist](https://www.servicenow.com/docs/access?context=activity-l1-sd-ai-spec&family=zurich&ft:locale=en-US)**
+
+View the task execution history of the L1 IT Service Desk AI Specialist to track where and when it is planning and attempting executions. You can also give feedback on its performance.
+
+
 </td></tr><tr><td>
 
 Australia
 
 </td><td>
 
-The L1 IT Service Desk AI Specialist is an autonomous worker that helps handle incidents end-to-end without human intervention. It uses knowledge articles and historical data to investigate and resolve high-volume, repeatable level 1 \(L1\) incidents. It communicates directly with requesters and escalates incidents to human agents when confidence is low.
+-   **[Rate trend chart](https://www.servicenow.com/docs/access?context=perf-overview-l1-sd-ai-spec&family=australia&ft:locale=en-US)**
 
- -   **[Autonomous vs. supervised](https://www.servicenow.com/docs/access?context=autonomous-supervised&family=australia&ft:locale=en-US)**
+Track the durable auto-resolve and coverage rates over time with a Rate trend chart on the AI Specialist Performance dashboard, and select a day to see its incidents.
+
+-   **[Overview funnel](https://www.servicenow.com/docs/access?context=perf-overview-l1-sd-ai-spec&family=australia&ft:locale=en-US)**
+
+Follow incidents from assignment to eligible groups through durable resolution in a four-step funnel on the Overview tab. Drill down into each step, and use the calculation cards to see how each rate is worked out.
+
+-   **[Cross-group reassignment outcomes](https://www.servicenow.com/docs/access?context=cross-group-reassignment-l1-sd-ai-spec&family=australia&ft:locale=en-US)**
+
+See what your service desk team did with cross-group reassignment recommendations in a chart that shows which were adopted, overridden, or are awaiting a decision.
+
+-   **[Requester reference portal](https://www.servicenow.com/docs/access?context=config-tasks-ref-l1-sd-ai-spec&family=australia&ft:locale=en-US)**
+
+AI Admins can set the portal that knowledge article and catalog item links open in for requesters. Links in work notes for Service Desk Agents continue to open in the platform view.
+
+
+ -   **[Configure task settings](https://www.servicenow.com/docs/access?context=config-tasks-l1-sd-ai-spec-sow&family=australia&ft:locale=en-US) Response Templates**
+
+AI Admins can switch response templates between a fixed template and dynamic mode, where the AI Specialist writes activity notes, customer comments, work notes, and close notes from free-form instructions the administrator provides.
+
+-   **[Catalog request submission and tracking](https://www.servicenow.com/docs/access?context=catalog-variable-collection-slot-fill-l1-sd-ai-spec&family=australia&ft:locale=en-US)**
+
+The L1 IT Service Desk AI Specialist can resolve incidents by submitting service catalog requests on behalf of users. The L1 IT Service Desk AI Specialist collects the required details through guided questions, submits or drafts the request, and resolves the linked incident so users can track fulfillment through the request.
+
+L1 IT Service Desk AI Specialist now uses dynamic response authoring for ZTS Action Agent and Catalog submission responses. Default instructions are provided so the agent composes each message fresh instead of relying on a fixed template.
+
+-   **[Catalog performance analytics](https://www.servicenow.com/docs/access?context=catalog-tab-l1-sd-ai-spec&family=australia&ft:locale=en-US)**
+
+A new Catalog tab on the AI Specialist performance dashboard shows drafted, submitted, abandoned, and canceled request volumes by catalog item. This gives administrators visibility into how well the AI Specialist is handling catalog-based resolutions.
+
+-   **[Quality assessment skill](https://www.servicenow.com/docs/access?context=qa-l1-sd-ai-spec&family=australia&ft:locale=en-US)**
+
+Evaluate L1 IT Service Desk AI Specialist's work, captured in a coaching assessment against the rubric defined on the coaching opportunity by using the AI Quality Assessment skill to get consistent, objective scoring.
+
+
+ -   **[Routing criteria configuration](https://www.servicenow.com/docs/access?context=config-tasks-l1-sd-ai-spec-sow&family=australia&ft:locale=en-US)**
+
+Enable hand-offs between the AI specialist and human agents if work is better handled by a different group or requires additional human oversight.
+
+-   **[Routing decision criteria over time analytics](https://www.servicenow.com/docs/access?context=perf-overview-l1-sd-ai-spec&family=australia&ft:locale=en-US)**
+
+Shows how many incidents over time were reassigned because routing decision criteria matched.
+
+-   **[Performance quality assessment analytics](https://www.servicenow.com/docs/access?context=perf-quality-l1-sd-ai-spec&family=australia&ft:locale=en-US)**
+
+Review how the AI Specialist measures up in each quality area using automatically generated quality assessments. You can monitor scores, compare different coaching opportunities, and pinpoint areas where quality can be enhanced.
+
+
+ The L1 IT Service Desk AI Specialist is an autonomous worker that helps handle incidents end-to-end without human intervention. It uses knowledge articles and historical data to investigate and resolve high-volume, repeatable level 1 \(L1\) incidents. It communicates directly with requesters and escalates incidents to human agents when confidence is low.
+
+ -   **[\[Placeholder link text to key bundle-itsm.autonomous-supervised\]](https://www.servicenow.com/docs/access?context=autonomous-supervised&family=australia&ft:locale=en-US)**
 
 Choose from two types of execution modes for the L1 IT Service Desk AI Specialist during configuration or activation, Autonomous or Supervised. The execution mode of the L1 IT Service Desk AI Specialist determines its autonomy when performing tasks on incidents. You can change the execution mode at any time.
 
@@ -172,7 +276,10 @@ Zurich
 
 </td><td>
 
-No updates for this release.
+-   **[Catalog variable collection and messages](https://www.servicenow.com/docs/access?context=catalog-variable-collection-slot-fill-l1-sd-ai-spec&family=zurich&ft:locale=en-US)**
+
+The L1 IT Service Desk AI Specialist now fills catalog item variables from the incident and the caller's details and shows requesters what it already captured, so requesters answer fewer questions. It also now uses dynamic response authoring for L1 IT Service Desk AI Specialist Catalog submission responses. Default instructions are provided so the agent composes each message fresh instead of relying on a fixed template.
+
 
 </td></tr><tr><td>
 
@@ -180,7 +287,10 @@ Australia
 
 </td><td>
 
-No updates for this release.
+-   **[Catalog variable collection and messages](https://www.servicenow.com/docs/access?context=catalog-variable-collection-slot-fill-l1-sd-ai-spec&family=australia&ft:locale=en-US)**
+
+The L1 IT Service Desk AI Specialist now fills catalog item variables from the incident and the caller's details and shows requesters what it already captured, so requesters answer fewer questions. It also now uses dynamic response authoring for L1 IT Service Desk AI Specialist Catalog submission responses. Default instructions are provided so the agent composes each message fresh instead of relying on a fixed template.
+
 
 </td></tr></tbody>
 </table>## Removed
@@ -262,7 +372,18 @@ Zurich
 
 </td><td>
 
-No updates for this release.
+-   **[Routing journey count cards](https://www.servicenow.com/docs/access?context=perf-overview-l1-sd-ai-spec&family=zurich&ft:locale=en-US)**
+
+Removed. The Routing journey count cards are replaced by the funnel on the Overview tab.
+
+-   **[Research depth](https://www.servicenow.com/docs/access?context=config-tasks-ref-l1-sd-ai-spec&family=zurich&ft:locale=en-US)**
+
+Removed. The unused Research depth setting is no longer available. There is no replacement.
+
+-   **[Pre resolution condition](https://www.servicenow.com/docs/access?context=config-tasks-ref-l1-sd-ai-spec&family=zurich&ft:locale=en-US)**
+
+Removed. The Pre resolution condition setting is no longer available, and incidents are no longer checked against it. There is no replacement.
+
 
 </td></tr><tr><td>
 
@@ -270,7 +391,18 @@ Australia
 
 </td><td>
 
-No updates for this release.
+-   **[Routing journey count cards](https://www.servicenow.com/docs/access?context=perf-overview-l1-sd-ai-spec&family=australia&ft:locale=en-US)**
+
+Removed. The Routing journey count cards are replaced by the funnel on the Overview tab.
+
+-   **[Research depth](https://www.servicenow.com/docs/access?context=config-tasks-ref-l1-sd-ai-spec&family=australia&ft:locale=en-US)**
+
+Removed. The unused Research depth setting is no longer available. There is no replacement.
+
+-   **[Pre resolution condition](https://www.servicenow.com/docs/access?context=config-tasks-ref-l1-sd-ai-spec&family=australia&ft:locale=en-US)**
+
+Removed. The Pre resolution condition setting is no longer available, and incidents are no longer checked against it. There is no replacement.
+
 
 </td></tr></tbody>
 </table>## Activation information

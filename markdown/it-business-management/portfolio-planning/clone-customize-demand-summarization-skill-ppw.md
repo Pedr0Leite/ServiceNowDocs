@@ -7,7 +7,7 @@ release: australia
 product: Portfolio Planning
 classification: portfolio-planning
 topic_type: task
-last_updated: "2026-08-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 keywords: [clone, Demand Summarization, Now Assist for Strategic Portfolio Management]
 breadcrumb: [Configure the demand AI skills, Configure, Next Experience for Demand Management in Portfolio Planning, Portfolio Planning, Strategic Portfolio Management]
@@ -23,7 +23,7 @@ Role required: sn\_nowassist\_admin.nsa\_admin
 
 ## About this task
 
-The demand summarization skill generates a summary of a demand record from a set of input fields and related lists. The base skill can be copied to include fields or related entities specific to your organization's demand process that are not included in the base skill. Copying creates an independent copy that you customize with your own fields, related entities, and prompt. The copied skill then summarizes demands using your configuration.
+The demand summarization skill generates a summary of a demand record from a set of input fields and related lists. The base skill can be copied to include fields or related entities specific to your organization's demand process that aren't included in the base skill. Copying creates an independent copy that you can customize with your own fields, related entities, and prompt. The copied skill then summarizes demands using your configuration.
 
 **Note:** The existing skill, either base or copy, are deactivated after a new copy is activated.
 
@@ -47,15 +47,15 @@ The demand summarization skill generates a summary of a demand record from a set
 
 7.  Add or remove an input field.
 
-<table id="choicetable_zn4_5qk_fkc"><thead><tr><th align="left" id="d182757e157">
+<table id="choicetable_zn4_5qk_fkc"><thead><tr><th align="left" id="d193274e157">
 
 Goal
 
-</th><th align="left" id="d182757e160">
+</th><th align="left" id="d193274e160">
 
 Action
 
-</th></tr></thead><tbody><tr><td id="d182757e166">
+</th></tr></thead><tbody><tr><td id="d193274e166">
 
 **Add a field**
 
@@ -66,7 +66,7 @@ Action
 3.  Provide a description for the field.
 
 
-</td></tr><tr><td id="d182757e190">
+</td></tr><tr><td id="d193274e190">
 
 **Remove a field**
 
@@ -81,15 +81,15 @@ Select the cross icon next to an input field.
 
 9.  Add or remove a field from a related table, add or remove a related table, or add rule conditions for each related table.
 
-<table id="choicetable_wzc_j5k_fkc"><thead><tr><th align="left" id="d182757e227">
+<table id="choicetable_wzc_j5k_fkc"><thead><tr><th align="left" id="d193274e227">
 
 Goal
 
-</th><th align="left" id="d182757e230">
+</th><th align="left" id="d193274e230">
 
 Action
 
-</th></tr></thead><tbody><tr><td id="d182757e236">
+</th></tr></thead><tbody><tr><td id="d193274e236">
 
 **Add a field from a related table**
 
@@ -100,7 +100,7 @@ Action
 3.  Provide a description for the field.
 
 
-</td></tr><tr><td id="d182757e260">
+</td></tr><tr><td id="d193274e260">
 
 **Remove a field from a related table**
 
@@ -108,7 +108,7 @@ Action
 
 Select the cross icon next to a related table field.
 
-</td></tr><tr><td id="d182757e269">
+</td></tr><tr><td id="d193274e269">
 
 **Add a related table**
 
@@ -120,7 +120,7 @@ Select the cross icon next to a related table field.
 4.  Provide a description for the field.
 
 
-</td></tr><tr><td id="d182757e296">
+</td></tr><tr><td id="d193274e296">
 
 **Remove a related table**
 
@@ -128,7 +128,7 @@ Select the cross icon next to a related table field.
 
 Select the cross icon next to a related table.
 
-</td></tr><tr><td id="d182757e306">
+</td></tr><tr><td id="d193274e306">
 
 **Add rule conditions for a related table**
 

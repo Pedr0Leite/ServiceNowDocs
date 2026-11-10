@@ -5,8 +5,8 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/delta-xanadu-australia/australia-xanadu-nextexperience-release-notes.html
 release: australia
 topic_type: reference
-last_updated: "2026-09-24"
-reading_time_minutes: 11
+last_updated: "2026-11-06"
+reading_time_minutes: 13
 breadcrumb: [Products combined by family]
 ---
 
@@ -160,7 +160,12 @@ Australia
 
 </td><td>
 
--   **[Enable auto-focus on page alerts new accessibility preference](https://www.servicenow.com/docs/access?context=enable-auto-focus-on-page-alerts&family=australia&ft:locale=en-US)**
+-   **[In-Product Surveys](https://www.servicenow.com/docs/access?context=in-product-surveys-overview&family=australia&ft:locale=en-US)**
+
+Collect feedback from users as they work in Next Experience. Admins can turn off surveys at the instance level.
+
+
+ -   **[Enable auto-focus on page alerts new accessibility preference](https://www.servicenow.com/docs/access?context=enable-auto-focus-on-page-alerts&family=australia&ft:locale=en-US)**
 
 Turn on the Enable auto-focus on page alerts preference to automatically move focus to the page alert. See the Accessibility section for details.
 
@@ -222,7 +227,16 @@ Zurich
 
 </td><td>
 
--   **Coral theme**
+-   **[Now Assist &gt; ServiceNow Otto® announcement](https://www.servicenow.com/docs/access?context=sn-ai-implementation-landing&family=zurich&ft:locale=en-US)**
+
+ServiceNow Otto introduced AI on the platform. As that experience has evolved, there's a new name for the experience. ServiceNow Otto® is the conversational AI platform integrated into ServiceNow workflows. It provides agentic capabilities, supports multimodal interactions across web, mobile, and messaging channels, and enables autonomous orchestration for cross-system workflows.
+
+-   **ServiceNow Otto® onboarding slide added**
+
+Next Experience onboarding now opens with a ServiceNow Otto slide. The slide appears only when the Generative AI Controller plugin \(sn\_generative\_ai\) is active on the instance. After a user selects “Got it,” the slide doesn’t appear again.
+
+
+ -   **Coral theme**
 
 Coral is now the default theme for new portal, web, and mobile experiences with Next Experience or Core UI enabled. This theme provides a fresh look and feel, featuring brand-neutral illustrations to enhance your user experience. A dark theme option is available for web and mobile experiences.
 
@@ -237,7 +251,25 @@ Australia
 
 -   **[Now Assist &gt; ServiceNow Otto® announcement](https://www.servicenow.com/docs/access?context=sn-ai-implementation-landing&family=australia&ft:locale=en-US)**
 
-Now Assist introduced AI on the platform. As that experience has evolved, there's a new name for the experience. ServiceNow Otto® is the conversational AI platform integrated into ServiceNow workflows. It provides agentic capabilities, supports multimodal interactions across web, mobile, and messaging channels, and enables autonomous orchestration for cross-system workflows.
+ServiceNow Otto introduced AI on the platform. As that experience has evolved, there's a new name for the experience. ServiceNow Otto® is the conversational AI platform integrated into ServiceNow workflows. It provides agentic capabilities, supports multimodal interactions across web, mobile, and messaging channels, and enables autonomous orchestration for cross-system workflows.
+
+-   **ServiceNow Otto® onboarding slide added**
+
+Next Experience onboarding now opens with a ServiceNow Otto slide. The slide appears only when the Generative AI Controller plugin \(sn\_generative\_ai\) is active on the instance. After a user selects “Got it,” the slide doesn’t appear again.
+
+
+ -   **[Updated Coral theme](https://www.servicenow.com/docs/access?context=next-experience-theming&family=australia&ft:locale=en-US)**
+
+The Coral theme has been improved to enhance usability across web, mobile, and portal experiences that use Next Experience and Core UI:
+
+    -   A fully overhauled color system for smoother gradients and better contrast.
+    -   Softer outlines and more rounded components for a modern, accessible look.
+    -   A significantly improved dark mode with deeper blue tones for reduced eye strain.
+    -   New AI gradient styles and subtle animations to highlight intelligent features.
+    -   Smarter focus behavior that reduces visual clutter for mouse users.
+-   **New Works with ServiceNow badge added to user menu**
+
+The Works with ServiceNow badge now appears in the user menu for custom-branded accounts. This applies to web and mobile experiences with Next Experience or Core UI enabled. All other branding and theme settings remain unchanged. This update applies automatically.
 
 
 </td></tr></tbody>
@@ -320,7 +352,7 @@ Zurich
 
 </td><td>
 
-No updates for this release.
+The Unified Navigation Onboarding and Unified Navigation Onboarding With Feedback tours, and their steps, are removed.
 
 </td></tr><tr><td>
 
@@ -328,7 +360,9 @@ Australia
 
 </td><td>
 
-Starting with the Australia release, the legacy user interfaces commonly referred to as UI11 and UI15 are deprecated. These legacy UIs no longer receive enhancements, defect fixes, and will no longer be supported. Certain system features may continue to display through legacy rendering paths \(for example, printer‑friendly views\) and will be addressed case by case as part of ongoing platform improvements. Use the Next Experience for a modern, accessible, unified interface. For information activating Next Experience see [Activation considerations](https://www.servicenow.com/docs/access?context=next-experience-adoption-paths&family=australia&ft:locale=en-US).
+The Unified Navigation Onboarding and Unified Navigation Onboarding With Feedback tours, and their steps, are removed.
+
+ Starting with the Australia release, the legacy user interfaces commonly referred to as UI11 and UI15 are deprecated. These legacy UIs no longer receive enhancements, defect fixes, and will no longer be supported. Certain system features may continue to display through legacy rendering paths \(for example, printer‑friendly views\) and will be addressed case by case as part of ongoing platform improvements. Use the Next Experience for a modern, accessible, unified interface. For information activating Next Experience see [Activation considerations](https://www.servicenow.com/docs/access?context=next-experience-adoption-paths&family=australia&ft:locale=en-US).
 
 </td></tr></tbody>
 </table>## Activation information

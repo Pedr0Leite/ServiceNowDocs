@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/release-notes/upgrades-phase-4.html
 release: australia
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
-breadcrumb: [Upgrade to the Australia release, Australia release notes]
+breadcrumb: [Upgrade to the Brazil release, Brazil release notes]
 ---
 
 # Phase 4 - Upgrade and validate the development instance
@@ -28,7 +28,7 @@ The Upgrade Monitor helps you upgrade an individual instance. You can monitor th
 
 1.  Using the Upgrade Monitor, monitor the upgrade to your instance and validate that the upgrade to your development instance is complete.
 
-2.  After the upgrade for your development instance is complete, [process the skipped records list](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/platform-administration/uc-process-skipped-records.md) in the Upgrade Monitor.
+2.  After the upgrade for your development instance is complete, process the skipped records list in the Upgrade Monitor.
 
     As you are processing the skipped list, you may merge and revert records, resolve conflicts for an individual record, and make additional customizations. These changes go into the latest version, which goes into your current update set.
 

@@ -5,8 +5,8 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/delta-xanadu-australia/australia-xanadu-financialservicesoperationsintegrationwithvisa-release-notes.html
 release: australia
 topic_type: reference
-last_updated: "2026-09-24"
-reading_time_minutes: 6
+last_updated: "2026-11-06"
+reading_time_minutes: 7
 breadcrumb: [Products combined by family]
 ---
 
@@ -189,7 +189,16 @@ Australia
 
 </td><td>
 
--   **[Updated subflows](https://www.servicenow.com/docs/access?context=components-installed-with-the-financial-services-operations-integration-with-visa&family=australia&ft:locale=en-US)**
+-   **Updated questionnaire field labels and validation**
+
+Renamed the question "Explain why credit presented does not apply" to "Provide the Transaction Identifier\(s\) or Acquirer Reference Number\(s\) and the Transaction Date that the credit\(s\) was applied to and why the credit\(s\) does not resolve the Dispute," and renamed "Certification that the merchant facilities were withdrawn" to "Certification that the facilities were withdrawn." The **Name** field is no longer required, and **Key Factors** now accepts up to 200 characters.
+
+-   **Updated Spoke action wiring for new questionnaire fields**
+
+Added the **Date facilities were withdrawn** and **Date cardholder checked out from hotel** fields to the **Submit Dispute Questionnaire** and **Look up Dispute Details Response Parser** spoke actions, and added **CE Transaction Details** as a read-back field on **Look up Dispute Details Response Parser**. See [Financial Services Card Operations 2026 September Monthly release notes](https://www.servicenow.com/docs/access?context=financial-services-card-operations-rn-2026-09&family=australia&ft:locale=en-US) for the corresponding questionnaire questions.
+
+
+ -   **[Updated subflows](https://www.servicenow.com/docs/access?context=components-installed-with-the-financial-services-operations-integration-with-visa&family=australia&ft:locale=en-US)**
 
 The following subflows have been updated to support integration with the Card data security application:
 
@@ -308,7 +317,7 @@ Xanadu
 
 </td><td>
 
-Install Now Assist for FSO by requesting it from the ServiceNow Store. Visit the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/home) website to view all the available apps and for information about submitting requests to the store. For cumulative release notes information for all released apps, see the [ServiceNow Store version history release notes](https://www.servicenow.com/docs/access?context=sn-store-release-notes&family=xanadu&ft:locale=en-US).
+Install ServiceNow Otto for FSO by requesting it from the ServiceNow Store. Visit the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/home) website to view all the available apps and for information about submitting requests to the store. For cumulative release notes information for all released apps, see the [ServiceNow Store version history release notes](https://www.servicenow.com/docs/access?context=sn-store-release-notes&family=xanadu&ft:locale=en-US).
 
 </td></tr><tr><td>
 
@@ -329,6 +338,8 @@ Zurich
 Install Financial Services Operations Integration with Visa by requesting it from the ServiceNow Store. Visit the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/home) website to view all the available apps and for information about submitting requests to the store. For cumulative release notes information for all released apps, see the [ServiceNow Store version history release notes](https://www.servicenow.com/docs/access?context=sn-store-release-notes&family=zurich&ft:locale=en-US).
 
 
+**Important:** Financial Services Operations Integration with Visa is available in the ServiceNow Store. For details, see the "Activation information" section of these release notes.
+
 </td></tr><tr><td>
 
 Australia
@@ -339,6 +350,8 @@ Australia
 
 Install Financial Services Operations Integration with Visa by requesting it from the ServiceNow Store. Visit the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!/store/home) to view all the available apps, and for information about submitting requests to the store. For cumulative release notes information for all released apps, see the [ServiceNow Store version history release notes](https://www.servicenow.com/docs/access?context=sn-store-release-notes&family=australia&ft:locale=en-US).
 
+
+**Important:** Financial Services Operations Integration with Visa is available in the ServiceNow Store. For details, see the "Activation information" section of these release notes.
 
 </td></tr></tbody>
 </table>## Additional requirements

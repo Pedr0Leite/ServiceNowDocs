@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/application-development/add-page-to-navigation-servicenow-ai-experience-lab-for-vs-code.html
 release: australia
 topic_type: task
-last_updated: "2026-08-06"
-reading_time_minutes: 1
-breadcrumb: [Use, ServiceNow Lux Lab for VS Code extension, Building pro-code applications, Developing your application, Building applications]
+last_updated: "2026-09-10"
+reading_time_minutes: 2
+breadcrumb: [Use, ServiceNow Lux Lab for VS Code extension, Building pro-code applications, Developing your application, Classic app development, Building applications]
 ---
 
 # Add a page to the navigation
@@ -44,7 +44,7 @@ Visual Studio Code
 
 </td><td>
 
-1.97 later
+1.97 or later
 
 </td><td>
 
@@ -80,7 +80,7 @@ ServiceNow SDK
 
 </td><td>
 
-4.10 or later
+4.14 or later
 
 </td><td>
 
@@ -115,6 +115,25 @@ ServiceNow instance
 5.  Add the following lines of code to the application.js file with the page name and target path that you want to add.
 
     **Note:** To add pages to L2, include an `l2Nav: [{icon, title, action}]` array on the L1 page you pass to `addNavItem`. The page accepts \{icon, title, action, l2Nav?, l3Nav?\}.
+
+    A navigation entry has the following format:
+
+    ```
+    setup(ctx) {
+      const items = [
+        {
+          icon: 'home',
+          title: i18n.getMessage('Home'),
+          action: {type: 'navigate', path: '/home'}
+        },
+        {
+          icon: 'list',
+          title: i18n.getMessage('Incidents'),
+          action: {type: 'navigate', path: '/incidents'}
+        }
+      ];
+    }
+    ```
 
     |Action|Code to add in application.js|
     |------|-----------------------------|

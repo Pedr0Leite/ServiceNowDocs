@@ -7,7 +7,7 @@ release: australia
 product: Configuration Management Database \(CMDB\)
 classification: configuration-management-database-cmdb
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 breadcrumb: [Configure, CMDB Health, Configuration Management Database \(CMDB\), Configuration Management, Extend ServiceNow AI Platform capabilities]
 ---
@@ -87,5 +87,5 @@ The relationship conditions that a CI must fail,based on records in the CI Relat
 **Related topics**  
 
 
-[CMDB Health Dashboard for Helsinki \| Overview](https://youtu.be/CvMRT3NExIo)
+[CMDB Health Dashboard overview](https://www.youtube.com/watch?v=aPHxWoVdD1c)
 

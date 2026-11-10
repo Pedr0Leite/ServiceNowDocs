@@ -7,7 +7,7 @@ release: australia
 product: Resource Management
 classification: resource-management
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 breadcrumb: [Manage resource assignments from Project Workspace, Use, Resource Management Workspace, Project Portfolio Management, Strategic Portfolio Management]
 ---
@@ -48,10 +48,6 @@ Role required: it\_project\_manager
 
     You can use this option to create a resource assignment using the resource form. On the New Resource Assignment form, fill in the fields and select **Submit**. For a description of the field names, see [New Resource Assignment form](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-business-management/resource-management/create-ra-form-rmw.md).
 
-7.  Select the expense type of the assignment based on the work as **Opex** or **Capex**.
-
-    A resource can use this information while capturing efforts using the time sheet portal. Once the time sheet is approved, an expense line is created for the project capturing the expense as capex or opex, based on the selected expense type.
-
 
 ## What to do next
 
@@ -66,5 +62,5 @@ Role required: it\_project\_manager
 
 [Update the resource allocation in a heatmap](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-business-management/project-workspace/view-allocations-heatmap-prj-wksp.md)
 
-[Realign resource assignments with project dates](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-business-management/project-workspace/realign-resource-assignment-to-task.md)
+[Realign resource assignment to project task](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-business-management/project-workspace/realign-resource-assignment-to-task.md)
 

@@ -7,7 +7,7 @@ release: australia
 product: Now Assist for CSM
 classification: now-assist-for-csm
 topic_type: task
-last_updated: "2026-03-23"
+last_updated: "2026-09-10"
 reading_time_minutes: 4
 keywords: [Generative AI, generative AI for Customer Service Management, generative AI for customer service agents]
 breadcrumb: [Activate ServiceNow Otto Skills, Configure, ServiceNow Otto for CSM, Customer Service Management]
@@ -21,7 +21,7 @@ Configure Sentiment analysis for email interactions to evaluate sentiment, trend
 
 Role required: admin
 
-Install the plugin for email interactions.
+Install the plugin \(sn\_eaai\_csm\) for Email Interaction for CSM.
 
 ## About this task
 
@@ -42,7 +42,7 @@ Sentiment is calculated using several factors:
 -   Frequency of updates and response time
 -   Language tone
 
-The Sentiment Reasoning field provides details on which factors were considered. This includes:
+The Sentiment Reasoning field in the record provides details on which factors were considered for reasoning. This includes:
 
 -   Tone of the requester's messages across the transcript.
 -   Feedback or continued frustration in the latest requester's messages.
@@ -62,7 +62,7 @@ The Sentiment Reasoning field provides details on which factors were considered.
 
     Additional information regarding details of the skill are displayed, but can't be edited.
 
-5.  Select **Choose Input** and review the tables and fields to create prompts that determines where data is pulled from.
+5.  Select **Choose Input** and review the tables and fields to create prompts that determine where data is pulled from.
 
     **Note:** You cannot modify the input data source.
 

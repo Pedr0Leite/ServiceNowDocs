@@ -1,5 +1,5 @@
 ---
-title: Add new CAB meeting agenda items
+title: Add CAB meeting agenda items
 description: You can add an agenda item to your CAB meeting to customize the agenda and make the meeting more effective.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/it-service-management/change-management/add-new-agenda-items.html
@@ -7,18 +7,22 @@ release: australia
 product: Change Management
 classification: change-management
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Working with the CAB Workbench, Use, Change Management, IT Service Management]
 ---
 
-# Add new CAB meeting agenda items
+# Add CAB meeting agenda items
 
 You can add an agenda item to your CAB meeting to customize the agenda and make the meeting more effective.
 
 ## Before you begin
 
 Role required: admin
+
+## About this task
+
+The **Agenda Items** related list connects a change request \(RFC\) to the CAB meetings where the change is reviewed. Each agenda item record uses the fields described in the **CAB Agenda Item form** table.
 
 ## Procedure
 
@@ -28,7 +32,9 @@ Role required: admin
 
 2.  Select the CAB meeting record that you want to add an agenda item to.
 
-3.  In the **Agenda Items** context menu, select **New**.
+3.  In the **Agenda Items** related list, select **New**.
+
+    The **Agenda Items** related list is on the CAB meeting record.
 
     **Note:** If the **New** button does not appear on the **Agenda Items** related list, confirm that you have a required role and that the CAB meeting is in a state that allows adding agenda items.
 
@@ -56,7 +62,7 @@ Task
 
 </td><td>
 
-Lookup list to select the change request or standard change proposal.**Note:** The standard change proposal is available for selection only from Australia .
+Lookup list to select the change request or standard change proposal.**Note:** The standard change proposal is available for selection only from Brazil.
 
 </td></tr><tr><td>
 
@@ -64,7 +70,7 @@ Order
 
 </td><td>
 
-Order that the agenda items will be reviewed during the CAB meeting.
+Order that the agenda items are reviewed during the CAB meeting.
 
 </td></tr><tr><td>
 

@@ -7,7 +7,7 @@ release: australia
 product: Search Administration
 classification: search-administration
 topic_type: task
-last_updated: "2026-08-11"
+last_updated: "2026-09-10"
 reading_time_minutes: 5
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Crawl, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -41,14 +41,14 @@ You can run a content crawl as a one-time task or set it to recur on a scheduled
 
 2.  In the Connectors list, select the record for the connector that you want to create a content crawl for.
 
-3.  In the connector editor's Create crawls tab, select **Crawl content**.
+3.  In the connector editor's **Create crawls** tab, select **Crawl content**.
 
     The Crawl content dialog box appears.
 
 4.  Select the tile for the scope you want for your content crawl.
 
     -   To retrieve searchable content and metadata from all available start points in your source system, select **Full content crawl**.
-    -   To only retrieve searchable content and metadata from a single start point, select **Partial content crawl** and enter or select the start point for the crawl. The partial crawl will only retrieve content from this start point and its descendant locations.
+    -   To only retrieve searchable content and metadata from a single start point, select **Partial content crawl** and enter or select the start point for the crawl. The partial crawl only retrieves content from this start point and its descendant locations.
 
         **Note:** When configuring a partial content crawl, you can select **Refresh start points** to populate the list of available start points. Refreshing this list requires retrieval of data from the source system and may take a minute or two.
 

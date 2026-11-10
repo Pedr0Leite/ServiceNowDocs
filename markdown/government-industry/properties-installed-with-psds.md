@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/government-industry/properties-installed-with-psds.html
 release: australia
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Components and roles installed, Reference, Public Sector Digital Services \(PSDS\)]
 ---
@@ -32,7 +32,7 @@ glide.enforce\_security\_scope.sn\_gsm\_info\_req
 
 </td><td>
 
-Controls access to playbook data for the Information Request Playbook feature. If this property is set to false, then ACLs from all scopes are considered when granting access to playbook data in the scope master table. This would expose information request playbook data.
+Controls access to playbook data for the Information Request Administration feature. If this property is set to false, then ACLs from all scopes are considered when granting access to playbook data in the scope master table. This would expose information request playbook data.
 
 -   Type: Boolean
 -   Default value: true

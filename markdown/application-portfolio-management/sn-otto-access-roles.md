@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/application-portfolio-management/sn-otto-access-roles.html
 release: australia
 topic_type: reference
-last_updated: "2026-06-09"
+last_updated: "2026-09-10"
 reading_time_minutes: 12
-breadcrumb: [Configure ServiceNow Otto for Enterprise Architecture \(EA\), Configuring Enterprise Architecture Workspace, Enterprise Architecture Workspace, Enterprise Architecture]
+breadcrumb: [Install Enterprise Architecture Workspace, Configuring Enterprise Architecture Workspace, Enterprise Architecture Workspace, Enterprise Architecture]
 ---
 
 # ServiceNow Otto for Enterprise Architecture \(EA\) access roles
@@ -150,6 +150,34 @@ Configure role-based access to individual skills
 </td></tr><tr><td>
 
 Define and configure custom parameters for the business application insights prompt; make a copy of the business application insights skill
+
+</td><td align="center">
+
+\[Omitted image "icon-check-mark-green.png"\] Alt text: Yes
+
+</td><td align="center">
+
+ 
+
+</td><td align="center">
+
+ 
+
+</td><td align="center">
+
+ 
+
+</td><td align="center">
+
+ 
+
+</td><td>
+
+ 
+
+</td></tr><tr><td>
+
+Set how the business application insights skill is triggered \(**Automatic** or **User trigger**\) and define optional conditions for the **Automatic** trigger on the **Define trigger** tab
 
 </td><td align="center">
 
@@ -552,6 +580,34 @@ Notes
 </th></tr></thead><tbody><tr><td>
 
 Generate insights from the business application details page
+
+</td><td align="center">
+
+ 
+
+</td><td align="center">
+
+ 
+
+</td><td align="center">
+
+\[Omitted image "icon-check-mark-green.png"\] Alt text: Yes
+
+</td><td align="center">
+
+ 
+
+</td><td align="center">
+
+ 
+
+</td><td>
+
+Available when the skill trigger is set to **User trigger**.
+
+</td></tr><tr><td>
+
+View insights that are generated automatically when you open a business application record page, when the skill trigger is set to **Automatic**
 
 </td><td align="center">
 
@@ -1750,6 +1806,34 @@ Ask follow-up questions within the same session without restating context; selec
 
  
 
+</td></tr><tr><td>
+
+Ask about the impact of an infrastructure CI, such as a database, database instance, server, or storage device. Ask about the infrastructure that a business application or application service depends on.
+
+</td><td align="center">
+
+ 
+
+</td><td align="center">
+
+ 
+
+</td><td align="center">
+
+\[Omitted image "icon-check-mark-green.png"\] Alt text: Yes
+
+</td><td align="center">
+
+ 
+
+</td><td align="center">
+
+ 
+
+</td><td>
+
+ 
+
 </td></tr></tbody>
 </table>## Conversational experience \(Virtual Agent\)
 
@@ -1924,7 +2008,7 @@ Review and modify the auto-populated form fields before submission
 No role required.
 
 </td></tr></tbody>
-</table>**Parent Topic:**[Configure ServiceNow Otto for Enterprise Architecture \(EA\)](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-portfolio-management/configure-now-assist-ea.md)
+</table>**Parent Topic:**[Install Enterprise Architecture Workspace](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-portfolio-management/install-ea-workspace.md)
 
 **Related topics**  
 

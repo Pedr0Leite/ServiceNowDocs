@@ -7,7 +7,7 @@ release: australia
 product: Event Management
 classification: event-management
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 4
 breadcrumb: [Self-health monitors for Event Management, Manage and monitor alerts, Configure, Event Management, ITOM AIOps, IT Operations Management]
 ---
@@ -226,11 +226,9 @@ Additional information
 Further information about the monitor.
 
 </td></tr></tbody>
-</table>3.  On the Monitoring Configuration form, next to the **Script** field, click the search icon.
+</table>3.  On the Monitoring Configuration form, next to the **Script** field, click the search icon to open the Health Monitor Scripts form.
 
     To create a custom health monitor script, click **New**.
-
-    The Health Monitor Scripts form opens.
 
 4.  On the form, fill in the fields.
 

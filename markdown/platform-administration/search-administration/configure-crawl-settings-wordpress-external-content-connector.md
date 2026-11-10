@@ -7,7 +7,7 @@ release: australia
 product: Search Administration
 classification: search-administration
 topic_type: task
-last_updated: "2026-05-15"
+last_updated: "2026-09-10"
 reading_time_minutes: 8
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [WordPress external content connector, Configure, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -40,7 +40,7 @@ When a connector's indexed content item count exceeds 800,000, a warning message
 
 External content connectors that support user permissions crawls can handle permissions for up to five hundred thousand \(500,000\) users and their groups. If a connector retrieves users in excess of this limit, user and group permissions may not be correctly applied to the connector's retrieved content. As a result, the content may not be searchable.
 
-If one of your connectors reaches the content indexing limit, you can update its crawl settings and file inclusion/exclusion filters to reduce the number of content items it retrieves. Alternatively, if you need a connector to index more than 1,000,000 content items, you can create a Customer Service and Support case at [https://support.servicenow.com/now](https://support.servicenow.com/now) to request a limit increase for the connector.
+If one of your connectors reaches the content indexing limit, you can update its crawl settings and file inclusion/exclusion filters to reduce the number of content items it retrieves. If you need to index more content items than the limit allows, you can create a Customer Service and Support case at [https://support.servicenow.com/now](https://support.servicenow.com/now) to request a limit increase for the connector.
 
 ## Procedure
 
@@ -48,7 +48,7 @@ If one of your connectors reaches the content indexing limit, you can update its
 
 2.  In the Connectors list, select the record for the WordPress external content connector whose settings you want to modify.
 
-3.  In the connector editor's Settings tab, select **Crawl settings**.
+3.  In the connector editor's **Settings** tab, select **Crawl settings**.
 
 4.  Select one of the following **Pages** options:
 
@@ -79,7 +79,7 @@ If one of your connectors reaches the content indexing limit, you can update its
 
         As an example, you might enter `Company news`, `Tech blog`, and `Press events` to only retrieve searchable content from blog posts that belong to the specified categories.
 
-    -   To retrieve blog posts belonging to all but a specified set of categories from the source system, select **Exclude only these blog posts**, then use the **Categories to exclude** field and **Add** button to enter URLs for categories you want the connector to exclude when crawling blog posts.
+    -   To retrieve blog posts belonging to all but a specified set of categories from the source system, select **Exclude only these categories**, then use the **Categories to exclude** field and **Add** button to enter URLs for categories you want the connector to exclude when crawling blog posts.
 
         As an example, you might enter `Testing` to exclude searchable content from blog posts that belong to the specified category.
 
@@ -94,11 +94,11 @@ If one of your connectors reaches the content indexing limit, you can update its
     -   To retrieve pages and blog posts with all states from the source system, select **Crawl all states**.
     -   To retrieve only pages and blog posts with a specified set of states from the source system, select **Include only these states**, then use the **States to include** field and **Add** button to enter states you want the connector to include when crawling.
 
-        As an example, you might enter `publish` to only retrieve pages and blog that have this state.
+        As an example, you might enter `publish` to only retrieve pages and blog posts that have this state.
 
     -   To retrieve pages and blog posts with all but a specified set of states from the source system, select **Exclude only these states**, then use the **States to exclude** field and **Add** button to enter states you want the connector to exclude when crawling.
 
-        As an example, you might enter `private`, `future`, `pending`, and `draft` to exclude pages and blog that have any of the specified states.
+        As an example, you might enter `private`, `future`, `pending`, and `draft` to exclude pages and blog posts that have any of the specified states.
 
 9.  Select one of the following **Attachments** options:
 

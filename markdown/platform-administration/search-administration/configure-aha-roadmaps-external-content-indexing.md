@@ -7,7 +7,7 @@ release: australia
 product: Search Administration
 classification: search-administration
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Aha! Roadmaps external content connector, Configure, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -29,7 +29,7 @@ Role required: none
 
 The Aha! Roadmaps external content connector retrieves Features, Goals, Ideas, Notes, and Releases from workspaces in your Aha! Roadmaps source system using the Aha! REST API.
 
-To allow the connector to access your Aha! Roadmaps content via the REST API, you must generate an API key in Aha! Roadmaps. Your connector administrator can use this API key to configure the Aha! Roadmaps external connector for proper connection to your source system.
+To allow the connector to access your Aha! Roadmaps content via the REST API, you must generate an API key in Aha! Roadmaps. Your connector administrator can use this API key to configure the Aha! Roadmaps external content connector for proper connection to your source system.
 
 ## Procedure
 

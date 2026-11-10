@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/mc-review-and-submit-the-cost-configuration.html
 release: australia
 topic_type: task
-last_updated: "2026-09-24"
+last_updated: "2026-11-06"
 reading_time_minutes: 2
-breadcrumb: [Cost, Configure, Measure AI system, Measure AI systems, AI Control Tower, Enable AI experiences]
+breadcrumb: [Cost, Configure, Measure AI system, Measure AI systems, AI Control Tower, Establishing AI governance, Enable AI Experiences]
 ---
 
 # Review and submit the cost configuration
@@ -16,7 +16,7 @@ Review all Cost Framework configurations, verify the calculations, and submit to
 
 ## Before you begin
 
-Role required: AI steward \(`sn_ai_governance_ai_steward`\).
+Role required: AI steward \(`sn_ai_governance.ai_steward`\).
 
 ## About this task
 

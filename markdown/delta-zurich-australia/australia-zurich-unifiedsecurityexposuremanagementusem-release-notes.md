@@ -5,8 +5,8 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/delta-zurich-australia/australia-zurich-unifiedsecurityexposuremanagementusem-release-notes.html
 release: australia
 topic_type: reference
-last_updated: "2026-09-24"
-reading_time_minutes: 26
+last_updated: "2026-11-06"
+reading_time_minutes: 27
 breadcrumb: [Products combined by family]
 ---
 
@@ -184,7 +184,16 @@ Australia
 
 </td><td>
 
--   **[SSVC decision values roll up from CVEs to third-party entries](https://www.servicenow.com/docs/access?context=nvd-ssvc-enrichment&family=australia&ft:locale=en-US)**
+-   **[Schedule patch deployments through Change Request approval](https://www.servicenow.com/docs/access?context=vr-ws-patch-schedule-change-request&family=australia&ft:locale=en-US)**
+
+Route patch deployments scheduled from remediation tasks through Change Request approval for Microsoft SCCM and HCL BigFix integrations. This lets you align patch deployment for critical vulnerabilities with your organization's change management approval process, and optionally deploy the patch automatically once the change is approved.
+
+-   **[Modify risk rating in bulk](https://www.servicenow.com/docs/access?context=sem-modify-risk&family=australia&ft:locale=en-US)**
+
+Vulnerability Admins can now modify risk rating directly on individual or bulk findings across host, application, or container vulnerable item, or on a remediation task without an approval workflow. Remediation Owners can also modify risk ratings, with changes routed through a change approval process. Associating a compensating control with the change is optional for all roles.
+
+
+ -   **[SSVC decision values roll up from CVEs to third-party entries](https://www.servicenow.com/docs/access?context=nvd-ssvc-enrichment&family=australia&ft:locale=en-US)**
 
 USEM rolls up the Exploitation, Automatable, and Technical Impact SSVC \(Stakeholder-Specific Vulnerability Categorization\) values from CVE entries to the corresponding third-party entry \(TPE\) records. Changes to these values automatically trigger a risk score recalculation when the TPE risk calculator uses one or more of them.
 
@@ -215,12 +224,6 @@ USEM was enhanced and updated in the Australia release to support the new AI nat
 
     -   Links to Records: Select the counts and findings in the Security Exposure 360 output to link you directly to the underlying vulnerable item \(VITs\) and records in your instance.
     -   Suggested follow-up questions: Follow-up questions are provided that help you drill down.
--   **[Fix Intelligence for Security Exposure Management](https://www.servicenow.com/docs/access?context=fix-intel-for-usem-landing&family=australia&ft:locale=en-US)**
-
-Fix Intelligence for Security Exposure Management is a new application that enriches your host findings with normalized fix information from Armis Centrix™ for Vulnerability Prioritization and Remediation \(ViPR\). Detections are de-duplicated into Fix records that are linked to the findings and assets each fix resolves, with a rolled-up risk score per fix. Your team can remediate by fix instead of one finding at a time.
-
-Prioritize fixes from the **Fix Intelligence** tab, the **Findings View**, and the **Remediation View**, and group the findings that share a fix into a single remediation task. In this release, fixes are identified for host vulnerabilities from Qualys, Rapid7, Tenable.io, Wiz, and Microsoft Defender Vulnerability Management.
-
 -   **[Enhancements to the Vulnerability Response Integration with Wiz Test Results Integration](https://www.servicenow.com/docs/access?context=wiz-test-result-tab-filters&family=australia&ft:locale=en-US)**
 
 Enhancements to the Wiz integration that imports cloud configuration findings as Test Results in Configuration Compliance. Configuration issues related to AI assets, such as AI models and agents are routed into AI security exposure management tables \(AI posture findings\).
@@ -400,7 +403,12 @@ Australia
 
 </td><td>
 
--   **[ITSM Advanced plugin required for change request options in the Remediation view](https://www.servicenow.com/docs/access?context=sem-ws-CRs&family=australia&ft:locale=en-US)**
+-   **Risk rating options are no longer part of exception or deferral requests**
+
+Changing a risk rating is no longer available from the Request Exception dialog, or from the Bulk Edit dialog by selecting **Mitigating Control in Place** as a deferral reason. Risk rating and compensating control fields have been removed from both. Use **Modify risk** or **Request risk modification**, according to your role, to change a risk rating instead for individual records or in bulk.
+
+
+ -   **[ITSM Advanced plugin required for change request options in the Remediation view](https://www.servicenow.com/docs/access?context=sem-ws-CRs&family=australia&ft:locale=en-US)**
 
 Use the **Create Change** and **Add to existing change** options in the Remediation view of the Security Exposure Management Workspace to manage remediation tasks through Change Management. These options now require the ITSM Advanced plugin to be active on your instance. If you have migrated to an ITSM AI Native SKU without ITSM Advanced, upgrade to ITSM Advanced SKU to restore access to these options.
 

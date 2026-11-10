@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/itom-csdm-business-application-to-infrastructure-ai-specialist-ai-agent.html
 release: australia
 topic_type: reference
-last_updated: "2026-08-14"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
-breadcrumb: [IT Operations Management AI agents, IT Operations Management, AI agents library, AI assets, Enable AI experiences]
+breadcrumb: [IT Operations Management AI agents, IT Operations Management, AI agents library, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # CSDM business application to infrastructure AI specialist
@@ -18,9 +18,9 @@ This AI specialist finds the best matching discovered service for each business 
 
 The specialist connects the CSDM business application to infrastructure.
 
-1.  Receive the user's request and search based on that filter.
-2.  Evaluate and rank search results.
-3.  Return the highest-ranking results or update the relevant record.
+1.  Evaluate and rank search results. For each business application, the agent runs an AI semantic search against discovered services and receives up to 30 candidates, ordered by relevance score \(0–1\).
+2.  Candidates with a score of 0.3 or higher are automatically connected. The agent creates a "Uses::Used by" relationship in \[cmdb\_rel\_ci\]. Candidates with a score of 0.1–0.29 are saved to the staging table \[sn\_sm\_gen\_ai\_ba\_candidate\_rel\] for administrator review. Candidates below 0.1 are filtered out.
+3.  If the AI Search profile is unavailable, fall back to a keyword search using the CONTAINS operator on the service name field.
 
 <table><thead><tr><th>
 

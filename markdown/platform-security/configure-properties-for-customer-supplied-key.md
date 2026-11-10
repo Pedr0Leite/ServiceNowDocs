@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/platform-security/configure-properties-for-customer-supplied-key.html
 release: australia
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Configure Customer-supplied keys for Field Encryption Enterprise, Configuring Field Encryption, Field Encryption, Encryption]
 ---
@@ -77,9 +77,9 @@ Period for which the ephemeral key pair is valid.
 </td></tr></tbody>
 </table>## Procedure
 
-1.  Contact ServiceNow Support if you need to change any of these properties.
+1.  Contact ServiceNow Support to change any of these properties.
 
-    **Note:** These system properties are not visible to admins, and do not appear in the System properties \[sys\_properties\] list. Use the table above to see their default values.
+    **Note:** These system properties aren't visible to admins, and don't appear in the System properties \[sys\_properties\] list. Use the table above to see their default values.
 
 
 ## What to do next

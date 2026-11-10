@@ -5,8 +5,8 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/delta-zurich-australia/australia-zurich-disputerulescontentpackformastercard-release-notes.html
 release: australia
 topic_type: reference
-last_updated: "2026-09-24"
-reading_time_minutes: 12
+last_updated: "2026-11-06"
+reading_time_minutes: 15
 breadcrumb: [Products combined by family]
 ---
 
@@ -106,7 +106,57 @@ Australia
 
 </td><td>
 
--   **[July Store Release: New data field for Mastercard chargeback ineligibility rule assessment](https://www.servicenow.com/docs/access?context=dispute-rules-content-pack-for-mastercard-landing-page&family=australia&ft:locale=en-US)**
+-   **New choice values for Mastercard transactional data fields**
+
+Use the new **processing\_code** and **merchant\_advice\_code** choice values on the Financial Transaction Authorization table to align with the current authorization data requirements of Mastercard.
+
+**processing\_code** values:
+
+    -   00 Purchase
+    -   01 Withdrawal
+    -   02 Debit Adjustment
+    -   09 Purchase with Cash Back
+    -   10 Visa Only. Account Funding
+    -   17 Cash Disbursement
+    -   18 Scrip Issue
+    -   20 Purchase Return/Refund
+    -   21 Deposit
+    -   22 Credit Adjustment
+    -   28 Payment Transaction
+    -   30 Balance Inquiry
+    -   40 Account Transfer
+    -   90 Reserved for Future Use
+    -   91 PIN Unblock
+    -   92 PIN Change
+**merchant\_advice\_code** values:
+
+    -   01 New account information available
+    -   02 Cannot approve at this time, try again later
+    -   03 Do not try again
+    -   04 Token requirements not fulfilled for this token type
+    -   05 Negotiated value not approved
+    -   06 Original Transaction Approved
+    -   07 Original Transaction Declined
+    -   08 Original Transaction Approval Status Unknown
+    -   21 Payment Cancellation
+    -   22 Merchant does not qualify for product code
+    -   24 Retry after 1 hour
+    -   25 Retry after 24 hours
+    -   26 Retry after 2 days
+    -   27 Retry after 4 days
+    -   28 Retry after 6 days
+    -   29 Retry after 8 days
+    -   30 Retry after 10 days
+    -   40 Consumer non-reloadable prepaid card
+    -   41 Consumer single-use virtual card number
+    -   42 Sanctions score limit exceeded
+    -   43 Consumer multi-use virtual card number
+    -   44 Processing in progress
+    -   blank \(no value\) Retry with PIN
+    -   90 Issuer decisioned
+    -   99 Mastercard decisioned
+
+ -   **[July Store Release: New data field for Mastercard chargeback ineligibility rule assessment](https://www.servicenow.com/docs/access?context=dispute-rules-content-pack-for-mastercard-landing-page&family=australia&ft:locale=en-US)**
 
 A new Mastercard data field `programRegistrationId` has been added to the Financial Transaction table to support chargeback ineligibility rule evaluation for RC 4853 Cardholder Disputes sub-categories. The field is sourced from the Mastercard clearing API.
 
@@ -231,7 +281,18 @@ Australia
 
 </td><td>
 
--   **[July Store Release: Build and update Mastercard chargeback ineligibility rules — Processing Errors](https://www.servicenow.com/docs/access?context=dispute-rules-content-pack-for-mastercard-landing-page&family=australia&ft:locale=en-US)**
+-   **Updated Mastercard chargeback ineligibility decision tables for fraud \(RC 4870 and RC 4871\)**
+
+The ineligibility condition for RC 4871 \(Chip Liability Shift, Lost, Stolen, or Never Received Issue \(NRI\) Fraud\) in the **Mastercard 4871 - Chip Liability Shift-Lost/Stolen/Never Received Issue \(NRI\) Fraud** decision table reverses the comparison for the fraud-report timing window. Before this release, a dispute was ineligible when it was raised fewer than three days after the transaction was reported lost, stolen, or never received in the fraud and loss database. A dispute is ineligible when it is raised more than three days after the report. The condition also requires a fraud report ID to be present; this requirement is unchanged. The associated chargeback ineligibility reason text is updated to match the current wording in the Mastercard Chargeback Guide.
+
+The **Mastercard 4870 - Chip Liability Shift** and **Mastercard 4871 - Chip Liability Shift-Lost/Stolen/Never Received Issue \(NRI\) Fraud** decision tables each change the ineligibility condition for repeat fraud chargebacks on the same Mastercard card account. Before this release, a dispute was ineligible when the **Chargeback transactions count** was three or more. The count included chargebacks under RC 4837, RC 4870, or RC 4871, regardless of when they were submitted. The condition uses a new input, **Fraud CB count before auth date**, and a dispute is ineligible when the count is two or more. The new count includes only chargebacks that were submitted before the authorization date of the disputed transaction. The chargeback ineligibility reason text in both decision tables is updated to specify fraud chargebacks.
+
+-   **Updated Mastercard chargeback ineligibility decision table for Refund Not Processed \(RC 4853\)**
+
+The **Mastercard 4853 - Credit Not Processed** decision table adds a condition to the ineligibility rule for RC 4853 \(Refund Not Processed\). Before this release, a dispute was ineligible when the transaction had one of the merchant category codes \(MCCs\) 3000 through 3999, 4411, 4511, 4722, 6513, 7011, 7512, 7519, or 7922. The MCC list is unchanged. A dispute with one of these MCCs is ineligible only when the merchant provided a voucher for future use and disclosed it in its terms and conditions. The new condition checks that the answer to the merchant voucher question in the dispute questionnaire is Yes. The chargeback ineligibility reason text is updated to describe the voucher condition.
+
+
+ -   **[July Store Release: Build and update Mastercard chargeback ineligibility rules — Processing Errors](https://www.servicenow.com/docs/access?context=dispute-rules-content-pack-for-mastercard-landing-page&family=australia&ft:locale=en-US)**
 
 Ineligibility rule conditions have been updated across the RC 4834 Processing Errors sub-categories to align with the latest Mastercard Chargeback Guide. Updated sub-categories include Transaction Amount Differs, Currency Errors, Cardholder Debited More than Once for the Same Goods or Services, ATM Funds Not Dispensed, Charges for Loss, Theft, or Damages, Merchant Refund Correcting Error Resulted in Cardholder Currency Exchange Loss, Improper Merchant Surcharge, Unreasonable Amount, and Cash was not properly provided from a Purchase with Cash Back transaction.
 

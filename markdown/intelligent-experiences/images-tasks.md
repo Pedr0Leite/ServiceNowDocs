@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/images-tasks.html
 release: australia
 topic_type: concept
-last_updated: "2027-07-21"
+last_updated: "2026-10-27"
 reading_time_minutes: 6
-breadcrumb: [Platform agentic workflows, Agentic workflows, AI assets, Enable AI experiences]
+breadcrumb: [Platform agentic workflows, Agentic workflows, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Platform Process images for new tasks agentic workflow
@@ -30,7 +30,7 @@ Users must have the **sn\_uxc\_gen\_ai.platform\_ai\_image\_processor** role to 
 
 If you want the ability for users to create tasks from images using ServiceNow Otto for Virtual Agent, you must activate the Image Processor Agent, Record management AI agent, and Document and visual insights AI agent and set the display to include Virtual Agent. This agentic workflow cannot be discovered in Virtual Agent, so you must enable the individual AI agents that comprise it.
 
-## Role masking
+## Role filtering
 
 Required role: sn\_uxc\_gen\_ai.platform\_ai\_image\_processor.
 
@@ -83,7 +83,13 @@ List of tables where you can make tasks from images
 </td></tr></tbody>
 </table>## Accessing the Process images for new tasks agentic workflow
 
-To access the agentic workflow:
+To access the agentic workflow in AI Agent Studio:
+
+1.  Navigate to **All** &gt; **AI Agent Studio** &gt; **Agentic Solutions**.
+2.  Select the **Agentic workflows** tab.
+3.  Select **Process images for new tasks**.
+
+To access the agentic workflow in the legacy AI Agent Studio:
 
 1.  Navigate to **All** &gt; **AI Agent Studio** &gt; **Create and manage**.
 2.  Select **Process images for new tasks**.

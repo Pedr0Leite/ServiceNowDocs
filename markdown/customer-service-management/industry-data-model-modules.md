@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/customer-service-management/industry-data-model-modules.html
 release: australia
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-28"
 reading_time_minutes: 2
-breadcrumb: [Overview, Configure Service Model Foundation, Data models, Set up your environment, Configure, Customer Service Management]
+breadcrumb: [Service Model Foundation overview, Configure Service Model Foundation, Data models, Set up your environment, Configure, Customer Service Management]
 ---
 
 # Service Model Foundation modules
@@ -32,7 +32,7 @@ Users with the following roles have access to these modules.
 
 ## External Organization Staff \(formerly Service Organization External Staffs\) module
 
-**All &gt; Customer Service &gt; Business Organizations&gt; External Organization Staff \(formerly Service Organization External Staffs\)**: This module lists the external staff members created and added to the external organization.
+**All &gt; Customer Service &gt; Business Organizations&gt; External Organization Staff \(formerly Service Organization External Staffs\)**: This module lists the external staff members created and added to the external business location.
 
 **Note:** This module is available in Agent Workspace and in the platform interface.
 

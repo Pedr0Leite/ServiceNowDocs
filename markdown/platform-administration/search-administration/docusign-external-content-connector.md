@@ -7,7 +7,7 @@ release: australia
 product: Search Administration
 classification: search-administration
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Configure, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -23,7 +23,7 @@ The indexed content and metadata are stored as records in a connector-specific i
 
 **Important:**
 
-The Docusign external content connector doesn’t support the [shared access](https://support.docusign.com/s/document-item?language=en_US&bundleId=oeq1643226594604&topicId=rdu1656546423934.html&_LANG=enus) feature in Docusign. As a result, users in search applications can't see searchable content and metadata from envelopes that they only have shared access to.
+The Docusign external content connector doesn't support the [shared access](https://support.docusign.com/s/document-item?language=en_US&bundleId=oeq1643226594604&topicId=rdu1656546423934.html&_LANG=enus) feature in Docusign. As a result, users in search applications can't see searchable content and metadata from envelopes that they only have shared access to.
 
 -   **[Configure Docusign for external content indexing](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-administration/search-administration/configure-docusign-external-content-indexing.md)**  
 Create an app and integration key in Docusign to allow the Docusign external content connector to access your source system.

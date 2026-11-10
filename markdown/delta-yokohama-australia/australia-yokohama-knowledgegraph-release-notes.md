@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/delta-yokohama-australia/australia-yokohama-knowledgegraph-release-notes.html
 release: australia
 topic_type: reference
-last_updated: "2026-09-24"
+last_updated: "2026-11-06"
 reading_time_minutes: 12
 breadcrumb: [Products combined by family]
 ---
@@ -575,7 +575,9 @@ Zurich
 
 </td><td>
 
-Zurich patch 13:
+Knowledge Graph can now be accessed by External users, with user role snc\_external, by setting the sn\_kg.enable\_external\_user\_check property to true.
+
+ Zurich patch 13:
 
 -   Improved search results accuracy with enhanced Knowledge Graph integration in ServiceNow Otto panel, ServiceNow® Otto for Virtual Agent, and AI Agents.
 
@@ -617,7 +619,7 @@ Zurich patch 13:
 
  Zurich EA
 
--   Use Google Gemini and Anthropic Claude on AWS as AI model providers for Knowledge Graph in addition to Now LLM Service and Azure OpenAI.
+-   Use Google Gemini and Anthropic Claude as AI model providers for Knowledge Graph in addition to Now LLM Service and Azure OpenAI.
 -   Select your preferred large language model \(LLM\) provider for Now Assist platform. Apart from Now LLM Service, the platform supports Azure OpenAI GPT-4.1 and GPT-4.1 mini, Google Gemini 2.0 Flash and 2.5 Pro, and AWS Anthropic Claude 3.7 Sonnet LLM providers with ServiceNow® third-party model strategy.
 
  See [Knowledge Graph](https://www.servicenow.com/docs/access?context=knowledge-graph-landing&family=zurich&ft:locale=en-US) for more information.
@@ -628,7 +630,9 @@ Australia
 
 </td><td>
 
-[\[Placeholder link text to key australia-patch-6\]](https://www.servicenow.com/docs/access?context=australia-patch-6&family=australia&ft:locale=en-US)
+-   Knowledge Graph can now be accessed by External users, with user role snc\_external, by setting the sn\_kg.enable\_external\_user\_check property to true.
+
+ [Australia Patch 6](https://www.servicenow.com/docs/access?context=australia-patch-6&family=australia&ft:locale=en-US)
 
 -   Improved search results accuracy with enhanced Knowledge Graph integration in ServiceNow Otto® panel, ServiceNow® Otto for Virtual Agent, and AI Agents.
 

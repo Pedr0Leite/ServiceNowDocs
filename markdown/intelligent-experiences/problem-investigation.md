@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/problem-investigation.html
 release: australia
 topic_type: concept
-last_updated: "2026-07-21"
-reading_time_minutes: 5
-breadcrumb: [Platform agentic workflows, Agentic workflows, AI assets, Enable AI experiences]
+last_updated: "2026-10-27"
+reading_time_minutes: 6
+breadcrumb: [Platform agentic workflows, Agentic workflows, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Platform Investigate problems agentic workflow
@@ -28,7 +28,7 @@ To access this workflow, you must have ServiceNow Otto for Platform installed on
 
 Because this agentic workflow analyzes problems and incidents related to those problems, you must have records on the Problem and Incident table.
 
-## Role masking
+## Role filtering
 
 Required role: sn\_uxc\_gen\_ai.platform\_ai\_problem\_investigator.
 
@@ -38,7 +38,13 @@ In the data access settings, you must also add the necessary roles to enable rea
 
 ## Accessing the Investigate problems agentic workflow
 
-To access the agentic workflow:
+To access the agentic workflow in AI Agent Studio:
+
+1.  Navigate to **All** &gt; **AI Agent Studio** &gt; **Agentic Solutions**.
+2.  Select the **Agentic workflows** tab.
+3.  Select **Investigate problems**.
+
+To access the agentic workflow in the legacy AI Agent Studio:
 
 1.  Navigate to **All** &gt; **AI Agent Studio** &gt; **Create and manage**.
 2.  Select **Investigate problems**.

@@ -7,8 +7,8 @@ release: australia
 product: Discovery
 classification: discovery
 topic_type: concept
-last_updated: "2026-03-23"
-reading_time_minutes: 30
+last_updated: "2026-10-26"
+reading_time_minutes: 37
 keywords: [azure kubernetes, kubernetes cluster, get kubernetes config file, kubernetes mid server]
 breadcrumb: [Discovery for containerized resources, Discovery, ITOM Visibility, IT Operations Management]
 ---
@@ -23,7 +23,7 @@ Discovery uses the Kubernetes pattern and its extension sections to discover Kub
 -   The **Service Mesh** extension discovers service mesh details. This information enables the pattern to create service-to-service relations, shown as Connects to::Connected. Service mesh discovery requires deploying Istio on your K8s \(Kubernetes\) cluster. The Service Mesh extension section is available from [Kubernetes extension classes](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/servicenow-platform/cmdb-ci-class-models-kubernetes.md). It’s supported on the ServiceNow AI Platform using the Madrid release or later.
 -   The **Collect Container Repository** and extension section finds container registries and images in these registries.
 
-Starting from Discovery and Service Mapping Patterns version 1.35.0, the Kubernetes Cluster - Per-Namespace LP pattern is available for large cluster discovery. For more information, see the **Large-payload Kubernetes discovery** section.
+Starting from Discovery and Service Mapping Patterns version 1.35.1, the Kubernetes Cluster - Per-Namespace LP pattern is available for large cluster discovery. For more information, see the **Large-payload Kubernetes discovery** section.
 
 In addition, Discovery uses the Kubernetes Event pattern to discover events for Kubernetes components.
 
@@ -49,13 +49,11 @@ Visit the [ServiceNow Store](https://store.servicenow.com/sn_appstore_store.do#!
 
 ## Large-payload Kubernetes discovery
 
-By default, Discovery uses the Kubernetes pattern to discover an entire cluster in a single execution. On large clusters, this can result in incomplete discovery data in the CMDB. The Kubernetes Cluster - Per-Namespace LP pattern is available as an alternative for large cluster environments, starting from Discovery and Service Mapping Patterns version 1.35.0.
+By default, Discovery uses the Kubernetes pattern to discover an entire cluster in a single execution. On large clusters, this can result in incomplete discovery data in the CMDB. The Kubernetes Cluster - Per-Namespace LP pattern is available as an alternative for large cluster environments, starting from Discovery and Service Mapping Patterns version 1.35.1.
 
 The Kubernetes Cluster - Per-Namespace LP pattern identifies the cluster and then discovers each namespace separately, improving reliability on large clusters. The data collected and the CIs populated in the CMDB are identical between the two patterns. For configuration on on-premises clusters, see the **Prerequisites for on-premises Kubernetes discovery** section. For cloud clusters, see the prerequisites section for your cloud provider.
 
-## Prerequisites for on-premises Kubernetes discovery
-
-**Note:** For prerequisites for Kubernetes Cloud infrastructure discovery, see [below](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/discovery/kubernetes-discovery.md).
+## General prerequisites for Kubernetes discovery
 
 **Note:** Running automatic serverless Kubernetes schedules fetches the Bearer token. Adding credentials is unnecessary.
 
@@ -289,7 +287,7 @@ Pattern
 </td><td>
 
 Pattern to use for this schedule: -   **Kubernetes**
--   **Kubernetes Cluster - Per-Namespace LP** \(starting from Discovery and Service Mapping Patterns version 1.35.0\)
+-   **Kubernetes Cluster - Per-Namespace LP** \(starting from Discovery and Service Mapping Patterns version 1.35.1\)
 
 
 </td></tr><tr><td>
@@ -318,7 +316,12 @@ url
 
 </td><td>
 
-The identifier for the hostname, IP, or FQDN and the port of the Kubernetes apiserver. Use the following format: example\_hostname:example\_port or example\_ip:example\_port. Provide the correct protocol \(HTTP or HTTPS\) in the URL.
+The identifier for the Kubernetes apiserver. Provide the correct protocol \(HTTP or HTTPS\) in the URL. Use one of the following formats: -   Hostname, IP address, or FQDN, with the port in the following formats: example\_hostname:example\_port or example\_ip:example\_port.
+
+If no port is specified, 443 is used for HTTPS and 80 is used for HTTP.
+
+-   For on-premises clusters managed through a proxy such as Rancher, use the cluster-specific URL in the following format: https://&lt;hostname&gt;/k8s/clusters/&lt;cluster\_id&gt;
+
 
 </td></tr><tr><td>
 
@@ -386,19 +389,22 @@ Internal parameter used by the **Kubernetes Cluster - Per-Namespace LP** pattern
 
 10. To include discovered components into service instances, enable CI relationships used in tag-based discovery by Service Mapping. These CI relationships are available from the 1.0.68 release on the ServiceNow Store. For operational steps, see [Tag-based discovery configuration](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/service-mapping/tag_discovery_configuration.md).
 
-## Prerequisites for Kubernetes Cloud infrastructure discovery
+## Additional prerequisites for Kubernetes Cloud infrastructure discovery
 
 For the Google Cloud Platform \(GCP\) – Get Kubernetes Clusters pattern, perform the following:
 
 1.  In the ServiceNow instance, set up a Google Cloud Platform \(GCP\) service account with valid credentials and permissions.
 2.  On the GCP infrastructure, set up the MID Server with full access to all Cloud APIs: Set Cloud API access scopes to "Allow full access to all Cloud APIs". The MID Server instance can access only the Clusters specific to the project.
 3.  Navigate to `sys_properties.list` and, using the admin role, configure the following properties:
-    -   **sn\_itom\_pattern.k8s\_midserver**: Specify a valid MID Server or MID Server cluster name \(MID Server cluster support starting with Discovery and Service Mapping Patterns version 1.35.0\).
+    -   **sn\_itom\_pattern.k8s\_midserver**: Specify a valid MID Server or MID Server cluster name \(MID Server cluster support starting with Discovery and Service Mapping Patterns version 1.35.1\).
+
+        **Note:** To target a specific service account or cluster, you can configure the **sn\_itom\_pattern.k8s\_&lt;service\_account\_id&gt;\_midserver** and the **sn\_itom\_pattern.k8s\_&lt;service\_account\_id&gt;\_&lt;clustername&gt;\_midserver** properties. The most specific property takes precedence.
+
     -   **sn\_itom\_pattern.k8s\_create\_schedule\_enabled**: Set the value to **true**.
 
         **Note:** Enabling the **sn\_itom\_pattern.k8s\_create\_schedule\_enabled** property automatically creates a serverless schedule for your cloud clusters, eliminating the need for manual scheduling. If you have an existing manual schedule and want to convert it to an automatic one, enable the property. Your manual schedule will be updated; no additional schedule will be created. An automatically created schedule has no "Max run time" defined.
 
-    -   **sn\_itom\_pattern.k8s\_entry\_pattern**: To use the per-namespace large-payload \(LP\) discovery pattern, set the value to **Kubernetes Cluster - Per-Namespace LP** \(starting from Discovery and Service Mapping Patterns version 1.35.0\).
+    -   **sn\_itom\_pattern.k8s\_entry\_pattern**: To use the per-namespace large-payload \(LP\) discovery pattern, set the value to **Kubernetes Cluster - Per-Namespace LP** \(starting from Discovery and Service Mapping Patterns version 1.35.1\).
 4.  Create and run Google Cloud Discovery
 
     **Note:**
@@ -412,17 +418,16 @@ For the Google Cloud Platform \(GCP\) – Get Kubernetes Clusters pattern, perfo
 
 For the Amazon Elastic Kubernetes Service \(EKS\) cluster discovery, perform the following:
 
-1.  In the ServiceNow instance, set an AWS service account with valid management account credentials and permissions.
-    1.  Verify that the Amazon Elastic Kubernetes Service \(EKS\) Cluster has a cluster role with the read-only access to all resources.
-    2.  Create cluster role binding between the cluster role and a Kubernetes user. For example, read-onlyuser.
-    3.  Create an AWS IAM role with the policy EKSReadOnly.
-    4.  Associate the IAM role with the Kubernetes user in one of the following ways:
-        -   In the cluster, edit the aws-auth ConfigMap.
-        -   Run the command:
+1.  On the Amazon Elastic Kubernetes Service \(EKS\) cluster, create the Kubernetes RBAC resources:
+    1.  Verify that the Amazon Elastic Kubernetes Service \(EKS\) cluster has a cluster role with read-only access to all resources.
+    2.  Create a cluster role binding between the cluster role and a Kubernetes user. For example, read-only-user.
+2.  Create an AWS IAM role with a customer-managed policy named EKSReadOnly, and map it to the Kubernetes user in one of the following ways:
+    -   In the cluster, edit the aws-auth ConfigMap.
+    -   Run the command:
 
-            `eksctl create iamidentitymapping --cluster yourClusterName --arnarn:aws:iam::yourAccountID:role/yourIAMRoleName --username read-only-user`
+        `eksctl create iamidentitymapping --cluster yourClusterName --arn arn:aws:iam::yourAccountID:role/yourIAMRoleName --username read-only-user`
 
-2.  Run Amazon Elastic Kubernetes Service \(EKS\) cluster discovery in one of two ways: Using the AWS Command Line Interface \(CLI\) or without using the AWS CLI. First, set the system property **sn\_itom\_pattern.k8s\_aws\_cli\_to\_generate\_token** to use the model you choose. This system property is set to **true** by default.
+3.  Run Amazon Elastic Kubernetes Service \(EKS\) cluster discovery in one of two ways: Using the AWS Command Line Interface \(CLI\) or without using the AWS CLI. First, set the system property **sn\_itom\_pattern.k8s\_aws\_cli\_to\_generate\_token** to use the model you choose. This system property is set to **true** by default.
 
     -   Set this system property to **true** to use AWS CLI to generate a token.
 
@@ -430,13 +435,13 @@ For the Amazon Elastic Kubernetes Service \(EKS\) cluster discovery, perform the
 
     1.  Run Amazon Elastic Kubernetes Service \(EKS\) cluster discovery using AWS CLI:
 
-        1.  Set up the MID Server with the AWS CLI configured. Configuring AWS CLI credentials grants access to the Amazon Elastic Kubernetes Service \(EKS\) cluster.
+        1.  On the host where the MID Server service runs, configure the AWS CLI by running `aws configure` as the MID Server service user.
 
-            **Note:** The user logged in to the system must be the same as the MID Server user.
+            **Note:** The user logged in to the system must be the same as the MID Server service user. On Windows, the MID Server service often runs as Local System. In that case, run `aws configure` in the context of the Local System account.
 
-        2.  To generate the Bearer token, While running the Amazon Elastic Kubernetes Service \(EKS\) schedule, use the AWS CLI command:`aws eks get-token --cluster-name <cluster_name>`.
+        2.  To generate the Bearer token while running the Amazon Elastic Kubernetes Service \(EKS\) schedule, use the AWS CLI command: `aws eks get-token --cluster-name <cluster_name>`.
 
-            Configuring the AWS CLI user/role in the MID Server instance grants access to the Amazon Elastic Kubernetes Service \(EKS\) cluster to generate the token.
+            The AWS CLI must be configured on the host where the MID Server service runs, using the credentials of the MID Server service user. This grants access to the Amazon Elastic Kubernetes Service \(EKS\) cluster to generate the token.
 
     2.  Run Amazon Elastic Kubernetes Service \(EKS\) cluster discovery without using AWS CLI:
 
@@ -446,14 +451,17 @@ For the Amazon Elastic Kubernetes Service \(EKS\) cluster discovery, perform the
 
         Refer to the following KB for detailed instructions: [KB1182188: EKS cluster discovery using STS AssumeRoles \(Without AWS CLI\)](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB1182188)
 
-3.  Navigate to `sys_properties.list` and, using the admin role, configure the following properties:
-    -   **sn\_itom\_pattern.k8s\_midserver**: Specify a valid MID Server or MID Server cluster name \(MID Server cluster support starting with Discovery and Service Mapping Patterns version 1.35.0\).
+4.  Navigate to `sys_properties.list` and, using the admin role, configure the following properties:
+    -   **sn\_itom\_pattern.k8s\_midserver**: Specify a valid MID Server or MID Server cluster name \(MID Server cluster support starting with Discovery and Service Mapping Patterns version 1.35.1\).
+
+        **Note:** To target a specific service account or cluster, you can configure the **sn\_itom\_pattern.k8s\_&lt;service\_account\_id&gt;\_midserver** and the **sn\_itom\_pattern.k8s\_&lt;service\_account\_id&gt;\_&lt;clustername&gt;\_midserver** properties. The most specific property takes precedence.
+
     -   **sn\_itom\_pattern.k8s\_create\_schedule\_enabled**: Set the value to **true**.
 
         **Note:** Enabling the **sn\_itom\_pattern.k8s\_create\_schedule\_enabled** property automatically creates a serverless schedule for your cloud clusters, eliminating the need for manual scheduling. If you have an existing manual schedule and want to convert it to an automatic one, enable the property. Your manual schedule will be updated; no additional schedule will be created. An automatically created schedule has no "Max run time" defined.
 
-    -   **sn\_itom\_pattern.k8s\_entry\_pattern**: To use the per-namespace large-payload \(LP\) discovery pattern, set the value to **Kubernetes Cluster - Per-Namespace LP** \(starting from Discovery and Service Mapping Patterns version 1.35.0\).
-4.  Create and run an AWS Cloud Discovery schedule.
+    -   **sn\_itom\_pattern.k8s\_entry\_pattern**: To use the per-namespace large-payload \(LP\) discovery pattern, set the value to **Kubernetes Cluster - Per-Namespace LP** \(starting from Discovery and Service Mapping Patterns version 1.35.1\).
+5.  Create and run an AWS Cloud Discovery schedule.
 
 
 For Microsoft Azure Kubernetes Services \(AKS\)- Kubernetes cluster discovery, perform the following:
@@ -461,14 +469,17 @@ For Microsoft Azure Kubernetes Services \(AKS\)- Kubernetes cluster discovery, p
 1.  Update to the latest Discovery and Service Mapping Patterns version.
 2.  In the ServiceNow instance, configure the Azure Service Account with valid Azure credentials and permission.
 3.  Navigate to `sys_properties.list` and, using the admin role, configure the following properties:
-    -   **sn\_itom\_pattern.k8s\_midserver**: Specify a valid MID Server or MID Server cluster name \(MID Server cluster support starting with Discovery and Service Mapping Patterns version 1.35.0\).
+    -   **sn\_itom\_pattern.k8s\_midserver**: Specify a valid MID Server or MID Server cluster name \(MID Server cluster support starting with Discovery and Service Mapping Patterns version 1.35.1\).
+
+        **Note:** To target a specific service account or cluster, you can configure the **sn\_itom\_pattern.k8s\_&lt;service\_account\_id&gt;\_midserver** and the **sn\_itom\_pattern.k8s\_&lt;service\_account\_id&gt;\_&lt;clustername&gt;\_midserver** properties. The most specific property takes precedence.
+
     -   **sn\_itom\_pattern.k8s\_create\_schedule\_enabled**: Set the value to **true**.
 
         **Note:** Enabling the **sn\_itom\_pattern.k8s\_create\_schedule\_enabled** property automatically creates a serverless schedule for your cloud clusters, eliminating the need for manual scheduling. If you have an existing manual schedule and want to convert it to an automatic one, enable the property. Your manual schedule will be updated; no additional schedule will be created. An automatically created schedule has no "Max run time" defined.
 
         .
 
-    -   **sn\_itom\_pattern.k8s\_entry\_pattern**: To use the per-namespace large-payload \(LP\) discovery pattern, set the value to **Kubernetes Cluster - Per-Namespace LP** \(starting from Discovery and Service Mapping Patterns version 1.35.0\).
+    -   **sn\_itom\_pattern.k8s\_entry\_pattern**: To use the per-namespace large-payload \(LP\) discovery pattern, set the value to **Kubernetes Cluster - Per-Namespace LP** \(starting from Discovery and Service Mapping Patterns version 1.35.1\).
 4.  If you don't have local accounts with Kubernetes RBAC and want to improve pattern efficiency, navigate to **MID Server** &gt; **Properties** and set the **sn\_itom\_pattern.aks\_fetch\_local\_ad\_token** property to **false**.
 5.  Run an Azure cloud discovery schedule.
 6.  Configure the MID Server in the Discovery schedules according to the cluster account type. If you don't have Local accounts with RBAC, you can ignore this step.
@@ -607,7 +618,7 @@ sn\_itom\_pattern.k8s\_midserver\*
 
 \[Default\]
 
- Example- Valid MID Server or MID Server cluster name \(MID Server cluster support starting with Discovery and Service Mapping Patterns version 1.35.0\). Applies to newly created discovery schedules only; existing schedules aren't updated.
+ Example- Valid MID Server or MID Server cluster name \(MID Server cluster support starting with Discovery and Service Mapping Patterns version 1.35.1\). Applies to newly created discovery schedules only; existing schedules aren't updated.
 
 </td><td>
 
@@ -625,7 +636,7 @@ sn\_itom\_pattern.k8s\_&lt;service\_account\_id&gt;\_midserver\*
 
 \[Based on Service Account Level\]
 
- Example- Valid MID Server or MID Server cluster name \(MID Server cluster support starting with Discovery and Service Mapping Patterns version 1.35.0\).
+ Example- Valid MID Server or MID Server cluster name \(MID Server cluster support starting with Discovery and Service Mapping Patterns version 1.35.1\).
 
 </td><td>
 
@@ -643,7 +654,7 @@ sn\_itom\_pattern.k8s\_&lt;service\_account\_id&gt;\_&lt;clustername&gt;\_midser
 
 \[Based on Cluster name\]
 
- Example- Valid MID Server or MID Server cluster name \(MID Server cluster support starting with Discovery and Service Mapping Patterns version 1.35.0\).
+ Example- Valid MID Server or MID Server cluster name \(MID Server cluster support starting with Discovery and Service Mapping Patterns version 1.35.1\).
 
 </td><td>
 
@@ -921,7 +932,7 @@ sn\_itom\_pattern.k8s\_entry\_pattern
 
 </td><td>
 
-Controls which entry pattern Kubernetes cloud discovery uses. When set to **Kubernetes Cluster - Per-Namespace LP**, discovery identifies the cluster and then discovers each namespace separately, improving reliability on large clusters. The Kubernetes Cluster - Per-Namespace LP pattern is available starting from Discovery and Service Mapping Patterns version 1.35.0.
+Controls which entry pattern Kubernetes cloud discovery uses. When set to **Kubernetes Cluster - Per-Namespace LP**, discovery identifies the cluster and then discovers each namespace separately, improving reliability on large clusters. The Kubernetes Cluster - Per-Namespace LP pattern is available starting from Discovery and Service Mapping Patterns version 1.35.1.
 
 </td><td>
 
@@ -988,9 +999,126 @@ Enter Unique name.
 </td></tr></tbody>
 </table>## Data collected by Discovery during horizontal discovery
 
-<table id="table_olk_1pq_f56b"><thead><tr><th>
+-   **Kubernetes pattern**
 
-Table and field
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the kube-controller-manager leader.|
+    |Kubernetes UID \[k8s\_uid\]|The kube-system namespace UID \[supported versions: 1.0.92 and later\]|
+    |IP Address \[ip\_address\]|The identifier for the host IP of the Kubernetes apiserver.|
+    |Port \[port\]|The identifier for the Kubernetes apiserver port.|
+    |Namespace \[namespace\]|This value shows the namespaces the system passed in the Kubernetes Discovery Configuration.|
+    |Event Timestamp \[event\_timestamp\]|The timestamp of the latest event created on this Kubernetes cluster at the time of the discovery.|
+
+    |Field|Description|
+    |-----|-----------|
+    |The virtual aspect of the Kubernetes node. Data relating to the physical aspect of the Kubernetes node is stored under Linux server.|
+    |Name \[name\]|The name of the Kubernetes node. The format can be only the name of the machine or the full name consisting of the name and the hostname: `<name>.<hostname>`.|
+    |Kubernetes UID \[k8s\_uid\]|The identifier for the Kubernetes node UUID.|
+    |Kubernetes Cluster \[cluster\]|References the Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\] table.|
+    |Operational status \[operational\_status\]|The operational status of the Kubernetes node.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the Kubernetes service.|
+    |Selector \[selector\]|A comma delimited list of the label selectors specified in the Kubernetes configuration that are used to select target pods.|
+    |Namespace \[namespace\]|The Kubernetes namespace to which this Kubernetes service belongs.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes service UUID.|
+    |Kubernetes Cluster \[cluster\]|References the Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\] table.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the Kubernetes pod.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes pod UUID.|
+    |Resource version \[resource\_version\]|The resource version of the Kubernetes pod.|
+    |Namespace \[namespace\]|The Kubernetes namespace to which this Kubernetes pod belongs.|
+    |Kubernetes Cluster \[cluster\]|References the Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\] table.|
+    |State \[state\]|The Kubernetes pod status: Pending, Running, Succeeded, Failed, and Unknown.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the Kubernetes cronjob.|
+    |Namespace \[namespace\]|The Kubernetes namespace to which this Kubernetes cronjob belongs.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes cronjob UUID.|
+    |Kubernetes Cluster \[cluster\]|References the Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\] table.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the Kubernetes job.|
+    |Namespace \[namespace\]|The Kubernetes namespace to which this Kubernetes job belongs.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes job UUID.|
+    |Kubernetes Cluster \[cluster\]|References the Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\] table.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the Kubernetes daemonset.|
+    |Namespace \[namespace\]|The Kubernetes namespace to which this Kubernetes daemonset belongs.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes daemonset UUID.|
+    |Kubernetes Cluster \[cluster\]|References the Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\] table.|
+    |Pods Available \[pods\_avail\]|The number of available pods.|
+    |Pods Failed \[pods\_failed\]|The number of pods in the Failed phase.|
+    |Pods Running \[pods\_running\]|The number of pods in the Running phase.|
+    |Pods Succeeded \[pods\_succeeded\]|The number of pods in the Succeeded phase.|
+    |Pods Waiting \[pods\_waiting\]|The number of pods in the Waiting phase.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the Kubernetes ingress.|
+    |Namespace \[namespace\]|The Kubernetes namespace to which this Kubernetes ingress belongs.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes ingress UID.|
+    |Kubernetes Cluster \[cluster\]|References the Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\] table.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the Kubernetes deployment.|
+    |Namespace \[namespace\]|The Kubernetes namespace to which this Kubernetes deployment belongs.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes deployment UID.|
+    |Kubernetes Cluster \[cluster\]|References the Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\] table.|
+    |Total Replicas \[total\_replicas\]|The number of replicas in this deployment.|
+    |Desired Replicas \[desired\_replicas\]|The number of replicas in the desired phase.|
+    |Available Replicas \[available\_replicas\]|The number of available replicas.|
+    |Unavailable Replicas \[unavailable\_replicas\]|The number of replicas in the unavailable phase.|
+    |Updated Replicas \[updated\_replicas\]|The number of updated replicas.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the Kubernetes replicaset.|
+    |Namespace \[namespace\]|The Kubernetes namespace to which this Kubernetes replicaset belongs.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes replicaset UID.|
+    |Kubernetes Cluster \[cluster\]|References the Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\] table.|
+    |Total Replicas \[total\_replicas\]|The number of replicas in this replicaset.|
+    |Desired Replicas \[desired\_replicas\]|The number of replicas in the desired phase.|
+    |Available Replicas \[available\_replicas\]|The number of available replicas.|
+    |Unavailable Replicas \[unavailable\_replicas\]|The number of replicas in the unavailable phase.|
+    |Updated Replicas \[updated\_replicas\]|The number of updated replicas.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the Kubernetes replication controller.|
+    |Namespace \[namespace\]|The Kubernetes namespace to which this Kubernetes replication controller belongs.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes replication controller UID.|
+    |Kubernetes Cluster \[cluster\]|References the Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\] table.|
+    |Total Replicas \[total\_replicas\]|The number of replicas in this replication controller.|
+    |Desired Replicas \[desired\_replicas\]|The number of replicas in the desired phase.|
+    |Available Replicas \[available\_replicas\]|The number of available replicas.|
+    |Unavailable Replicas \[unavailable\_replicas\]|The number of replicas in the unavailable phase.|
+    |Updated Replicas \[updated\_replicas\]|The number of updated replicas.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the Kubernetes statefulset.|
+    |Namespace \[namespace\]|The Kubernetes namespace to which this Kubernetes statefulset belongs.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes statefulset UID.|
+    |Kubernetes Cluster \[cluster\]|References the Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\] table.|
+    |Total Replicas \[total\_replicas\]|The number of replicas in this statefulset.|
+    |Desired Replicas \[desired\_replicas\]|The number of replicas in the desired phase.|
+    |Available Replicas \[available\_replicas\]|The number of available replicas.|
+    |Unavailable Replicas \[unavailable\_replicas\]|The number of replicas in the unavailable phase.|
+    |Updated Replicas \[updated\_replicas\]|The number of updated replicas.|
+
+<table id="table_docker_container"><thead><tr><th>
+
+Field
 
 </th><th>
 
@@ -998,613 +1126,51 @@ Description
 
 </th></tr></thead><tbody><tr><td colspan="2">
 
-Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
-
-</td></tr><tr><td>
-
-Name
-
-</td><td>
-
-The name of the kube-controller-manager leader.
-
-</td></tr><tr><td>
-
-K8s\_uid
-
-</td><td>
-
-The kube-system namespace UID \[supported versions: 1.0.92 and later\]
-
-</td></tr><tr><td>
-
-ip\_address
-
-</td><td>
-
-The identifier for the host\_ip of the Kubernetes apiserver.
-
-</td></tr><tr><td>
-
-port
-
-</td><td>
-
-The identifier for the Kubernetes apiserver port.
-
-</td></tr><tr><td>
-
-namespace
-
-</td><td>
-
-This value shows the namespaces the system passed in the Kubernetes Discovery Configuration.
-
-</td></tr><tr><td>
-
-event\_timestamp
-
-</td><td>
-
-The timestamp of the latest event created on this Kubernetes cluster at the time of the discovery.
-
-</td></tr><tr><td>
-
-Kubernetes Node \[cmdb\_ci\_kubernetes\_node\]
-
-</td><td>
-
-The virtual aspect of the Kubernetes node. Data relating to the physical aspect of the Kubernetes node is stored under Linux server.
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the Kubernetes node. The format can be only the name of the machine or the full name consisting of the name and the hostname: `<name>.<hostname>`.
-
-</td></tr><tr><td>
-
-k8s\_uid
-
-</td><td>
-
-The identifier for the Kubernetes node UUID.
-
-</td></tr><tr><td>
-
-cluster
-
-</td><td>
-
-The name of the cluster that contains this resource.
-
-</td></tr><tr><td>
-
-operational\_status
-
-</td><td>
-
-The operational status of the Kubernetes node.
-
-</td></tr><tr><td colspan="2">
-
-Kubernetes Service \[cmdb\_ci\_kubernetes\_service\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the Kubernetes service.
-
-</td></tr><tr><td>
-
-selector
-
-</td><td>
-
-A comma delimited list of the label selectors specified in the Kubernetes configuration that are used to select target pods.
-
-</td></tr><tr><td>
-
-namespace
-
-</td><td>
-
-The Kubernetes namespace to which this Kubernetes service belongs.
-
-</td></tr><tr><td>
-
-k8s\_uid
-
-</td><td>
-
-The Kubernetes service UUID.
-
-</td></tr><tr><td>
-
-cluster
-
-</td><td>
-
-The name of the cluster that contains this resource.
-
-</td></tr><tr><td colspan="2">
-
-Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the Kubernetes pod.
-
-</td></tr><tr><td>
-
-k8s\_uid
-
-</td><td>
-
-The Kubernetes pod UUID.
-
-</td></tr><tr><td>
-
-resourceVersion
-
-</td><td>
-
-The resource version of the Kubernetes pod.
-
-</td></tr><tr><td>
-
-namespace
-
-</td><td>
-
-The Kubernetes namespace to which this Kubernetes pod belongs.
-
-</td></tr><tr><td>
-
-cluster
-
-</td><td>
-
-The name of the cluster that contains this resource.
-
-</td></tr><tr><td>
-
-state
-
-</td><td>
-
-The Kubernetes pod status: Pending, Running, Succeeded, Failed, and Unknown.
-
-</td></tr><tr><td colspan="2">
-
-Kubernetes Cronjob \[cmdb\_ci\_kubernetes\_cronjob\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the Kubernetes cronjob
-
-</td></tr><tr><td>
-
-namespace
-
-</td><td>
-
-The Kubernetes namespace to which this Kubernetes pod belongs.
-
-</td></tr><tr><td>
-
-k8s\_uid
-
-</td><td>
-
-The Kubernetes cronjob UUID.
-
-</td></tr><tr><td>
-
-cluster
-
-</td><td>
-
-The name of the cluster that contains this resource.
-
-</td></tr><tr><td colspan="2">
-
-Kubernetes Job \[cmdb\_ci\_kubernetes\_job\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the Kubernetes Job
-
-</td></tr><tr><td>
-
-namespace
-
-</td><td>
-
-The Kubernetes namespace to which this Kubernetes job belongs.
-
-</td></tr><tr><td>
-
-k8s\_uid
-
-</td><td>
-
-The Kubernetes job UUID
-
-</td></tr><tr><td>
-
-cluster
-
-</td><td>
-
-The name of the cluster that contains Kubernetes job.
-
-</td></tr><tr><td colspan="2">
-
-Kubernetes Daemonset \[cmdb\_ci\_kubernetes\_daemonset\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the Kubernetes daemonset.
-
-</td></tr><tr><td>
-
-namespace
-
-</td><td>
-
-The Kubernetes namespace to which this Kubernetes daemonset belongs.
-
-</td></tr><tr><td>
-
-k8s\_uid
-
-</td><td>
-
-The Kubernetes daemonset UUID.
-
-</td></tr><tr><td>
-
-cluster
-
-</td><td>
-
-The name of the cluster that contains this resource.
-
-</td></tr><tr><td>
-
-pods\_avail
-
-</td><td>
-
-The number of pods Available.
-
-</td></tr><tr><td>
-
-pods\_failed
-
-</td><td>
-
-The number of pods in Failed phase.
-
-</td></tr><tr><td>
-
-pods\_running
-
-</td><td>
-
-The Number of pods in the Running phase.
-
-</td></tr><tr><td>
-
-pods\_succeeded
-
-</td><td>
-
-The number of pods in the Succeeded phase.
-
-</td></tr><tr><td>
-
-pods\_waiting
-
-</td><td>
-
-The number of pods in the Waiting phase.
-
-</td></tr><tr><td colspan="2">
-
-Kubernetes Ingress \[cmdb\_ci\_kubernetes\_ingress\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the Kubernetes ingress
-
-</td></tr><tr><td>
-
-namespace
-
-</td><td>
-
-The Kubernetes namespace to which this Kubernetes ingress belongs.
-
-</td></tr><tr><td>
-
-k8s\_uid
-
-</td><td>
-
-The Kubernetes ingress UID
-
-</td></tr><tr><td>
-
-cluster
-
-</td><td>
-
-The name of the cluster that contains this resource.
-
-</td></tr><tr><td colspan="2">
-
-Kubernetes Deployment \[cmdb\_ci\_kubernetes\_deployment\]
-
- Kubernetes Replicaset \[cmdb\_ci\_kubernetes\_replicaset\]
-
- Kubernetes Replication controller \[cmdb\_ci\_kubernetes\_replicationcontroller\]
-
- Kubernetes Statefulset \[cmdb\_ci\_kubernetes\_statefulset\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of this resource
-
-</td></tr><tr><td>
-
-namespace
-
-</td><td>
-
-The Kubernetes namespace to which this resource belongs.
-
-</td></tr><tr><td>
-
-K8s\_uid
-
-</td><td>
-
-The Kubernetes UID of this resource
-
-</td></tr><tr><td>
-
-cluster
-
-</td><td>
-
-The name of the cluster that contains this resource.
-
-</td></tr><tr><td>
-
-total\_replicas
-
-</td><td>
-
-Number of replicas in this resource
-
-</td></tr><tr><td>
-
-desired\_replicas
-
-</td><td>
-
-The number of replicas in desired phase
-
-</td></tr><tr><td>
-
-available\_replicas
-
-</td><td>
-
-Number of replicas available
-
-</td></tr><tr><td>
-
-unavailable\_replicas
-
-</td><td>
-
-Number of replicas in unavailable phase
-
-</td></tr><tr><td>
-
-updated\_replicas
-
-</td><td>
-
-Number of replicas updated
-
-</td></tr><tr><td>
-
-Docker Container \[cmdb\_ci\_docker\_container\]
-
-</td><td>
-
 The component that runs the docker image.
 
 </td></tr><tr><td>
 
-container\_id
+Container id \[container\_id\]
 
 </td><td>
 
-The unique identifier for the Kubernetes docker containerIn cases where duplicate records are created, deduplication tasks appear once discovery runs. For information on how to resolve these tasks, see the [Making docker container identifier independent \[KB1443042\]](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB1443042) article in the ServiceNow® Knowledge Base.
-
-</td></tr><tr><td>
-
-namespace
-
-</td><td>
-
-The Kubernetes namespace to which this Kubernetes docker container belongs
-
-</td></tr><tr><td>
-
-Docker Image \[cmdb\_ci\_docker\_image\]
-
-</td><td>
-
-An executable package of an application and its related software that can be instantiated by a docker container
-
-</td></tr><tr><td>
-
-image\_id
-
-</td><td>
-
-The identifier for the Kubernetes docker image
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the Kubernetes docker image.
-
-</td></tr><tr><td>
-
-image\_url
-
-</td><td>
-
-The URL for downloading the docker image.
-
-</td></tr><tr><td>
-
-namespace
-
-</td><td>
-
-The Kubernetes namespace to which this Kubernetes docker image belongs.
-
-</td></tr><tr><td>
-
-Linux Server \[cmdb\_ci\_linux\_server\]
-
-</td><td>
-
-The server that hosts the Kubernetes node.
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the Linux server powering the Kubernetes node.
-
-</td></tr><tr><td>
-
-hostname
-
-</td><td>
-
-The hostname of the Linux server.
-
-</td></tr><tr><td>
-
-os
-
-</td><td>
-
-The operating system deployed on this Linux server.
-
-</td></tr><tr><td>
-
-kernel\_release
-
-</td><td>
-
-The version of the Linux kernel operating system deployed on this Linux server.
-
-</td></tr><tr><td>
-
-ram
-
-</td><td>
-
-The size of RAM installed on this Linux server.
-
-</td></tr><tr><td>
-
-ip\_address
-
-</td><td>
-
-The IP address of the Linux server.
-
-</td></tr><tr><td>
-
-cpu\_type
-
-</td><td>
-
-The CPU architecture of the Linux server hosting the Kubernetes node.
-
-</td></tr><tr><td>
-
-cpu\_count
-
-</td><td>
-
-The number of CPUs on the Linux server hosting the Kubernetes node.
-
-</td></tr><tr><td>
-
-serial\_number
-
-</td><td>
-
-The serial number of the Linux server hosting the Kubernetes node.
-
-</td></tr><tr><td>
-
-Key Value \[cmdb\_key\_value\]
-
-</td><td>
+The unique identifier for the Kubernetes docker container.In cases where duplicate records are created, deduplication tasks appear once discovery runs. For information on how to resolve these tasks, see the [Making docker container identifier independent \[KB1443042\]](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB1443042) article in the ServiceNow® Knowledge Base.
+
+</td></tr></tbody>
+</table>    |Field|Description|
+    |-----|-----------|
+    |An executable package of an application and its related software that can be instantiated by a docker container.|
+    |Image id \[image\_id\]|The identifier for the Kubernetes docker image.|
+    |Name \[name\]|The name of the Kubernetes docker image.|
+
+    |Field|Description|
+    |-----|-----------|
+    |The server that hosts the Kubernetes node.|
+    |Name \[name\]|The name of the Linux server powering the Kubernetes node.|
+    |Host name \[host\_name\]|The hostname of the Linux server.|
+    |Operating System \[os\]|The operating system deployed on this Linux server.|
+    |Kernel Release \[kernel\_release\]|The version of the Linux kernel operating system deployed on this Linux server.|
+    |RAM \(MB\) \[ram\]|The size of RAM installed on this Linux server.|
+    |IP Address \[ip\_address\]|The IP address of the Linux server.|
+    |CPU type \[cpu\_type\]|The CPU architecture of the Linux server hosting the Kubernetes node.|
+    |CPU count \[cpu\_count\]|The number of CPUs on the Linux server hosting the Kubernetes node.|
+    |Serial number \[serial\_number\]|The serial number of the Linux server hosting the Kubernetes node.|
+
+<table id="table_key_value"><thead><tr><th>
+
+Field
+
+</th><th>
+
+Description
+
+</th></tr></thead><tbody><tr><td colspan="2">
 
 This configuration item contains Kubernetes labels. Labels are key/value pairs that are attached to objects, such as pods.
 
 </td></tr><tr><td>
 
-key
+Key \[key\]
 
 </td><td>
 
@@ -1612,462 +1178,173 @@ The key of the Kubernetes pod or Kubernetes service **Key Value** parameter.
 
 </td></tr><tr><td>
 
-value
+Value \[value\]
 
 </td><td>
 
 The value of the Kubernetes pod or Kubernetes service **Key Value** parameter.
 
-</td></tr><tr><td colspan="2">
-
-Kubernetes Volume \[cmdb\_ci\_kubernetes\_volume\]
-
 </td></tr><tr><td>
 
-k8s\_uid
+Configuration item \[configuration\_item\]
 
 </td><td>
 
-The Kubernetes volume UUID.
+References one of the following CI tables, based on the key-value pair: -   Kubernetes DaemonSet \[cmdb\_ci\_kubernetes\_daemonset\]
+-   Kubernetes Deployment \[cmdb\_ci\_kubernetes\_deployment\]
+-   Kubernetes Ingress \[cmdb\_ci\_kubernetes\_ingress\]
+-   Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]
+-   Kubernetes Node \[cmdb\_ci\_kubernetes\_node\]
+-   Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]
+-   Kubernetes ReplicaSet \[cmdb\_ci\_kubernetes\_replicaset\]
+-   Kubernetes ReplicationController \[cmdb\_ci\_kubernetes\_replicationcontroller\]
+-   Kubernetes Service \[cmdb\_ci\_kubernetes\_service\]
+-   Kubernetes StatefulSet \[cmdb\_ci\_kubernetes\_statefulset\]
 
-</td></tr><tr><td>
-
-mount\_path
-
-</td><td>
-
-The path for accessing this Kubernetes volume.
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the Kubernetes volume.
-
-</td></tr><tr><td>
-
-namespace
-
-</td><td>
-
-The Kubernetes namespace to which this Kubernetes volume belongs.
-
-</td></tr><tr><td>
-
-cluster
-
-</td><td>
-
-The name of the cluster that contains this resource.
-
-</td></tr><tr><td>
-
-volume\_id
-
-</td><td>
-
-The ID of the Kubernetes volume.
-
-</td></tr><tr><td colspan="2">
-
-OpenShift Deployed Configuration \[cmdb\_ci\_openshift\_dep\_conf\]​
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the OpenShift Deployment configuration.
-
-</td></tr><tr><td>
-
-namespace
-
-</td><td>
-
-The name of the namespace containing the deployment configuration.
-
-</td></tr><tr><td>
-
-k8s\_uid
-
-</td><td>
-
-The Kubernetes volume UUID.
-
-</td></tr><tr><td>
-
-url
-
-</td><td>
-
-The URL of the OpenShift deployed configuration, available only for Kubernetes versions earlier than 1.16.
-
-</td></tr><tr><td colspan="2">
-
-OpenShift Build Config \[cmdb\_ci\_openshift\_build\_conf\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the OpenShift build configuration.
-
-</td></tr><tr><td>
-
-namespace
-
-</td><td>
-
-The name of the OpenShift namespace containing the build configuration.
-
-</td></tr><tr><td>
-
-k8s
-
-</td><td>
-
-The Kubernetes volume UUID.
-
-</td></tr><tr><td>
-
-url
-
-</td><td>
-
-The URL of the OpenShift build configuration, available only for Kubernetes versions earlier than 1.16.
-
-</td></tr><tr><td colspan="2">
-
-OpenShift Source2Image \[cmdb\_ci\_openshift\_source\_2\_image\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the OpenShift source image.
-
-</td></tr><tr><td>
-
-to
-
-</td><td>
-
-Related image.
-
-</td></tr><tr><td>
-
-parent\_id
-
-</td><td>
-
-The ID of the OpenShift source image.
-
-</td></tr><tr><td colspan="2">
-
-OpenShift Route \[cmdb\_ci\_openshift\_route\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the OpenShift route.
-
-</td></tr><tr><td>
-
-namespace
-
-</td><td>
-
-The name of the namespace containing the OpenShift route.
-
-</td></tr><tr><td>
-
-k8s\_uid
-
-</td><td>
-
-The Kubernetes volume UUID.
-
-</td></tr><tr><td>
-
-url
-
-</td><td>
-
-The URL of the OpenShift Route, available only for Kubernetes versions earlier than 1.16.
-
-</td></tr><tr><td>
-
-host
-
-</td><td>
-
-The target host of the OpenShift route.
-
-</td></tr><tr><td>
-
-port
-
-</td><td>
-
-The target port of the OpenShift route.
-
-</td></tr><tr><td colspan="2">
-
-OpenShift Group \[cmdb\_ci\_openshift\_group\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the OpenShift Group.
-
-</td></tr><tr><td>
-
-k8s\_uid
-
-</td><td>
-
-The Kubernetes volume UUID.
-
-</td></tr><tr><td>
-
-url
-
-</td><td>
-
-The URL of the OpenShift Group, available only for Kubernetes versions earlier than 1.16.
-
-</td></tr><tr><td colspan="2">
-
-OpenShift User \[cmdb\_ci\_openshift\_user\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the OpenShift user.
-
-</td></tr><tr><td>
-
-k8s\_uid
-
-</td><td>
-
-The Kubernetes volume UUID.
-
-</td></tr><tr><td>
-
-url
-
-</td><td>
-
-The URL of the OpenShift user, available only for Kubernetes versions earlier than 1.16.
-
-</td></tr><tr><td>
-
-full\_name
-
-</td><td>
-
-The full name of the OpenShift user.
-
-</td></tr><tr><td colspan="2">
-
-OpenShift Project \[cmdb\_ci\_openshift\_project\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the OpenShift project.
-
-</td></tr><tr><td>
-
-k8s\_uid
-
-</td><td>
-
-The Kubernetes volume UUID.
-
-</td></tr><tr><td>
-
-url
-
-</td><td>
-
-The URL of the OpenShift Project, available only for Kubernetes versions earlier than 1.16.
-
-</td></tr><tr><td colspan="2">
-
-OpenShift Image \[cmdb\_ci\_openshift\_images\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the OpenShift Image.
-
-</td></tr><tr><td>
-
-k8s\_uid
-
-</td><td>
-
-The Kubernetes volume UUID.
-
-</td></tr><tr><td>
-
-url
-
-</td><td>
-
-The URL of the OpenShift Image, available only for Kubernetes versions earlier than 1.16.
-
-</td></tr><tr><td>
-
-docker\_image\_metadata\_id
-
-</td><td>
-
-The ID of the docker image.
-
-</td></tr><tr><td>
-
-docker\_image\_metadata\_parent\_id
-
-</td><td>
-
-The ID of the image parent ID.
-
-</td></tr><tr><td>
-
-arch
-
-</td><td>
-
-Architecture of the image.
-
-</td></tr><tr><td>
-
-size
-
-</td><td>
-
-The image size.
-
-</td></tr><tr><td>
-
-hostname
-
-</td><td>
-
-The hostname related to the image.
-
-</td></tr><tr><td colspan="2">
-
-OpenShift Image Stream \[cmdb\_ci\_openshift\_images\_stream\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the OpenShift Image Stream.
-
-</td></tr><tr><td>
-
-k8s\_uid
-
-</td><td>
-
-The Kubernetes volume UUID.
-
-</td></tr><tr><td>
-
-url
-
-</td><td>
-
-The URL of the OpenShift Image Stream, available only for Kubernetes versions earlier than 1.16.
-
-</td></tr><tr><td>
-
-namespace
-
-</td><td>
-
-The name of the namespace containing the OpenShift image stream.
-
-</td></tr><tr><td colspan="2">
-
-OpenShift Docker Image Repository \[cmdb\_ci\_openshift\_docker\_images\_repository\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the OpenShift docker image repository.
-
-</td></tr><tr><td>
-
-parent\_ID
-
-</td><td>
-
-The ID of the parent system.
-
-</td></tr><tr><td colspan="2">
-
-Namespace \[cmdb\_ci\_kubernetes\_namespace\]
-
-</td></tr><tr><td>
-
-name
-
-</td><td>
-
-The name of the Kubernetes Namespace.
-
-</td></tr><tr><td>
-
-state
-
-</td><td>
-
-The Kubernetes namespace phases: Active or Terminating.
 
 </td></tr></tbody>
-</table>This data is collected by the **Collect Container Repository** extension section.
+</table>    |Field|Description|
+    |-----|-----------|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes volume UUID.|
+    |Mount Path \[mount\_path\]|The path for accessing this Kubernetes volume.|
+    |Name \[name\]|The name of the Kubernetes volume.|
+    |Namespace \[namespace\]|The Kubernetes namespace to which this Kubernetes volume belongs.|
+    |Kubernetes Cluster \[cluster\]|The name of the cluster that contains this resource.|
+    |Volume ID \[volume\_id\]|The ID of the Kubernetes volume.|
 
-|Table and field|Description|
-|---------------|-----------|
-|Container Repository \[cmdb\_ci\_container\_repository\]|
-|Name \[name\]|The name of the container repository.|
-|Container Repository Entry \[cmdb\_ci\_container\_repository\_entry\]|
-|Name \[name\]|The name of the container repository entry.|
-|Category \[category\]|The category of the container repository entry.|
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the Kubernetes namespace.|
+    |Kubernetes Cluster \[cluster\]|References the Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\] table.|
+    |State \[state\]|The Kubernetes namespace phase: Active or Terminating.|
+
+-   **Collect OpenShift info pattern extension**
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the OpenShift deployment configuration.|
+    |Namespace \[namespace\]|The name of the namespace containing the deployment configuration.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes UID of this resource.|
+    |Kubernetes Cluster \[cluster\]|References the Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\] table.|
+    |Url \[url\]|The URL of the OpenShift deployed configuration, available only for Kubernetes versions earlier than 1.16.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the OpenShift build configuration.|
+    |Namespace \[namespace\]|The name of the OpenShift namespace containing the build configuration.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes UID of this resource.|
+    |Url \[url\]|The URL of the OpenShift build configuration, available only for Kubernetes versions earlier than 1.16.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the OpenShift source image.|
+    |To \[to\]|Related image.|
+    |Parent ID \[parent\_id\]|The ID of the OpenShift source image.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the OpenShift route.|
+    |Namespace \[namespace\]|The name of the namespace containing the OpenShift route.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes UID of this resource.|
+    |Kubernetes Cluster \[cluster\]|References the Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\] table.|
+    |Url \[url\]|The URL of the OpenShift route, available only for Kubernetes versions earlier than 1.16.|
+    |Host \[host\]|The target host of the OpenShift route.|
+    |Port \[port\]|The target port of the OpenShift route.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the OpenShift group.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes UID of this resource.|
+    |Url \[url\]|The URL of the OpenShift group, available only for Kubernetes versions earlier than 1.16.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the OpenShift user.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes UID of this resource.|
+    |Url \[url\]|The URL of the OpenShift user, available only for Kubernetes versions earlier than 1.16.|
+    |Full Name \[full\_name\]|The full name of the OpenShift user.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the OpenShift project.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes UID of this resource.|
+    |Url \[url\]|The URL of the OpenShift project, available only for Kubernetes versions earlier than 1.16.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the OpenShift image.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes UID of this resource.|
+    |Url \[url\]|The URL of the OpenShift image, available only for Kubernetes versions earlier than 1.16.|
+    |Docker Image Metadata ID \[docker\_image\_metadata\_id\]|The ID of the docker image.|
+    |Docker Image Metadata Parent ID \[docker\_image\_metadata\_parent\_id\]|The ID of the image parent.|
+    |Architecture \[arch\]|The architecture of the image.|
+    |Size \[size\]|The image size.|
+    |Hostname \[hostname\]|The hostname related to the image.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the OpenShift image stream.|
+    |Kubernetes UID \[k8s\_uid\]|The Kubernetes UID of this resource.|
+    |Url \[url\]|The URL of the OpenShift image stream, available only for Kubernetes versions earlier than 1.16.|
+    |Namespace \[namespace\]|The name of the namespace containing the OpenShift image stream.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the OpenShift docker image repository.|
+    |Parent ID \[parent\_id\]|The ID of the parent system.|
+
+<table id="table_openshift_key_value"><thead><tr><th>
+
+Field
+
+</th><th>
+
+Description
+
+</th></tr></thead><tbody><tr><td colspan="2">
+
+This configuration item contains OpenShift labels. Labels are key/value pairs that are attached to objects, such as deployed configurations and routes.
+
+</td></tr><tr><td>
+
+Key \[key\]
+
+</td><td>
+
+The key of the OpenShift deployed configuration or route **Key Value** parameter.
+
+</td></tr><tr><td>
+
+Value \[value\]
+
+</td><td>
+
+The value of the OpenShift deployed configuration or route **Key Value** parameter.
+
+</td></tr><tr><td>
+
+Configuration item \[configuration\_item\]
+
+</td><td>
+
+References one of the following CI tables, based on the key-value pair: -   OpenShift Deployed Config \[cmdb\_ci\_openshift\_dep\_conf\]
+-   OpenShift Route \[cmdb\_ci\_openshift\_route\]
+
+
+</td></tr></tbody>
+</table>-   **Collect Container Repository pattern extension**
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the container repository.|
+
+    |Field|Description|
+    |-----|-----------|
+    |Name \[name\]|The name of the container repository entry.|
+    |Category \[category\]|The category of the container repository entry.|
+
+
+## Kubernetes deployment diagrams
 
 The graphic illustrates CIs that are part of Kubernetes discovery.
 
@@ -2077,486 +1354,387 @@ The graphic illustrates CIs that are part of Kubernetes discovery.
 
 \[Omitted image "openshift-diagram.png"\] Alt text: Namespace contains OpenShift configuration items
 
-## CI relationships collected by the Kubernetes pattern
+## CI relationships and references created by the Kubernetes pattern
 
-These relationships are created by Kubernetes pattern:
+These relationships and references are created by the Kubernetes pattern. References link to records in other tables and don't appear in the CI Relationship \[cmdb\_rel\_ci\] table.
 
-<table id="table_ysf_fpq_f987b"><thead><tr><th>
+|CI|Relationship|CI|
+|---|------------|---|
+|Docker Container \[cmdb\_ci\_docker\_container\]|Runs on::Runs|Linux Server \[cmdb\_ci\_linux\_server\]\*|
+|Docker Image \[cmdb\_ci\_docker\_image\]|Instantiates::Instantiated by|Docker Container \[cmdb\_ci\_docker\_container\]\*|
+|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|Contains::Contained by|Kubernetes Ingress \[cmdb\_ci\_kubernetes\_ingress\]|
+|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|Contains::Contained by|Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]|
+|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|Cluster of::Cluster|Kubernetes Node \[cmdb\_ci\_kubernetes\_node\]\*|
+|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|Contains::Contained by|Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]\*|
+|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|Contains::Contained by|Kubernetes Service \[cmdb\_ci\_kubernetes\_service\]\*|
+|Kubernetes Cronjob \[cmdb\_ci\_kubernetes\_cronjob\]|Hosted on::Hosts|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|
+|Kubernetes Cronjob \[cmdb\_ci\_kubernetes\_cronjob\]|Owns::Owned by|Kubernetes Job \[cmdb\_ci\_kubernetes\_job\]|
+|Kubernetes DaemonSet \[cmdb\_ci\_kubernetes\_daemonset\]|Hosted on::Hosts|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|
+|Kubernetes DaemonSet \[cmdb\_ci\_kubernetes\_daemonset\]|Instantiates::Instantiated by|Docker Image \[cmdb\_ci\_docker\_image\]|
+|Kubernetes DaemonSet \[cmdb\_ci\_kubernetes\_daemonset\]|Instantiates::Instantiated by|Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]|
+|Kubernetes Deployment \[cmdb\_ci\_kubernetes\_deployment\]|Hosted on::Hosts|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|
+|Kubernetes Deployment \[cmdb\_ci\_kubernetes\_deployment\]|Instantiates::Instantiated by|Docker Image \[cmdb\_ci\_docker\_image\]|
+|Kubernetes Deployment \[cmdb\_ci\_kubernetes\_deployment\]|Instantiates::Instantiated by|Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]|
+|Kubernetes Deployment \[cmdb\_ci\_kubernetes\_deployment\]|Owns::Owned by|Kubernetes ReplicaSet \[cmdb\_ci\_kubernetes\_replicaset\]|
+|Kubernetes Deployment \[cmdb\_ci\_kubernetes\_deployment\]|Owns::Owned by|Kubernetes ReplicationController \[cmdb\_ci\_kubernetes\_replicationcontroller\]|
+|Kubernetes Ingress \[cmdb\_ci\_kubernetes\_ingress\]|Instantiates::Instantiated by|Kubernetes Service \[cmdb\_ci\_kubernetes\_service\]|
+|Kubernetes Job \[cmdb\_ci\_kubernetes\_job\]|Hosted on::Hosts|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|
+|Kubernetes Job \[cmdb\_ci\_kubernetes\_job\]|Instantiates::Instantiated by|Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]|
+|Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]|Contains::Contained by|Kubernetes Cronjob \[cmdb\_ci\_kubernetes\_cronjob\]|
+|Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]|Contains::Contained by|Kubernetes DaemonSet \[cmdb\_ci\_kubernetes\_daemonset\]|
+|Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]|Contains::Contained by|Kubernetes Deployment \[cmdb\_ci\_kubernetes\_deployment\]|
+|Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]|Contains::Contained by|Kubernetes Ingress \[cmdb\_ci\_kubernetes\_ingress\]|
+|Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]|Contains::Contained by|Kubernetes Job \[cmdb\_ci\_kubernetes\_job\]|
+|Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]|Contains::Contained by|Kubernetes ReplicaSet \[cmdb\_ci\_kubernetes\_replicaset\]|
+|Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]|Contains::Contained by|Kubernetes ReplicationController \[cmdb\_ci\_kubernetes\_replicationcontroller\]|
+|Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]|Contains::Contained by|Kubernetes Service \[cmdb\_ci\_kubernetes\_service\]|
+|Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]|Contains::Contained by|Kubernetes StatefulSet \[cmdb\_ci\_kubernetes\_statefulset\]|
+|Kubernetes Node \[cmdb\_ci\_kubernetes\_node\]|Hosted on::Hosts|Linux Server \[cmdb\_ci\_linux\_server\]\*|
+|Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]|Contains::Contained by|Docker Container \[cmdb\_ci\_docker\_container\]\*|
+|Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]|Contains::Contained by|Docker Image \[cmdb\_ci\_docker\_image\]\*|
+|Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]|Contains::Contained by|Kubernetes Volume \[cmdb\_ci\_kubernetes\_volume\]\*|
+|Kubernetes ReplicaSet \[cmdb\_ci\_kubernetes\_replicaset\]|Hosted on::Hosts|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|
+|Kubernetes ReplicaSet \[cmdb\_ci\_kubernetes\_replicaset\]|Instantiates::Instantiated by|Docker Image \[cmdb\_ci\_docker\_image\]|
+|Kubernetes ReplicaSet \[cmdb\_ci\_kubernetes\_replicaset\]|Instantiates::Instantiated by|Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]|
+|Kubernetes ReplicationController \[cmdb\_ci\_kubernetes\_replicationcontroller\]|Hosted on::Hosts|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|
+|Kubernetes ReplicationController \[cmdb\_ci\_kubernetes\_replicationcontroller\]|Instantiates::Instantiated by|Docker Image \[cmdb\_ci\_docker\_image\]|
+|Kubernetes ReplicationController \[cmdb\_ci\_kubernetes\_replicationcontroller\]|Instantiates::Instantiated by|Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]|
+|Kubernetes Service \[cmdb\_ci\_kubernetes\_service\]|Provided By::Provides|Kubernetes DaemonSet \[cmdb\_ci\_kubernetes\_daemonset\]|
+|Kubernetes Service \[cmdb\_ci\_kubernetes\_service\]|Provided By::Provides|Kubernetes Deployment \[cmdb\_ci\_kubernetes\_deployment\]|
+|Kubernetes Service \[cmdb\_ci\_kubernetes\_service\]|Provided By::Provides|Kubernetes StatefulSet \[cmdb\_ci\_kubernetes\_statefulset\]|
+|Kubernetes StatefulSet \[cmdb\_ci\_kubernetes\_statefulset\]|Hosted on::Hosts|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|
+|Kubernetes StatefulSet \[cmdb\_ci\_kubernetes\_statefulset\]|Instantiates::Instantiated by|Docker Image \[cmdb\_ci\_docker\_image\]|
+|Kubernetes StatefulSet \[cmdb\_ci\_kubernetes\_statefulset\]|Instantiates::Instantiated by|Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]|
+|Linux Server \[cmdb\_ci\_linux\_server\]|Contains::Contained by|Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]\*|
+|Linux Server \[cmdb\_ci\_linux\_server\]|Managed by::Manages|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]\*|
+
+\* These relationships are also created by the Kubernetes Event pattern.
+
+<table id="table_ci_references_k8s"><thead><tr><th>
 
 CI
 
 </th><th>
 
-Relationship
+Field
 
 </th><th>
 
-CI
+Referenced CI
 
-</th></tr></thead><tbody><tr><td rowspan="13">
+</th></tr></thead><tbody><tr><td>
+
+Container Environment Variables \[cmdb\_container\_environment\_variables\]
+
+</td><td>
+
+Configuration item \[configuration\_item\]
+
+</td><td>
+
+Docker Container \[cmdb\_ci\_docker\_container\]
+
+</td></tr><tr><td>
+
+Key Value \[cmdb\_key\_value\]
+
+</td><td>
+
+Configuration item \[configuration\_item\]
+
+</td><td>
+
+References one of the following CI tables, based on the key-value pair:
+
+ -   Kubernetes DaemonSet \[cmdb\_ci\_kubernetes\_daemonset\]
+-   Kubernetes Deployment \[cmdb\_ci\_kubernetes\_deployment\]
+-   Kubernetes Ingress \[cmdb\_ci\_kubernetes\_ingress\]
+-   Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]
+-   Kubernetes Node \[cmdb\_ci\_kubernetes\_node\]
+-   Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]
+-   Kubernetes ReplicaSet \[cmdb\_ci\_kubernetes\_replicaset\]
+-   Kubernetes ReplicationController \[cmdb\_ci\_kubernetes\_replicationcontroller\]
+-   Kubernetes Service \[cmdb\_ci\_kubernetes\_service\]
+-   Kubernetes StatefulSet \[cmdb\_ci\_kubernetes\_statefulset\]
+
+</td></tr><tr><td>
+
+Kubernetes Cronjob \[cmdb\_ci\_kubernetes\_cronjob\]
+
+</td><td>
+
+Kubernetes Cluster \[cluster\]
+
+</td><td>
 
 Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
 
+</td></tr><tr><td>
+
+Kubernetes DaemonSet \[cmdb\_ci\_kubernetes\_daemonset\]
+
 </td><td>
 
-Contains::Contained By
+Kubernetes Cluster \[cluster\]
 
 </td><td>
 
-Kubernetes Service \[cmdb\_ci\_kubernetes\_service\]
+Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
 
 </td></tr><tr><td>
 
-Contains::Contained By
+Kubernetes Deployment \[cmdb\_ci\_kubernetes\_deployment\]
 
 </td><td>
 
-Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]
+Kubernetes Cluster \[cluster\]
+
+</td><td>
+
+Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
 
 </td></tr><tr><td>
-
-Contains::Contained By
-
-</td><td>
 
 Kubernetes Ingress \[cmdb\_ci\_kubernetes\_ingress\]
 
-</td></tr><tr><td>
+</td><td>
 
-Contains::Contained By
+Kubernetes Cluster \[cluster\]
 
 </td><td>
+
+Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
+
+</td></tr><tr><td>
+
+Kubernetes Job \[cmdb\_ci\_kubernetes\_job\]
+
+</td><td>
+
+Kubernetes Cluster \[cluster\]
+
+</td><td>
+
+Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
+
+</td></tr><tr><td>
 
 Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]
 
-</td></tr><tr><td>
+</td><td>
 
-Contains::Contained By
+Kubernetes Cluster \[cluster\]
 
 </td><td>
 
-\[cmdb\_ci\_openshift\_source\_2\_image\]
+Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
 
 </td></tr><tr><td>
-
-Contains::Contained By
-
-</td><td>
-
-OpenShift Group \[cmdb\_ci\_openshift\_group\]
-
-</td></tr><tr><td>
-
-Contains::Contained By
-
-</td><td>
-
-OpenShift User \[cmdb\_ci\_openshift\_user\]
-
-</td></tr><tr><td>
-
-Contains::Contained By
-
-</td><td>
-
-OpenShift Project \[cmdb\_ci\_openshift\_project\]
-
-</td></tr><tr><td>
-
-Contains::Contained By
-
-</td><td>
-
-OpenShift Image \[cmdb\_ci\_openshift\_images\]
-
-</td></tr><tr><td>
-
-Contains::Contained By
-
-</td><td>
-
-OpenShift Docker Image Repository \[cmdb\_ci\_openshift\_docker\_images\_repository\]
-
-</td></tr><tr><td>
-
-Cluster of::Cluster
-
-</td><td>
 
 Kubernetes Node \[cmdb\_ci\_kubernetes\_node\]
 
+</td><td>
+
+Kubernetes Cluster \[cluster\]
+
+</td><td>
+
+Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
+
 </td></tr><tr><td>
 
-Manages::Managed by
+Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]
+
+</td><td>
+
+Kubernetes Cluster \[cluster\]
+
+</td><td>
+
+Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
+
+</td></tr><tr><td>
+
+Kubernetes ReplicaSet \[cmdb\_ci\_kubernetes\_replicaset\]
+
+</td><td>
+
+Kubernetes Cluster \[cluster\]
+
+</td><td>
+
+Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
+
+</td></tr><tr><td>
+
+Kubernetes ReplicationController \[cmdb\_ci\_kubernetes\_replicationcontroller\]
+
+</td><td>
+
+Kubernetes Cluster \[cluster\]
+
+</td><td>
+
+Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
+
+</td></tr><tr><td>
+
+Kubernetes Service \[cmdb\_ci\_kubernetes\_service\]
+
+</td><td>
+
+Kubernetes Cluster \[cluster\]
+
+</td><td>
+
+Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
+
+</td></tr><tr><td>
+
+Kubernetes StatefulSet \[cmdb\_ci\_kubernetes\_statefulset\]
+
+</td><td>
+
+Kubernetes Cluster \[cluster\]
+
+</td><td>
+
+Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
+
+</td></tr><tr><td>
+
+Kubernetes Volume \[cmdb\_ci\_kubernetes\_volume\]
+
+</td><td>
+
+Kubernetes Cluster \[cluster\]
+
+</td><td>
+
+Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
+
+</td></tr><tr><td>
+
+Serial Number \[cmdb\_serial\_number\]
+
+</td><td>
+
+Configuration Item \[cmdb\_ci\]
 
 </td><td>
 
 Linux Server \[cmdb\_ci\_linux\_server\]
 
+</td></tr></tbody>
+</table>## CI relationships created by the Kubernetes cloud patterns
+
+These additional relationships are created by the Google Cloud Platform \(GCP\) – Get Kubernetes Clusters, Amazon AWS Cloud - Get Kubernetes Clusters, and Microsoft Azure - Get Kubernetes Clusters patterns.
+
+|CI|Relationship|CI|
+|---|------------|---|
+|Azure Datacenter \[cmdb\_ci\_azure\_datacenter\]|Hosted on::Hosts|Cloud Service Account \[cmdb\_ci\_cloud\_service\_account\]|
+|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|Hosted on::Hosts|AWS Datacenter \[cmdb\_ci\_aws\_datacenter\]|
+|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|Hosted on::Hosts|Azure Datacenter \[cmdb\_ci\_azure\_datacenter\]|
+|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|Hosted on::Hosts|Google Datacenter \[cmdb\_ci\_google\_datacenter\]|
+|Resource Group \[cmdb\_ci\_resource\_group\]|Contains::Contained by|Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|
+
+## CI relationships and references created by the Kubernetes extension sections
+
+The following extension sections of the Kubernetes pattern identify additional relationships and references. References link to records in other tables and don't appear in the CI Relationship \[cmdb\_rel\_ci\] table.
+
+-   **Collect OpenShift info**
+
+    |CI|Relationship|CI|
+    |---|------------|---|
+    |Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|Contains::Contained by|OpenShift Docker Image Repository \[cmdb\_ci\_openshift\_docker\_images\_repository\]|
+    |Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|Contains::Contained by|OpenShift Group \[cmdb\_ci\_openshift\_group\]|
+    |Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|Contains::Contained by|OpenShift Image \[cmdb\_ci\_openshift\_images\]|
+    |Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|Contains::Contained by|OpenShift Project \[cmdb\_ci\_openshift\_project\]|
+    |Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|Contains::Contained by|OpenShift Source2Image \[cmdb\_ci\_openshift\_source\_2\_image\]|
+    |Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]|Contains::Contained by|OpenShift User \[cmdb\_ci\_openshift\_user\]|
+    |Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]|Contains::Contained by|OpenShift Build Config \[cmdb\_ci\_openshift\_build\_conf\]|
+    |Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]|Contains::Contained by|OpenShift Deployed Config \[cmdb\_ci\_openshift\_dep\_conf\]|
+    |Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]|Contains::Contained by|OpenShift Image Stream \[cmdb\_ci\_openshift\_images\_stream\]|
+    |Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]|Contains::Contained by|OpenShift Route \[cmdb\_ci\_openshift\_route\]|
+    |Kubernetes Service \[cmdb\_ci\_kubernetes\_service\]|Provided By::Provides|OpenShift Deployed Config \[cmdb\_ci\_openshift\_dep\_conf\]|
+    |OpenShift Build Config \[cmdb\_ci\_openshift\_build\_conf\]|Contains::Contained by|Tracked Configuration file \[cmdb\_ci\_config\_file\_tracked\]|
+    |OpenShift Deployed Config \[cmdb\_ci\_openshift\_dep\_conf\]|Contains::Contained by|Tracked Configuration file \[cmdb\_ci\_config\_file\_tracked\]|
+    |OpenShift Deployed Config \[cmdb\_ci\_openshift\_dep\_conf\]|Owns::Owned by|Kubernetes ReplicaSet \[cmdb\_ci\_kubernetes\_replicaset\]|
+    |OpenShift Deployed Config \[cmdb\_ci\_openshift\_dep\_conf\]|Owns::Owned by|Kubernetes ReplicationController \[cmdb\_ci\_kubernetes\_replicationcontroller\]|
+
+<table id="table_sjm_vyf_pkc"><thead><tr><th>
+
+CI
+
+</th><th>
+
+Field
+
+</th><th>
+
+Referenced CI
+
+</th></tr></thead><tbody><tr><td>
+
+Key Value \[cmdb\_key\_value\]
+
+</td><td>
+
+Configuration item \[configuration\_item\]
+
+</td><td>
+
+References one of the following CI tables, based on the key-value pair:-   OpenShift Deployed Config \[cmdb\_ci\_openshift\_dep\_conf\]
+-   OpenShift Route \[cmdb\_ci\_openshift\_route\]
+
+
 </td></tr><tr><td>
 
-Contained by::Contains
+OpenShift Deployed Config \[cmdb\_ci\_openshift\_dep\_conf\]
 
 </td><td>
 
-Resource Group \[cmdb\_ci\_resource\_group\]
-
-</td></tr><tr><td rowspan="3">
-
-Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]
-
-</td><td>
-
-Contains::Contained By
-
-</td><td>
-
-Docker Container \[cmdb\_ci\_docker\_container\]
-
-</td></tr><tr><td>
-
-Contains::Contained By
-
-</td><td>
-
-Docker Image \[cmdb\_ci\_docker\_image\]
-
-</td></tr><tr><td>
-
-Contains::Contained By
-
-</td><td>
-
-Kubernetes Volume \[cmdb\_ci\_kubernetes\_volume\]
-
-</td></tr><tr><td>
-
-Kubernetes Workload \[cmdb\_ci\_kubernetes\_workload\]
-
-</td><td>
-
-Hosted on::Hosts
+Kubernetes Cluster \[cluster\]
 
 </td><td>
 
 Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
 
 </td></tr><tr><td>
-
-Kubernetes Service \[cmdb\_ci\_kubernetes\_service\]
-
-</td><td>
-
-Provides::Provided By
-
-</td><td>
-
-Kubernetes Workload \[cmdb\_ci\_kubernetes\_workload\]
-
-</td></tr><tr><td>
-
-Kubernetes Deployment \[cmdb\_ci\_kubernetes\_deployment\]
-
-</td><td>
-
-Owns::Owned By
-
-</td><td>
-
-Kubernetes Replicaset \[cmdb\_ci\_kubernetes\_replicaset\]
-
-</td></tr><tr><td>
-
-Kubernetes Replicaset \[cmdb\_ci\_kubernetes\_replicaset\]
-
-</td><td>
-
-iInstantiates:: Instantiated By
-
-</td><td>
-
-Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]
-
-</td></tr><tr><td>
-
-Kubernetes Workload \[cmdb\_ci\_kubernetes\_workload\]
-
-</td><td>
-
-Provided By::Provides To
-
-</td><td>
-
-Kubernetes Service \[cmdb\_ci\_kubernetes\_service\]
-
-</td></tr><tr><td>
-
-Kubernetes Deployment \[cmdb\_ci\_kubernetes\_deployment\]
-
-</td><td>
-
-Hosted on::Hosts
-
-</td><td>
-
-Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
-
-</td></tr><tr><td>
-
-Kubernetes Daemonset \[cmdb\_ci\_kubernetes\_daemonset\]
-
-</td><td>
-
-Hosted on::Hosts
-
-</td><td>
-
-Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
-
-</td></tr><tr><td>
-
-Kubernetes Statefulset \[cmdb\_ci\_kubernetes\_statefulset\]
-
-</td><td>
-
-Hosted on::Hosts
-
-</td><td>
-
-Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
-
-</td></tr><tr><td rowspan="4">
-
-Kubernetes Namespace \[cmdb\_ci\_kubernetes\_namespace\]​
-
-</td><td>
-
-Contains::Contained By
-
-</td><td>
-
-OpenShift Deployed Config \[cmdb\_ci\_openshift\_dep\_conf​\]
-
-</td></tr><tr><td>
-
-Contains::Contained By
-
-</td><td>
-
-OpenShift Build Config \[cmdb\_ci\_openshift\_build\_conf\]
-
-</td></tr><tr><td>
-
-Contains::Contained By
-
-</td><td>
 
 OpenShift Route \[cmdb\_ci\_openshift\_route\]
 
-</td></tr><tr><td>
-
-Contains::Contained By
-
 </td><td>
 
-OpenShift Image Stream \[cmdb\_ci\_openshift\_images\_stream\]
-
-</td></tr><tr><td>
-
-Docker Image \[cmdb\_ci\_docker\_image\]
+Kubernetes Cluster \[cluster\]
 
 </td><td>
-
-Instantiates::Instantiated by
-
-</td><td>
-
-Docker Container \[cmdb\_ci\_docker\_container\]
-
-</td></tr><tr><td rowspan="3">
-
-Linux Server \[cmdb\_ci\_linux\_server\]
-
-</td><td>
-
-Contains::Contained By
-
-</td><td>
-
-Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]
-
-</td></tr><tr><td>
-
-Runs::Runs on
-
-</td><td>
-
-Docker Container \[cmdb\_ci\_docker\_container\]
-
-</td></tr><tr><td>
-
-Hosts::Hosted on
-
-</td><td>
-
-Kubernetes Node \[cmdb\_ci\_kubernetes\_node\]
-
-</td></tr><tr><td>
-
-OpenShift Deploy Config \[cmdb\_ci\_openshift\_dep\_conf​\]
-
-</td><td>
-
-Contains::Contained By
-
-</td><td>
-
-\[cmdb\_ci\_config\_file\_tracked​\]
-
-</td></tr></tbody>
-</table>The **Collect Container Repository** extension section of the Kubernetes pattern identifies these relationships.
-
-|CI|Relationship|CI|
-|---|------------|---|
-|Docker Image \[cmdb\_ci\_docker\_image\]|Provisioned From::Provisioned|Container Repository Entry \[cmdb\_ci\_container\_repository\_entry\]|
-|Container Repository Entry \[cmdb\_ci\_container\_repository\_entry\]|Hosted on::Hosts|Container Repository \[cmdb\_ci\_container\_repository\]|
-
-## CI relationships collected by the Istio Service Mesh extension
-
-Prerequisites for Istio Service Mesh extension:
-
--   Ensure that Istio Service Mesh and Prometheus components are configured on the Kubernetes cluster.
--   Ensure that Prometheus discovers the service connection information using the `queryistio_requests_total` command.
--   Ensure that the application services are connected, and verify service-to-service traffic flow in Kiali graph.
-
-For more information on the Bookinfo application, see: [https://istio.io/latest/docs/examples/bookinfo/](https://istio.io/latest/docs/examples/bookinfo/)
-
-|CI|Relationship|CI|
-|---|------------|---|
-|Kubernetes Service \[cmdb\_ci\_kubernetes\_servi ce\]|Connects to::Connected by|Kubernetes Service \[cmdb\_ci\_kubernetes\_servi ce\]|
-
-## CI relationships collected by the Kubernetes Event pattern
-
-These relationships are created to support the Kubernetes event discovery:
-
-<table id="table_ysf_fpq_f9k393"><thead><tr><th>
-
-CI
-
-</th><th>
-
-Relationship
-
-</th><th>
-
-CI
-
-</th></tr></thead><tbody><tr><td rowspan="4">
 
 Kubernetes Cluster \[cmdb\_ci\_kubernetes\_cluster\]
 
-</td><td>
-
-Contains::Contained By
-
-</td><td>
-
-Kubernetes Service \[cmdb\_ci\_kubernetes\_service\]
-
-</td></tr><tr><td>
-
-Contains::Contained By
-
-</td><td>
-
-Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]
-
-</td></tr><tr><td>
-
-Cluster of::Cluster
-
-</td><td>
-
-Kubernetes Node \[cmdb\_ci\_kubernetes\_node\]
-
-</td></tr><tr><td>
-
-Manages::Managed by
-
-</td><td>
-
-\[cmdb\_ci\_linux\_server\]
-
-</td></tr><tr><td rowspan="3">
-
-Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]
-
-</td><td>
-
-Contains::Contained By
-
-</td><td>
-
-Docker Container \[cmdb\_ci\_docker\_container\]
-
-</td></tr><tr><td>
-
-Contains::Contained By
-
-</td><td>
-
-Docker Image \[cmdb\_ci\_docker\_image\]
-
-</td></tr><tr><td>
-
-Contains::Contained By
-
-</td><td>
-
-Kubernetes Volume \[cmdb\_ci\_kubernetes\_volume\]
-
-</td></tr><tr><td>
-
-Docker Image \[cmdb\_ci\_docker\_image\]
-
-</td><td>
-
-Instantiates::Instantiated by
-
-</td><td>
-
-Docker Container \[cmdb\_ci\_docker\_container\]
-
-</td></tr><tr><td rowspan="3">
-
-Linux Server \[cmdb\_ci\_linux\_server\]
-
-</td><td>
-
-Contains::Contained By
-
-</td><td>
-
-Kubernetes Pod \[cmdb\_ci\_kubernetes\_pod\]
-
-</td></tr><tr><td>
-
-Runs::Runs on
-
-</td><td>
-
-Docker Container \[cmdb\_ci\_docker\_container\]
-
-</td></tr><tr><td>
-
-Hosts::Hosted on
-
-</td><td>
-
-Kubernetes Node \[cmdb\_ci\_kubernetes\_node\]
-
 </td></tr></tbody>
-</table>## Data collected by Service Mapping during tag-based discovery
+</table>-   **Collect Container Repository**
+
+    |CI|Relationship|CI|
+    |---|------------|---|
+    |Docker Image \[cmdb\_ci\_docker\_image\]|Provisioned From::Provisioned|Container Repository Entry \[cmdb\_ci\_container\_repository\_entry\]|
+    |Container Repository Entry \[cmdb\_ci\_container\_repository\_entry\]|Hosted on::Hosts|Container Repository \[cmdb\_ci\_container\_repository\]|
+
+-   **Istio Service Mesh**
+
+    Prerequisites for Istio Service Mesh extension:
+
+    -   Verify that Istio Service Mesh and Prometheus components are configured on the Kubernetes cluster.
+    -   Verify that Prometheus discovers the service connection information using the `queryistio_requests_total` command.
+    -   Verify that the application services are connected, and verify service-to-service traffic flow in Kiali graph.
+    For more information on the Bookinfo application, see: [https://istio.io/latest/docs/examples/bookinfo/](https://istio.io/latest/docs/examples/bookinfo/)
+
+    |CI|Relationship|CI|
+    |---|------------|---|
+    |Kubernetes Service \[cmdb\_ci\_kubernetes\_servi ce\]|Connects to::Connected by|Kubernetes Service \[cmdb\_ci\_kubernetes\_servi ce\]|
+
+
+## Data collected by Service Mapping during tag-based discovery
 
 Service Mapping uses tag-based discovery to create application service maps including the Kubernetes components. Service Mapping comes with the following preconfigured CI relationships used for tag-based discovery. These CI relationships are available from the 1.0.68 release on ServiceNow Store.
 
@@ -2622,6 +1800,8 @@ By default, the **sa.debugger.max\_timeout**parameter is set to 240 seconds.Incr
 
 -   **[Container image scanning for software decomposition](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/discovery/container-image-concept.md)**  
 The ITOM Visibility apps, Discovery and Service Mapping Patterns and Kubernetes Visibility Agent integrate with Aqua Trivy to collect data on container images and OS packages. You can increase your control over container deployment by having visibility to the container components.
+-   **[Disable Docker container CI discovery](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/discovery/disable-docker-container-discovery.md)**  
+Configure Docker discovery to collect image CIs only, instead of both image and container CIs.
 
 **Parent Topic:**[Discovery for containerized resources](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/discovery/container-discovery.md)
 

@@ -7,7 +7,7 @@ release: australia
 product: Agent Client Collector
 classification: agent-client-collector
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 breadcrumb: [Agent Client Collector upgrade overview, ACC deployment - servers, Configuring Agent Client Collector, Agent Client Collector, IT Operations Management]
 ---
@@ -49,7 +49,7 @@ CentOS,Red Hat
 -   `/usr/bin/systemctl start acc`
 -   `/usr/bin/systemctl stop acc`
 -   `<systemctl location> daemon-reload` \(default location is `/usr/bin`\)
--   `/usr/bin/rpm -Uv <cache dir location>/upgrade/agent-client-collector-upgrade.rpm`
+-   `/usr/bin/rpm/systemd-run -Uv <cache dir location>/upgrade/agent-client-collector-upgrade.rpm`
 
  Default cache directory location: `/var/cache/servicenow/agent-client-collector`
 
@@ -83,7 +83,7 @@ Debian, Ubuntu
 -   `/usr/bin/systemctl start acc`
 -   `/usr/bin/systemctl stop acc`
 -   `<systemctl location> daemon-reload` \(default location is `/usr/bin`\)
--   `/usr/bin/dpkg --install --refuse-downgrade --skip-same-version <cache dir location>/upgrade/agent-client-collector-upgrade.deb`
+-   `/usr/bin/dpkg/systemd-run --install --refuse-downgrade --skip-same-version <cache dir location>/upgrade/agent-client-collector-upgrade.deb`
 
  Default cache directory location: `/var/cache/servicenow/agent-client-collector`
 
@@ -157,6 +157,10 @@ Role required:
 -   Linux: sudo rpm/dpkg/systemd-run
 -   macOS: sudo pkg
 
+## About this task
+
+Selective upgrade doesn't support Agent Client Collector to MID Server communication via mTLS.
+
 ## Procedure
 
 1.  Navigate to **All** &gt; **Agent Client Collector** &gt; **Agents**.
@@ -173,7 +177,7 @@ Role required:
 
 5.  View the log for the agent upgrade in the **Message** column.
 
-    -   For a failed upgrade on a Linux machine, navigate to the `<cache directory location>/upgrade/agent-client-collector-upgrade.rpm` file. Verify that the configurations are set for the relevant OS, according to the Linux Operating Systems table, above.
+    -   For a failed upgrade on a Linux machine, navigate to the `<cache directory location>/upgrade/agent-client-collector-upgrade.rpm` file. Ensure that the configurations are set for the relevant OS, according to the Linux Operating Systems table, above.
     -   For a failed upgrade on a Windows machine, check the relevant log file, located at `<user folder>\AppData\Local\Temp\ACC_Logs`:
 
         -   ACC logs: `ACC_Upgrade.log`

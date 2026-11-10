@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/government-industry/psds-config-gmp-pgr-budget.html
 release: australia
 topic_type: task
-last_updated: "2026-06-23"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 keywords: [program budget, award allocation, budget categories, grants management]
 breadcrumb: [Configure the Grant program budget and award allocation, Set up a grant program, Grants Management Program Setup, Grants Management, Solutions, Use, Public Sector Digital Services \(PSDS\)]
@@ -23,7 +23,7 @@ From Grants management version 1.41, this step is structured into three logical 
 
 ## Before you begin
 
-Role required: sn\_gsm\_grnt\_mgmt.program\_manager, sn\_gsm\_grnt\_mgmt.grant\_director
+Role required: sn\_svc\_appl\_pgm\_mg.grant\_program\_manager or sn\_svc\_appl\_pgm\_mg.grant\_program\_director
 
 ## Procedure
 

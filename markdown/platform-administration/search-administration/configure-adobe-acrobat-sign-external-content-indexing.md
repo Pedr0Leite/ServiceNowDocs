@@ -7,7 +7,7 @@ release: australia
 product: Search Administration
 classification: search-administration
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Adobe Acrobat Sign external content connector, Configure, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -19,7 +19,7 @@ Create and authorize an OAuth 2.0 application in Adobe Acrobat Sign to allow the
 
 ## Before you begin
 
-You need to be an administrator in the Adobe Acrobat Sign.
+You need to be an administrator in Adobe Acrobat Sign.
 
 Role required: none
 
@@ -27,7 +27,7 @@ Role required: none
 
 The Adobe Acrobat Sign external content connector retrieves documents from agreements in your Adobe Acrobat Sign source system using the Adobe Acrobat Sign REST API.
 
-To allow the connector to access your Adobe Acrobat Sign content via the REST API, you must configure and authorize an API application with OAuth 2.0 in Adobe Acrobat Sign. Your connector administrator can use settings copied from this application to configure the Adobe Acrobat Sign external connector for proper connection to your source system.
+To allow the connector to access your Adobe Acrobat Sign content via the REST API, you must configure and authorize an API application with OAuth 2.0 in Adobe Acrobat Sign. Your connector administrator can use settings copied from this application to configure the Adobe Acrobat Sign external content connector for proper connection to your source system.
 
 ## Procedure
 

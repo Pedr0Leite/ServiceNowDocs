@@ -7,7 +7,7 @@ release: australia
 product: Agent Client Collector
 classification: agent-client-collector
 topic_type: task
-last_updated: "2026-08-27"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [ACC deployment - servers, Configuring Agent Client Collector, Agent Client Collector, IT Operations Management]
 ---
@@ -40,7 +40,7 @@ Role required: sn\_agent.token\_admin
 
     3.  Select **View Maintenance Token** in the Related Links section.
 
-    4.  Select the **Copy Token** \(\[Omitted image "copy-token-icon.png"\]\) icon to copy the maintenance token value.
+    4.  Select the **Copy Token** \(\[Omitted image "copy-token-icon.png"\] Alt text: Copy token icon to copy the maintenance token value\) icon to copy the maintenance token value.
 
 3.  Paste the maintenance token in the **Maintenance Token** field.
 
@@ -49,7 +49,7 @@ Role required: sn\_agent.token\_admin
     **Note:** Alternatively, you can enable requiring a maintenance token by using the following single line command:
 
     ```
-    msiexec /i <msi_file_path> /quiet /qn /norestart ACC_API_KEY=<key_value> ACC_MID=wss://<mid_ip>:<websocket_port>/ws/events ACC_ALLOW_LIST=False UNINSTALLVALIDATION=1
+    msiexec /quiet /x <path_to_acc_msi_file> UNINSTALL_TOKEN=<valid_token_value>
     ```
 
     The agent is uninstalled from your Windows machine.

@@ -5,11 +5,11 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/application-development/vc-and-atf.html
 release: australia
 topic_type: concept
-last_updated: "2026-06-05"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 keywords: [vibe coding, AI-assisted development, automated testing, test generation, application development, quality assurance]
 audience: developer
-breadcrumb: [Develop, Agentic development, Agentic development on the ServiceNow AI Platform, Building applications]
+breadcrumb: [Develop, Agentic development guide, Build, AI Workflow Factory Prime, Agentic app development, Building applications]
 ---
 
 # Testing agentically developed apps
@@ -24,9 +24,9 @@ When you use agentic development, the ServiceNow AI Platform can:
 
 This means you can go from idea to a working, testable app much faster. After the initial generation, you can refine the app and its tests in ServiceNow Studio or the ServiceNow IDE, and run the ATF tests to verify that the app functions correctly.
 
-**Note:** Build Agent can create, edit, and run ATF tests. For more information, see [Test what you built](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/build-agent-testing.md).
+**Note:** Build Agent can create, edit, and run ATF tests. For more information, see [Test what you built with Build Agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/build-agent-testing.md).
 
-ATF has a troubleshooting agent to debug test failures on specific metadata. For details, see [ATF troubleshooting agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/automated-test-framework-atf/atf-troubleshooting-agent-landing-page.md).
+ATF has a troubleshooting agent to debug test failures on specific metadata. For details, see [ATF troubleshooting agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/now-assist-for-creator/atf-troubleshooting-agent-landing-page.md).
 
 For full documentation on Automated Test Framework, see [Automated Test Framework \(ATF\)](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/automated-test-framework-atf/atf-landing-page.md).
 

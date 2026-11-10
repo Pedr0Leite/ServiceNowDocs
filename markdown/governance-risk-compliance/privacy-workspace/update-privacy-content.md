@@ -7,7 +7,7 @@ release: australia
 product: Privacy Workspace
 classification: privacy-workspace
 topic_type: task
-last_updated: "2026-03-10"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 breadcrumb: [Privacy content accelerator, Privacy Management, Governance, Risk, and Compliance]
 ---
@@ -25,6 +25,8 @@ The ServiceNow Risk products help customers address regulatory requirements unde
 ServiceNow aims to provide software updates for new or updated major regulations and requirements within twelve to eighteen months of the regulation's publication. For regulations for which ServiceNow provides a level of support in the base system, ServiceNow aims to provide software updates for minor regulatory changes within 12 months and for major regulatory changes within up to 18 months depending on scope and impact. We differentiate between typical regulatory content updates, which do not require software updates or enhancements, and regulatory updates, which do require software updates or enhancements. Content updates are generally delivered on a shorter cadence than if software update or enhancement is required for the regulatory update or change.
 
 ## Before you begin
+
+Privacy Management Content \(sn\_privacy\_content\) must be installed.
 
 Role required: sn\_privacy.manager
 

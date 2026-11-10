@@ -7,7 +7,7 @@ release: australia
 topic_type: task
 last_updated: "2026-07-29"
 reading_time_minutes: 7
-breadcrumb: [Connect, MCP Server Console, Enable AI experiences]
+breadcrumb: [Connect, MCP Server Console, Extending AI with external systems and providers, Enable AI Experiences]
 ---
 
 # Configure an MCP client to connect to an MCP server
@@ -21,6 +21,8 @@ Role required: sn\_mcp\_server.viewer
 ## About this task
 
 The process to configure a client to connect to a server is dependent on the client used. The following procedure is a high-level overview of the workflow to configure a client to call a server. For more information, refer to the documentation for your AI application and client. For an example that demonstrates how to connect from a server on one instance to the ServiceNow Model Context Protocol Client on another instance, see the example following this procedure.
+
+See [https://support.servicenow.com/kb?id=kb\_article\_view&amp;sysparm\_article=KB3013302](https://support.servicenow.com/kb?id=kb_article_view&sysparm_article=KB3013302) to see how to connect a ServiceNow MCP Server to Claude \(claude.ai\) using a custom connector with OAuth 2.0 authentication.
 
 **Note:**
 
@@ -156,6 +158,8 @@ The client secret from the OAuth inbound integration on the server instance.If y
 
     The server runs the relevant tools and returns the result to the client as JSON data. The client presents the response as formatted text.
 
+    **Important:** The MCP service limits the size of tool call payloads. If a request payload from the MCP client exceeds 26 KB, the MCP service returns an error stating that the request payload is too big. If a response payload exceeds 64 KB, the MCP service returns an error stating that the response payload is too big. The minimum version for this restriction is Brail patch 1, Australia patch 7 and Zurich patch 13.
+
     **Note:** If you don't receive the expected data in the response, review the following troubleshooting tips:
 
     -   If you receive an empty or incomplete response rather than an error, first check the ACL configuration for the invoked tool. For more information, see [Creating tools for a Model Context Protocol server](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/creating-tools-mcp-server.md).
@@ -170,7 +174,7 @@ If you run into other issues connecting to a server, see the following additiona
 
 ## Connecting to an MCP server from ServiceNow Model Context Protocol Client
 
-This example demonstrates how to connect to a server from an AI agent on another instance using the ServiceNow Model Context Protocol Client. First, you configure the client to call the preconfigured Quickstart Server. From an AI agent, you access the Quickstart Server's list of tools and add individual tools to the agent. Lastly, you test the agent in AI Agent Studio by providing a prompt and seeing the agent's response. For more information, see the [Model Context Protocol Client Legacy](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/mcp-client.md) documentation.
+This example demonstrates how to connect to a server from an AI agent on another instance using the ServiceNow Model Context Protocol Client. First, you configure the client to call the preconfigured Quickstart Server. From an AI agent, you access the Quickstart Server's list of tools and add individual tools to the agent. Lastly, you test the agent in AI Agent Studio by providing a prompt and seeing the agent's response. For more information, see the [Model Context Protocol Client](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/mcp-client.md) documentation.
 
 Role required: sn\_mcp\_server.viewer and sn\_mcp\_client.admin
 
@@ -183,7 +187,7 @@ Role required: sn\_mcp\_server.viewer and sn\_mcp\_client.admin
 4.  Select **New**.
 5.  Add the Quickstart Server.
 
-    For more information about this step, see [Add an MCP server with OAuth 2.1](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/add-an-oauth-2-1-mcp-server.md).
+    For more information about this step, see [Add an MCP Server with OAuth 2.1](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/add-an-oauth-2-1-mcp-server.md).
 
     1.  On the Add MCP server form, fill in the fields.
 
@@ -213,7 +217,7 @@ Role required: sn\_mcp\_server.viewer and sn\_mcp\_client.admin
     2.  Select **Allow** to allow the client to connect to the server.
 7.  Add tools from the Quickstart Server to an AI agent.
 
-    For more information about this step, see [Add an MCP server tool to an AI agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/add-mcp-server-tool.md).
+    For more information about this step, see [Add a Model Context Protocol to an AI agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/add-mcp-server-tool.md).
 
     1.  In AI Agent Studio, select the **Create and manage** tab.
     2.  From the AI agents tab, select an existing agent or create one.

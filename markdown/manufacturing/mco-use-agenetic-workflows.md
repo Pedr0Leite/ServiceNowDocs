@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/manufacturing/mco-use-agenetic-workflows.html
 release: australia
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
-breadcrumb: [ServiceNow Otto for MCO, Manufacturing Commercial Operations]
+breadcrumb: [AI in Manufacturing Commercial Operations, Explore, Manufacturing Commercial Operations]
 ---
 
 # Using agentic workflows in ServiceNow Otto for Manufacturing Commercial Operations
@@ -55,6 +55,4 @@ To run the AI agents autonomously, you must first duplicate the agentic workflow
 
 
 [bundle-platai.exploring-ai-agents]
-
-[Create recall corrective actions using ServiceNow Otto for MCO](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/manufacturing/execute-recall-campaigns.md)
 

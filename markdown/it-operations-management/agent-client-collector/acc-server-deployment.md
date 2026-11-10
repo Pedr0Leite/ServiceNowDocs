@@ -7,7 +7,7 @@ release: australia
 product: Agent Client Collector
 classification: agent-client-collector
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 5
 breadcrumb: [Configuring Agent Client Collector, Agent Client Collector, IT Operations Management]
 ---
@@ -23,18 +23,20 @@ Use server deployment when your agents are in controlled environments such as da
 -   **[Configuring Agent Client Collector with a MID Server](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/agent-client-collector/acc-configuring-with-mid.md)**  
 Configure the Agent Client Collector with a MID Server to enable communication between network servers and the ServiceNow instance.
 -   **[Agent Client Collector installation on a Linux OS system](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/agent-client-collector/acc-install-linux-concept.md)**  
-Install Agent Client Collector on a system that uses a Linux OS, either using a single-line command script, or following the installation procedure to embed in your own package distribution mechanism. The installation procedure provides consistency when using package distribution solutions.
+Install Agent Client Collector on a system that uses a Linux OS. Use a single-line command script, or follow the installation procedure to embed the agent in your own package distribution mechanism. The installation procedure provides consistency when using package distribution solutions.
 -   **[Agent Client Collector installation on a Windows machine](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/agent-client-collector/acc-windows-install-concept.md)**  
-When installing the Agent Client Collector on a Windows machine, either download an installation file and use a wizard to install the agent manually, or use silent installation to automate agent installation and configuration. Manual installation enables you to test the agent on a single system, while silent installation enables you to deploy the agent at scale.
+Install the Agent Client Collector on a Windows machine by downloading an installation file and using a wizard, or by using silent installation to automate agent installation and configuration. Manual installation enables you to test the agent on a single system, while silent installation enables you to deploy the agent at scale.
+-   **[Run Agent Client Collector self-diagnostic tests](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/agent-client-collector/run-acc-agent-self-test.md)**  
+Run built-in self-diagnostic tests to validate agents' configuration, connectivity, and system requirements.
 -   **[Require a maintenance token for Windows uninstalls](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/agent-client-collector/require-maintenance-token-uninstall.md)**  
 Require using a maintenance token when uninstalling an agent from a Windows device. A maintenance token provides a layer of administrative control so that unauthorized personnel can't perform the uninstall.
 -   **[Create a maintenance token](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/agent-client-collector/create-maintenance-token.md)**  
 Create a maintenance token to use when uninstalling an agent from a Windows device. Administrators require maintenance tokens to ensure that unauthorized employees can't perform an uninstall.
 -   **[Uninstall an agent using a maintenance token](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/agent-client-collector/uninstall-agent-maintenance-token.md)**  
 Uninstall an agent from a Windows device using a maintenance token. Administrators require maintenance tokens to ensure that unauthorized employees can't perform an uninstall.
--   **[Prepare for agent deployment on a non-persistent virtual desktop infrastructure machine](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/agent-client-collector/npvdi-agent-instance-prep.md)**  
-Configure the preliminary settings on an instance to enable using the agent with a non-persistent virtual desktop infrastructure machine \(NPVDI\) machine. NPVDI agents gather data more quickly than traditional agents not enabled for a VPVDI.
--   **[Enable a non-persistent virtual desktop infrastructure \(NPVDI\) agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/agent-client-collector/enable-npvdi-agent.md)**  
+-   **[Prepare agent deployment on a non-persistent virtual desktop infrastructure machine](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/agent-client-collector/npvdi-agent-instance-prep.md)**  
+Configure the preliminary settings on an instance to enable using the agent with a non-persistent virtual desktop infrastructure machine \(NPVDI\) machine. NPVDI agents gather data more quickly than traditional agents not enabled for an NPVDI.
+-   **[Enable a non-persistent virtual desktop infrastructure agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/agent-client-collector/enable-npvdi-agent.md)**  
 Configure an agent to enable it to work in a non-persistent virtual desktop infrastructure \(NPVDI\) environment. NPVDI agents are self-sufficient and start running checks immediately.
 -   **[Agent Client Collector upgrade overview](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/agent-client-collector/acc-agent-upgrade-overview.md)**  
 The Agent Client Collector Framework manages agent upgrades directly from the instance, with no manual action required on individual agent hosts.

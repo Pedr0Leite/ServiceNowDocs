@@ -5,10 +5,10 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/application-development/build-agent-reference-landing.html
 release: australia
 topic_type: concept
-last_updated: "2026-04-29"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 keywords: [reference, ServiceNow Otto, AI Agents, generative AI, agentic AI]
-breadcrumb: [Build Agent, Agentic development on the ServiceNow AI Platform, Building applications]
+breadcrumb: [Build Agent, Build, AI Workflow Factory Prime, Agentic app development, Building applications]
 ---
 
 # Build Agent reference
@@ -23,6 +23,8 @@ Metadata and app file types that Build Agent can create and manage.
 Explore example prompts for building apps, as well as adding governance, UI and other ServiceNow metadata to help you get started with prompting Build Agent.
 -   **[Supported file types for Build Agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/ba-supported-file-types.md)**  
 Build Agent accepts images, documents, code files, and file types specific to ServiceNow as uploads. Supported formats, size limits, and general guidelines apply when generating apps and metadata.
+-   **[Domain separation and Build Agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/ba-domain-separation.md)**  
+Domain separation is supported for Build Agent. Domain separation enables you to separate data, processes, and administrative tasks into logical groupings called domains. You can control several aspects of this separation, including which users can see and access data.
 
 **Parent Topic:**[Build Agent](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/build-agent.md)
 

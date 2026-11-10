@@ -7,7 +7,7 @@ release: australia
 product: Work Order Management
 classification: work-order-management
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 4
 breadcrumb: [Completing work on mobile, Use, Field Service Management]
 ---
@@ -84,7 +84,7 @@ Managers can perform the following actions on the manager mobile application.
 
     View your manager profile.
 
--   [Show that an agent is busy with a non-work order event on Field Service Manager Mobile](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/field-service-management/work-order-management/event-manager-mobile.md)
+-   [Create a personal event in Field Service Manager Mobile](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/field-service-management/work-order-management/event-manager-mobile.md)
 
     Block a technician's calendar for a personal event.
 

@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/domain-sep-aia.html
 release: australia
 topic_type: concept
-last_updated: "2026-09-24"
+last_updated: "2026-11-06"
 reading_time_minutes: 3
-breadcrumb: [Platform AI agents, AI assets, Enable AI experiences]
+breadcrumb: [ServiceNow AI Platform AI agents, ServiceNow AI Platform, AI agents library, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Domain Separation AI agent
@@ -100,5 +100,5 @@ The agent removes visibility for the specified domain from the specified user.
 
 **Note:** You can verify this by checking the `sys_user_visibility` table.
 
-**Parent Topic:**[Platform AI agents](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/platform-ai-agents.md)
+**Parent Topic:**[ServiceNow AI Platform AI agents](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/intelligent-experiences/platform-ai-agents-overview.md)
 

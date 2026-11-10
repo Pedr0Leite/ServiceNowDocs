@@ -10,7 +10,7 @@ topic_type: concept
 last_updated: "2026-04-24"
 reading_time_minutes: 2
 keywords: [AI-powered Widget Builder, widget authoring, natural-language prompts, widget library]
-breadcrumb: [Working with EmployeeWorks capabilities, ServiceNow EmployeeWorks Web App, Unified Employee Experience, Employee Service Management]
+breadcrumb: [Working with EmployeeWorks capabilities, ServiceNow EmployeeWorks Web App, EmployeeWorks, Employee Service Management]
 ---
 
 # AI-powered Widget Builder
@@ -18,6 +18,11 @@ breadcrumb: [Working with EmployeeWorks capabilities, ServiceNow EmployeeWorks W
 Administrators and partners use the AI-powered Widget Builder to generate, clone, and refine Employee Slate widgets. The builder provides natural-language prompts, a visual preview, and direct access to the generated component and server script.
 
 The Widget Builder is the single authoring surface for all Employee Slate canvas widgets. It combines a widget library, an AI chat panel, and an inline code and preview workspace. Administrators move from a written requirement to a working widget without leaving the tool.
+
+**Important:** The AI-powered Widget Builder version 1.3.7 has a new architecture backed by source code. It has the following changes.
+
+-   The widgets built in the old format shows an upgrade prompt with an **Upgrade** button. Without the upgrade, the old widget stays usable but non-editable.
+-   The upgrade converts the widget automatically with no functional loss.
 
 ## Widget library
 

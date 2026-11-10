@@ -5,8 +5,8 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/now-intelligence/create-dv-calendar-ac.html
 release: australia
 topic_type: task
-last_updated: "2026-03-12"
-reading_time_minutes: 4
+last_updated: "2026-09-25"
+reading_time_minutes: 5
 keywords: [Create calendar report, Create calendar visualization]
 breadcrumb: [Create, Data visualizations, Platform Analytics experience, Platform Analytics]
 ---
@@ -17,7 +17,7 @@ Create calendar report visualizations to show and highlight date-driven events.
 
 ## Before you begin
 
-Role required: Anyone with access to data can create a visualization of that data on any dashboard that they can edit. Users with the itil, report\_user, admin, or viz\_creator role can create a visualization in the Visualization Designer. When you create a visualization in the Visualization Designer, it is saved to the Library. For more information on access, see [Report\_view access control](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/reporting/report-view-access-control.md) and [Platform Analytics roles](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/platform-analytics-roles.md).
+Role required: Anyone with access to data can create a visualization of that data on any dashboard that they can edit. Users with the itil, report\_user, admin, or viz\_creator role can create a visualization in the Visualization Designer. When you create a visualization in the Visualization Designer, it is saved to the Library. For more information on access, see [Report\_view access control](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/report-view-access-control.md) and [Platform Analytics roles](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/platform-analytics-roles.md).
 
 For information about the use of the Calendar report visualizations on dashboards, see [the Developer Site](https://developer.servicenow.com/dev.do#!/reference/next-experience/yokohama/shared-components/sn-par-calendar-connected/usage). This site gives information about Calendar report components in the UI Builder, and some configuration options may differ from the Visualization Designer.
 
@@ -25,7 +25,20 @@ For information about the use of the Calendar report visualizations on dashboard
 
 The calendar visualization is used to show activity over the course of a longer span of time than most data visualizations. Use them when you want to condense date-specific information into a small space.
 
-**Note:** Calendar visualizations that are migrated from Core UI require a start time in the **Start date** field and an end time in the **End date** field. These fields are not required in Core UI, but are required in Platform Analytics experience.
+**Note:** Calendar visualizations that are migrated from Core UI require a start time in the **Start date** field and an end time in the **End date** field. These fields aren't required in Core UI, but are required in Platform Analytics experience.
+
+Calendar report limitations:
+
+-   You can limit the number of events that may be returned when you browse backwards in a calendar visualization. There is a limit of 30 days into the past, starting from the first day in the current Calendar view. Events that start more than 30 days before the first day visible on a calendar are not displayed. If you select **Year**, then the calendar includes events that start between December 1 of the previous year and December 31 of the current year.
+
+    The KB article [Weekly calendar view does not display all entries](https://support.servicenow.com/nav_to.do?uri=%2Fkb%3Fid%3Dkb_article_view%26sysparm_article%3DKB0598360) covers scenarios in which some expected entries do not display.
+
+    To show more or fewer days, edit the **glide.report.calendar.max\_days\_back** property. See [Core UI Reporting properties](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/now-intelligence/reporting/reporting-properties.md).
+
+    **Note:** Performance may degrade if this value is too large.
+
+-   This visualization type cannot be run as a scheduled export.
+-   Calendar visualizations on a start date field show the range of the field from the start date to the end date. Calendar visualizations on an end date field show only the end date.
 
 ## Procedure
 
@@ -37,7 +50,7 @@ The calendar visualization is used to show activity over the course of a longer 
 
 4.  In the configuration panel, configure the **Component header**.
 
-<table id="table_szd_jyh_njc"><thead><tr><th>
+<table><thead><tr><th>
 
 Field
 
@@ -91,7 +104,7 @@ Show description
 
 </td><td>
 
-Adds an information icon to the visualization. This icon opens the component description in a pop-up.
+Adds an information icon \(\[Omitted image "icon-info.png"\] Alt text: Information icon\) to the visualization. This icon opens the component description in a pop-up.
 
 </td></tr></tbody>
 </table>5.  In the **Data** section, specify the source table, predefined condition, date range, and filter options.
@@ -126,7 +139,7 @@ Edit filter table
 
 </td><td>
 
-Conditions for filtering event records. This filter is applied when the end user views the calendar. Users can filter further if a filter component is added to the page. **Note:** This property adds a filter condition in addition to the table and predefined conditions, if any are applied.
+Conditions for filtering event records. This filter is applied when the end user views the calendar. Users can filter further if a filter component is added to the page. **Note:** This property adds a filter condition to the table and predefined conditions, if any are applied.
 
 </td></tr><tr><td>
 
@@ -142,15 +155,9 @@ End date field
 
 </td><td>
 
-Field to report on as the ending event. You must select a date field. Default value: Closed \[closed\_at\]
+Field to report on as the ending event. You must select a date field. Hidden if you select **Hide end date**.
 
-</td></tr><tr><td>
-
-Hide end date
-
-</td><td>
-
-Check box to hide the end date field. Events without an end date run for 1 hour.
+Default value: Closed \[closed\_at\]
 
 </td></tr><tr><td>
 
@@ -158,15 +165,15 @@ Highlight based on
 
 </td><td>
 
-Select a value in the drop-down to visually highlight the calendar events by its configured colors.
+Choose a field that has platform-defined field styling to highlight calendar events by configured colors. For more information, see [Define field styles](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/platform-administration/t_DefineFieldStyles.md).
 
 </td></tr><tr><td>
 
-Allow change highlighting
+Allow change highlighting field
 
 </td><td>
 
-Check box to enable **Highlight based on** field.
+Select this option to enable users to choose the field that governs highlighting.
 
 </td></tr><tr><td>
 
@@ -218,7 +225,7 @@ Default value: Month
 </td></tr></tbody>
 </table>7.  Select **Save**.
 
-    Navigate to **All** &gt; **Platform Analytics** &gt; **Library** &gt; **Data Visualizations** to return to the Data Visualization list.
+    Navigate to **All** &gt; **Platform Analytics** &gt; **Library** &gt; **Data Visualizations** to return to the data visualization list.
 
 
 ## What to do next

@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/survey-suggest.html
 release: australia
 topic_type: concept
-last_updated: "2026-04-01"
+last_updated: "2026-10-27"
 reading_time_minutes: 5
-breadcrumb: [Platform agentic workflows, Agentic workflows, AI assets, Enable AI experiences]
+breadcrumb: [Platform agentic workflows, Agentic workflows, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Platform Propose survey responses agentic workflow
@@ -32,7 +32,7 @@ You can use this workflow for any survey triggered on the Incident or Request ta
 
 Propose survey responses isn’t available for ServiceNow Otto panel.
 
-## Role masking
+## Role filtering
 
 Required role: sn\_uxc\_gen\_ai.platform\_ai\_survey\_response.
 
@@ -42,7 +42,13 @@ In the data access settings, you must also add the necessary roles to enable rea
 
 ## Accessing the Propose survey responses agentic workflow
 
-To access the agentic workflow:
+To access the agentic workflow in AI Agent Studio:
+
+1.  Navigate to **All** &gt; **AI Agent Studio** &gt; **Agentic Solutions**.
+2.  Select the **Agentic workflows** tab.
+3.  Select **Propose survey responses**.
+
+To access the agentic workflow in the legacy AI Agent Studio:
 
 1.  Navigate to **All** &gt; **AI Agent Studio** &gt; **Create and manage**.
 2.  Select **Propose survey responses**.

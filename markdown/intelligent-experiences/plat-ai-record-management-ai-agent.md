@@ -7,7 +7,7 @@ release: australia
 topic_type: reference
 last_updated: "2026-08-14"
 reading_time_minutes: 2
-breadcrumb: [ServiceNow AI Platform AI agents, ServiceNow AI Platform, AI agents library, AI assets, Enable AI experiences]
+breadcrumb: [ServiceNow AI Platform AI agents, ServiceNow AI Platform, AI agents library, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Record management AI agent
@@ -63,6 +63,10 @@ Tools
 
 </td><td>
 
+-   **Knowledge graphs**
+
+User NLQ KG
+
 -   **Scripts**
 
 Attach Knowledge Article to Task
@@ -74,6 +78,8 @@ Get Fields from Table
 Get Task Tables
 
 save activity notes
+
+Validate UI Policies
 
 -   **Subflows**
 

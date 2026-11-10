@@ -7,7 +7,7 @@ release: australia
 product: Software Asset Management
 classification: software-asset-management
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 8
 breadcrumb: [Software Asset Management, IT Asset Management, Asset Management]
 ---
@@ -21,7 +21,7 @@ Create entitlements in the Software Asset Workspace to enter your license detail
 -   **[Import bulk entitlements in workspace](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/import-entitlements-workspace.md)**  
 You can import multiple entitlements at one go in the Software Asset Workspace.
 -   **[Install Software Asset Management Guided Experiences](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/install-sam-playbook.md)**  
-Install the Software Asset Management Guided Experiences \(com.sn\_sam\_playbook\) application for step-by-step guidance for completing tasks in your daily software management activities. The application includes demo data and installs related ServiceNow® Store applications and plugins if they aren’t already installed.
+Install the Software Asset Management Guided Experiences \(sn\_sam\_playbook\) application for step-by-step guidance for completing tasks in your daily software management activities. The application includes demo data and installs related ServiceNow® Store applications and plugins if they aren’t already installed.
 -   **[Create entitlements using the guided walk-through](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/guidedwalk-workspace.md)**  
 Use the guided walk-through playbook for a step-by-step process of creating entitlements.
 -   **[Create a software model in the Software Asset Workspace](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/create-swmodels-workspace.md)**  
@@ -30,6 +30,8 @@ Create a software model in the Software Asset Workspace. Add product details tha
 Reconciliation is run as a scheduled job \(default is weekly\), but you can also run reconciliation manually to reconcile software products in the Software Asset Workspace environment on-demand.
 -   **[Generate an Effective License Position \(ELP\) report](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/generate-elp-report-sam.md)**  
 Generate an ELP report to gain detailed insights into the consumption details of different groups within your organization.
+-   **[Create a custom deduplication rule](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/configure-custom-deduplication-rule.md)**  
+Create a custom deduplication rule to define how duplicate software installations are identified and matched within your organization.
 -   **[Create a software removal candidate in workspace](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/add-sw-removal-workspace.md)**  
 Removal candidates reclaim software resources in your environment. They are created automatically from reclamation rules or can be created manually.
 -   **[Reclaim software](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-asset-management/software-asset-management/reclaiming-software-sam.md)**  

@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/it-service-management/ai-native-it-service-desk-reference.html
 release: australia
 topic_type: concept
-last_updated: "2026-04-01"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 keywords: [reference]
 breadcrumb: [Simplified IT Service Management, IT Service Management]
@@ -21,6 +21,8 @@ You can configure the user access for Simplified ITSM pages using various roles.
 Use conversational AI-native experience for administrators, employees, and fulfillers using Simplified IT Service Management \(Simplified ITSM\). AI agents and agentic workflows provide a step-by-step approach to configure ITSM workflows with validated inputs and preview.
 -   **[Catalog items installed with Simplified IT Service Management](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-service-management/catalog-items-base-system.md)**  
 Few commonly requested catalog items are auto-installed in the base system for Simplified IT Service Management.
+-   **[Simplified IT Service Management glossary](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-service-management/glossary-landing-itsm.md)**  
+Learn about the terms and concepts in Simplified IT Service Management.
 
 **Parent Topic:**[Simplified IT Service Management](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-service-management/ai-native-it-service-desk-landing-page.md)
 

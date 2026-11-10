@@ -71,9 +71,9 @@ Application
 </td><td>
 
 Application scope of the service. Select from the following options:-   Public Sector Digital Services Core
--   License and Permit Playbook
--   Information Request Playbook
--   Service Request Playbook
+-   License and Permit Administration
+-   Information Request Administration
+-   Service Request Administration
 
 
 </td></tr><tr><td>

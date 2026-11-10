@@ -5,10 +5,10 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/aia-role-masking.html
 release: australia
 topic_type: concept
-last_updated: "2025-11-04"
+last_updated: "2026-09-10"
 reading_time_minutes: 3
 keywords: [Agent Role Masking, Agent Security]
-breadcrumb: [Security for AI agents, Explore, AI Agent Studio \(legacy\), Enable AI experiences]
+breadcrumb: [Configure, AI Agent Studio \(legacy\), AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Role masking in AI agents

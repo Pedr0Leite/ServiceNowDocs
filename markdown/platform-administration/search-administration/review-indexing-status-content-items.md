@@ -7,7 +7,7 @@ release: australia
 product: Search Administration
 classification: search-administration
 topic_type: task
-last_updated: "2026-08-27"
+last_updated: "2026-09-10"
 reading_time_minutes: 4
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
 breadcrumb: [Review, External Content Connectors, Search administration, Configure core features, Administer the ServiceNow AI Platform]
@@ -31,9 +31,7 @@ Use the index inspector tool to review individual content items retrieved by an 
 
 1.  Navigate to **All** &gt; **External Content Connectors** &gt; **External Content Admin Home**.
 
-2.  If prompted, select **Switch scope** to switch to the External Content Connectors Admin scope.
-
-    You must be in this scope to create or edit external content connectors.
+2.  If prompted to switch scope, select **Switch scope** and select the application scope specified in the prompt.
 
 3.  In the Connectors list, select the record for the external content connector whose content items you want to view indexing status for.
 
@@ -41,7 +39,7 @@ Use the index inspector tool to review individual content items retrieved by an 
 
     1.  Perform the appropriate action for your version of the UI:
 
-<table id="table_els_wyl_vpb"><thead><tr><th>
+<table><thead><tr><th>
 
 UI version
 

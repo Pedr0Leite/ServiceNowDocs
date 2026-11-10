@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/employee-service-management/lco-landing.html
 release: australia
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Employee Service Management]
 ---
@@ -17,7 +17,7 @@ Legal and Contract Operations empowers organizations to accelerate the delivery 
 Through Legal Service Delivery \(LSD\) and Contract Management Pro \(CM Pro\) of Legal and Contract Operations, transform fragmented and manual legal and contract processes into efficient and structured workflow. By replacing fragmented, manual processes with centralized request handling, automated workflows, and intuitive self-service, empower teams to operate with greater speed, precision, and agility.
 
 -   Legal Service Delivery provides a unified experience between the employees requesting legal support and the legal teams fulfilling them.
--   Contract Management Pro solution enables you to set up contract document templates, clauses, and clause variations, and to initiate contract and amendmentrequests. The solution uses AI to analyze contracts and extract metadata. It also supports e-signatures, wet signatures, and external storage systems.
+-   Contract Management Pro solution enables you to set up contract document templates, clauses, and clause variations, and to initiate contract, amendment and renewal requests. The solution uses AI to analyze contracts and extract metadata. It also supports e-signatures, wet signatures, and external storage systems.
 
 ## Get started
 

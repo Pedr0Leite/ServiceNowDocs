@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/manufacturing/mco-dealer-portal.html
 release: australia
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Explore, Manufacturing Commercial Operations]
 ---
@@ -117,7 +117,7 @@ User Profile
 
 </td><td>
 
-Displays user profile information. To learn more about user profile, see .
+Displays user profile information. To learn more about user profile, see [User Profile widget](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/platform-user-interface/user-profile-widget.md).
 
 </td></tr></tbody>
 </table>## What to explore next
@@ -125,6 +125,5 @@ Displays user profile information. To learn more about user profile, see .
 To learn more about configuring and using the dealer portal, see:
 
 -   [Dealer data model](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/manufacturing/dealer-data-model-overview.md)
--   [Configure dealer portal](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/manufacturing/mco-configure-dealer-portal.md)
 -   [Using the dealer portal](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/manufacturing/mco-use-dealer-portal.md)
 

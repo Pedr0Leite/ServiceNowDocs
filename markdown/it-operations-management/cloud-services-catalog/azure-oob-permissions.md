@@ -7,7 +7,7 @@ release: australia
 product: Cloud Services Catalog
 classification: cloud-services-catalog
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Out Of Box Catalogs using Cloud Services Catalog, Cloud Services Catalog, ITOM Cloud Accelerate, IT Operations Management]
 ---
@@ -15,6 +15,8 @@ breadcrumb: [Out Of Box Catalogs using Cloud Services Catalog, Cloud Services Ca
 # Microsoft Azure Out Of Box permissions
 
 Cloud Services Catalog Microsoft Azure Out Of Box catalog items permissions.
+
+These catalog items are available out of box in CSC Content Pack applications.
 
 <table id="table_hfp_fcg_hzb"><thead><tr><th>
 
@@ -215,4 +217,9 @@ resources/\*
 
 </td></tr></tbody>
 </table>**Parent Topic:**[Out Of Box Catalogs using Cloud Services Catalog](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/cloud-services-catalog/out-of-the-box-catalog-items.md)
+
+**Related topics**  
+
+
+[Out Of Box Catalogs using Cloud Services Catalog](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/cloud-services-catalog/out-of-the-box-catalog-items.md)
 

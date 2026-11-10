@@ -5,7 +5,7 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/platform-administration/exclude-a-table-from-cloning.html
 release: australia
 topic_type: task
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Add exclusion, Configure, Instance Clone, Configure core features, Administer the ServiceNow AI Platform]
 ---
@@ -26,14 +26,18 @@ Data is removed during the exclusion substage before the node repoint. The data 
 
 ## Procedure
 
-1.  Navigate to **All** &gt; **Instance Clone** &gt; **Clone Definitions** &gt; **Exclude Tables**.
+1.  Navigate to **All** &gt; **Clone Admin Console** &gt; **Clone Definition** &gt; **Exclude Tables**.
 
-2.  Select **New**.
+2.  In the Clone Exclude Tables page, select **New**.
 
-3.  Enter the table **Name**.
+3.  Enter the table name in the **Name** field.
 
     **Note:** Entering a parent table results in the clone process also excluding its child tables. For example, excluding the task table would also exclude the Change, Incident, and Problem tables.
 
 4.  Select **Submit**.
 
+
+## Result
+
+The exclusion is created but isn't automatically added to your clone profiles. Add it to each profile where you want it applied. For more information, see [Create a custom clone profile](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/platform-administration/configure-clone-profile.md).
 

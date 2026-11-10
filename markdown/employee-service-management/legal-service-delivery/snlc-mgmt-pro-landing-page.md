@@ -1,20 +1,20 @@
 ---
 title: Contract Management Pro for Legal Service Delivery
-description: With the Legal Contract Management Pro for Legal Service Delivery, you can configure and automate the legal contract lifecycle by creating contract document templates, clauses, and clause variations. The legal contract lifecycle enables you to submit, review, finalize, and manage legal contract and amendment requests. The integration also supports e-signatures and external storage systems.
+description: The ServiceNow Contract Management Pro for Legal Service Delivery enables you to configure and automate the legal contract lifecycle by creating contract document templates, clauses, and clause variations. The legal contract lifecycle enables you to submit, review, finalize, and manage legal contract, amendment, and renewal requests. It also supports e-signatures, wet signatures, offline signatures, and external storage systems.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/employee-service-management/legal-service-delivery/snlc-mgmt-pro-landing-page.html
 release: australia
 product: Legal Service Delivery
 classification: legal-service-delivery
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 2
 breadcrumb: [Integration with ServiceNow applications, Legal Service Delivery, Legal and Contract Operations, Employee Service Management]
 ---
 
 # Contract Management Pro for Legal Service Delivery
 
-With the Legal Contract Management Pro for Legal Service Delivery, you can configure and automate the legal contract lifecycle by creating contract document templates, clauses, and clause variations. The legal contract lifecycle enables you to submit, review, finalize, and manage legal contract and amendmentrequests. The integration also supports e-signatures and external storage systems.
+The ServiceNow® Contract Management Pro for Legal Service Delivery enables you to configure and automate the legal contract lifecycle by creating contract document templates, clauses, and clause variations. The legal contract lifecycle enables you to submit, review, finalize, and manage legal contract, amendment, and renewal requests. It also supports e-signatures, wet signatures, offline signatures, and external storage systems.
 
 ## Get started
 

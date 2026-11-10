@@ -1,19 +1,19 @@
 ---
 title: Configure observability agents for ServiceNow Otto
-description: Configure observability agents for third-party application performance monitoring \(APM\) or network performance monitoring \(NPM\) vendors. These agents are invoked by the analyze alert impact agentic workflow. You must configure connections to those vendors before they can be invoked.
+description: Configure observability agents for third-party application performance monitoring \(APM\) or network performance monitoring \(NPM\) vendors. These agents are used by the analyze alert impact agentic workflow and the AIOps AI specialist.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/it-operations-management/configure-integration-agents-for-now-assist.html
 release: australia
 topic_type: concept
-last_updated: "2026-05-27"
+last_updated: "2026-09-10"
 reading_time_minutes: 8
-keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI, Google Gemini Cloud Assist agent, Google Gemini Cloud Assist skill]
+keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI, AWS CloudWatch MCP, AWS CloudWatch API, Datadog, Dynatrace, Google Cloud, Google Gemini Cloud Assist agent, Google Gemini Cloud Assist skill, Kentik, LogicMonitor, Microsoft Azure, New Relic, Prometheus, SolarWinds, Splunk, ThousandEyes]
 breadcrumb: [Configure, ITOM AIOps, IT Operations Management]
 ---
 
 # Configure observability agents for ServiceNow Otto
 
-Configure observability agents for third-party application performance monitoring \(APM\) or network performance monitoring \(NPM\) vendors. These agents are invoked by the analyze alert impact agentic workflow. You must configure connections to those vendors before they can be invoked.
+Configure observability agents for third-party application performance monitoring \(APM\) or network performance monitoring \(NPM\) vendors. These agents are used by the analyze alert impact agentic workflowand the AIOps AI specialist.
 
 **Important:** This AI agent is turned on by default. For more information, see [AI agents, skills, and agentic workflows on by default](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/intelligent-experiences/now-assist-skills-on-by-default.md).
 
@@ -642,7 +642,7 @@ Required credentials
 
 </td><td>
 
-API bearer token: An LMv2 personal access token
+API bearer token: An LMv2 personal access token.Prefix the token with `Bearer` followed by a space, for example, `Bearer <your_token>`.
 
 </td></tr><tr><td>
 
@@ -1076,7 +1076,7 @@ For Splunk token generation:
     Your connection appears in the **Connections** tab.
 
 
-The agents are now ready to be used by the [analyze alert impact agentic workflow](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/event-management/now-assist-itom-agentic-aia.md)
+The agents are now ready to be used by the [analyze alert impact agentic workflow](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/event-management/now-assist-itom-agentic-aia.md).
 
 **Parent Topic:**[Configuring Service Operations Workspace for ITOM](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/it-operations-management/configure-sow-itom.md)
 

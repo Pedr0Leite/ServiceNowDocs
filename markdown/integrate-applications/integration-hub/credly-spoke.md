@@ -26,11 +26,11 @@ This spoke requires an Integration Hub subscription. For more information, see [
 
 ## Spoke version
 
-Credly spoke v1.0.0 is the latest version.
+Credly spoke v1.0.0 is the latest version. For version history of the spoke, see [Credly Spoke release notes](https://www.servicenow.com/docs/r/store-release-notes/store-rn-hr-credly-spoke.html?contentId=mRA4yJoDbEBE6vFNukMdBw).
 
 ## Supported versions
 
-This spoke was built for australia, and is compatible with later Washington DC and Xanadu versions.
+This spoke was built for brazil, and is compatible with later Washington DC and Xanadu versions.
 
 ## Key features
 

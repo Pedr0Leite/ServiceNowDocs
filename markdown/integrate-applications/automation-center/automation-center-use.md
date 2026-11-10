@@ -7,7 +7,7 @@ release: australia
 product: Automation Center
 classification: automation-center
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Automation Center, Workflow Data Fabric]
 ---
@@ -24,10 +24,8 @@ Create actions to fix issues that cause automations to fail.
 Reviews enable you to evaluate automations that have been created.
 -   **[Working with Connection Manager](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/integrate-applications/automation-center/connection-manager.md)**  
 Connection Manager enables you to add data from a third-party tool into Automation Center tables by correctly mapping and testing the data import.
--   **[Migrating automations from UiPath and Blue Prism to ServiceNow RPA Hub](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/integrate-applications/automation-center/migrating-automations-from-uipath.md)**  
-Migrate UiPath and Blue Prism automations to ServiceNow RPA Hub using Automation Center.
--   **[Automation Center integrations](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/integrate-applications/automation-center/automation-center-integrations.md)**  
-Automation Center integrations enable you to discover, analyze, and automate work from other ServiceNow applications. Rather than manually identifying automation opportunities, integrations help you to tap into existing analysis and user workflow data to find and build automations efficiently.
+-   **[Migrating automations from third-party applications to RPA Hub](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/integrate-applications/automation-center/migrating-automations-from-uipath.md)**  
+Migrate UiPath, Blue Prism, Automation Anywhere automations to ServiceNow RPA Hub using Automation Center.
 -   **[ServiceNow Otto for Automation Center](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/integrate-applications/automation-center/nowassist-ac.md)**  
 Use ServiceNow Otto for Automation Center helps you use AI features in your ServiceNow instance using Automation Center.
 

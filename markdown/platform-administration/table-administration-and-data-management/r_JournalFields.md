@@ -7,7 +7,7 @@ release: australia
 product: Table Administration and Data Management
 classification: table-administration-and-data-management
 topic_type: reference
-last_updated: "2026-03-12"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
 breadcrumb: [Task table structure, Working with Task table, Table admin, Tables and data, Configure core features, Administer the ServiceNow AI Platform]
 ---
@@ -18,7 +18,7 @@ Journal fields work together to create a log of changes and comments as tasks ar
 
 **Note:** Journal fields are shown regardless of the table audit enabled/disabled setting.
 
-Fields of the journal\_input type are multi-line text boxes which, upon save, add the comments into the Activity field with a notation.
+Fields of the journal\_input type are multi-line text boxes which, upon save, add the comments into the Activity field with a notation. The most common types of journal fields are work notes and additional comments.
 
 |Field|Description|
 |-----|-----------|

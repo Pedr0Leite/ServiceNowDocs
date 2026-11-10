@@ -7,22 +7,14 @@ release: australia
 product: Workspace Builder
 classification: workspace-builder
 topic_type: concept
-last_updated: "2026-03-12"
+last_updated: "2026-09-23"
 reading_time_minutes: 1
-breadcrumb: [Workspace Builder, Builder library, Developing your application, Building applications]
+breadcrumb: [Workspace Builder, Builder library, Developing your application, Classic app development, Building applications]
 ---
 
 # Exploring Workspace Builder
 
 Workspace Builder for App Engine is a streamlined, no-code environment that enables you to create a custom workspace from within App Engine Studio \(AES\) quickly and efficiently.
-
-##  users
-
-|User|Description|
-|----|-----------|
-|||
-| | |
-| | |
 
 ## What to explore next
 

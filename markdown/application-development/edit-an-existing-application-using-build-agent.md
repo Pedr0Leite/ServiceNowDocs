@@ -1,17 +1,17 @@
 ---
-title: Edit an existing application using Build Agent
+title: Edit an existing application using Build Agent default mode
 description: Use natural language prompts to modify an existing application in Build Agent. You can describe changes in plain language and review, refine, and approve updates before the application is built and installed.
 locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/application-development/edit-an-existing-application-using-build-agent.html
 release: australia
 topic_type: task
-last_updated: "2026-08-19"
+last_updated: "2026-09-10"
 reading_time_minutes: 4
 keywords: [ServiceNow Otto, AI Agents, generative AI, agentic AI]
-breadcrumb: [Use, Build Agent, Agentic development on the ServiceNow AI Platform, Building applications]
+breadcrumb: [Use, Build Agent, Build, AI Workflow Factory Prime, Agentic app development, Building applications]
 ---
 
-# Edit an existing application using Build Agent
+# Edit an existing application using Build Agent default mode
 
 Use natural language prompts to modify an existing application in Build Agent. You can describe changes in plain language and review, refine, and approve updates before the application is built and installed.
 
@@ -70,7 +70,7 @@ You can edit an application with Build Agent in both ServiceNow Studio and the S
 
 8.  Review the changes in the Change Log in a tab in ServiceNow Studio and continue iterating to refine the app.
 
-    For more information on the change log, see [Build Agent checkpoints and conversation change log](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/ba-conversational-change-log.md).
+    For more information on the change log, see [Checkpoints and conversation change log](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/application-development/ba-conversational-change-log.md).
 
     Review updates to generated tables, flows, and scripts, and preview any user interfaces created in your application. You can interact with the preview to make additional edits, for example, select a button in the **Preview** tab and tell Build Agent to `Change the color of the button to purple`.
 

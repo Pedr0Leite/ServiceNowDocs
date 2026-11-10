@@ -10,7 +10,7 @@ topic_type: task
 last_updated: "2026-05-27"
 reading_time_minutes: 2
 keywords: [AI widget builder, widget configuration, widget scope, chat compatibility, role access, Employee Slate]
-breadcrumb: [AI-powered Widget Builder, Working with EmployeeWorks capabilities, ServiceNow EmployeeWorks Web App, Unified Employee Experience, Employee Service Management]
+breadcrumb: [AI-powered Widget Builder, Working with EmployeeWorks capabilities, ServiceNow EmployeeWorks Web App, EmployeeWorks, Employee Service Management]
 ---
 
 # Configure the AI widget builder
@@ -23,9 +23,11 @@ Activate Employee Slate \(built for Now Assist\) in the instance.
 
 An Oasis for Creator license for any admin who uses the AI chat panel.
 
-Role required: admin.
+Role required: aix\_admin
 
 ## About this task
+
+**Important:** The Roles field is removed from widgets. Access and visibility are now controlled through ACLs. Roles already defined still work, and the upgrade converts them. For more information, see [AI-powered Widget Builder](https://raw.githubusercontent.com/ServiceNow/ServiceNowDocs/australia/markdown/australia/employee-service-management/employee-experience-foundation/eslate-ai-widget-builder.md).
 
 The AI widget builder lets admins describe a widget in plain language. The builder generates the widget code, validates it, and compiles it before preview.
 

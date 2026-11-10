@@ -5,9 +5,9 @@ locale: en-US
 canonical_url: https://www.servicenow.com/docs/r/australia/intelligent-experiences/define-sec-mcp.html
 release: australia
 topic_type: task
-last_updated: "2026-09-02"
+last_updated: "2026-09-10"
 reading_time_minutes: 1
-breadcrumb: [Adding an MCP Server Console in AI Agent Studio, Configuring Model Context Protocol Client, MCP Client, AI Agent Studio, Enable AI experiences]
+breadcrumb: [Adding an MCP Server Console in AI Agent Studio, MCP Client, AI Agent Studio, AI agents and agentic workflows, Enable AI Experiences]
 ---
 
 # Define security controls for MCP Servers
@@ -17,6 +17,10 @@ Define security controls for an MCP Servers to determine which users can access 
 ## Before you begin
 
 Role required: sn\_mcp\_client.admin
+
+## About this task
+
+The security control applies only when MCP server is added to an Assistant and when a user tries to invoke the respective MCP server from that Assistant. For adding to AI Agent, this ACL won't be applied and automatically agent ACLs are applied for the agent normally.
 
 ## Procedure
 
